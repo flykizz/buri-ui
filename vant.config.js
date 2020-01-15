@@ -1,41 +1,41 @@
 module.exports = {
-  name: 'vant',
+  name: 'buri',
   build: {
     skipInstall: ['lazyload'],
     site: {
-      publicPath: 'https://b.yzcdn.cn/vant/'
+      publicPath: 'https://b.yzcdn.cn/buri/'
     },
     vetur: {
-      tagPrefix: 'van-'
+      tagPrefix: 'buri-'
     }
   },
   site: {
     defaultLang: 'en-US',
     versions: [
-      { label: '1.x', link: 'https://youzan.github.io/vant/1.x/' }
+      { label: '1.x', link: 'https://flykizz.github.io/buri-ui/1.x/' }
     ],
     baiduAnalytics: {
       seed: 'ad6b5732c36321f2dafed737ac2da92f'
     },
     locales: {
       'zh-CN': {
-        title: 'Vant',
+        title: 'Buri',
         description: '轻量、可靠的移动端 Vue 组件库',
-        logo: 'https://img.yzcdn.cn/vant/logo.png',
+        logo: 'https://img.yzcdn.cn/buri/logo.png',
         langLabel: '中文',
         links: [
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
-            url: '/vant-weapp'
+            logo: 'https://b.yzcdn.cn/buri/logo/weapp.svg',
+            url: '/buri-weapp'
           },
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant'
+            logo: 'https://b.yzcdn.cn/buri/logo/github.svg',
+            url: 'https://github.com/flykizz/buri-ui'
           }
         ],
         searchConfig: {
           apiKey: '90067aecdaa2c85220e2783cd305caac',
-          indexName: 'vant',
+          indexName: 'buri',
           placeholder: '搜索文档...'
         },
         nav: [
@@ -78,7 +78,7 @@ module.exports = {
           },
           {
             title: '基础组件',
-            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
+            icon: 'https://img.yzcdn.cn/buri/basic-0401.svg',
             items: [
               {
                 path: 'button',
@@ -367,23 +367,23 @@ module.exports = {
         ]
       },
       'en-US': {
-        title: 'Vant',
+        title: 'Burit',
         description: 'Mobile UI Components built on Vue',
-        logo: 'https://img.yzcdn.cn/vant/logo.png',
+        logo: 'https://img.yzcdn.cn/buri/logo.png',
         langLabel: 'En',
         links: [
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
-            url: '/vant-weapp'
+            logo: 'https://b.yzcdn.cn/buri/logo/weapp.svg',
+            url: '/buri-weapp'
           },
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant'
+            logo: 'https://b.yzcdn.cn/buri/logo/github.svg',
+            url: 'https://github.com/flykizz/buri'
           }
         ],
         searchConfig: {
           apiKey: '90067aecdaa2c85220e2783cd305caac',
-          indexName: 'vant',
+          indexName: 'buri',
           placeholder: 'Search...'
         },
         nav: [
@@ -414,7 +414,7 @@ module.exports = {
           },
           {
             title: 'Basic Components',
-            icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
+            icon: 'https://img.yzcdn.cn/buri/basic-0401.svg',
             items: [
               {
                 path: 'button',

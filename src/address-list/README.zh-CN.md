@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { AddressList } from 'vant';
+import { AddressList } from 'buri';
 
 Vue.use(AddressList);
 ```
@@ -14,7 +14,7 @@ Vue.use(AddressList);
 ### 基础用法
 
 ```html
-<van-address-list
+<buri-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"

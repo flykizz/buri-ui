@@ -1,5 +1,5 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class Tabs extends VanComponent {
+export class Tabs extends BuriComponent {
   resize(): void;
 }

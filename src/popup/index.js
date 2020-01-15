@@ -52,7 +52,7 @@ export default createComponent({
 
     const transitionName =
       this.transition ||
-      (position === 'center' ? 'van-fade' : `van-popup-slide-${position}`);
+      (position === 'center' ? 'buri-fade' : `buri-popup-slide-${position}`);
 
     const style = {};
     if (isDef(duration)) {

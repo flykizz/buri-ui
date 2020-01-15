@@ -3,37 +3,37 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-cell--center van-switch-cell">
-        <div class="van-cell__title"><span>标题</span></div>
-        <div class="van-cell__value">
-          <div role="switch" aria-checked="true" class="van-switch van-switch--on" style="font-size: 24px;">
-            <div class="van-switch__node"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-cell--center buri-switch-cell">
+        <div class="buri-cell__title"><span>标题</span></div>
+        <div class="buri-cell__value">
+          <div role="switch" aria-checked="true" class="buri-switch buri-switch--on" style="font-size: 24px;">
+            <div class="buri-switch__node"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-cell--center van-switch-cell">
-        <div class="van-cell__title"><span>标题</span></div>
-        <div class="van-cell__value">
-          <div role="switch" aria-checked="true" class="van-switch van-switch--on van-switch--disabled" style="font-size: 24px;">
-            <div class="van-switch__node"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-cell--center buri-switch-cell">
+        <div class="buri-cell__title"><span>标题</span></div>
+        <div class="buri-cell__value">
+          <div role="switch" aria-checked="true" class="buri-switch buri-switch--on buri-switch--disabled" style="font-size: 24px;">
+            <div class="buri-switch__node"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-cell--center van-switch-cell">
-        <div class="van-cell__title"><span>标题</span></div>
-        <div class="van-cell__value">
-          <div role="switch" aria-checked="true" class="van-switch van-switch--on van-switch--loading" style="font-size: 24px;">
-            <div class="van-switch__node">
-              <div class="van-loading van-loading--circular van-switch__loading"><span class="van-loading__spinner van-loading__spinner--circular" style="color: rgb(25, 137, 250);"><svg viewBox="25 25 50 50" class="van-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-cell--center buri-switch-cell">
+        <div class="buri-cell__title"><span>标题</span></div>
+        <div class="buri-cell__value">
+          <div role="switch" aria-checked="true" class="buri-switch buri-switch--on buri-switch--loading" style="font-size: 24px;">
+            <div class="buri-switch__node">
+              <div class="buri-loading buri-loading--circular buri-switch__loading"><span class="buri-loading__spinner buri-loading__spinner--circular" style="color: rgb(25, 137, 250);"><svg viewBox="25 25 50 50" class="buri-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
             </div>
           </div>
         </div>

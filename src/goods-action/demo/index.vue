@@ -2,41 +2,41 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" :text="$t('icon1')" @click="onClickIcon" />
-        <van-goods-action-icon icon="cart-o" :text="$t('icon2')" @click="onClickIcon" />
-        <van-goods-action-button type="warning" :text="$t('button1')" @click="onClickButton" />
-        <van-goods-action-button type="danger" :text="$t('button2')" @click="onClickButton" />
-      </van-goods-action>
+      <buri-goods-action>
+        <buri-goods-action-icon icon="chat-o" :text="$t('icon1')" @click="onClickIcon" />
+        <buri-goods-action-icon icon="cart-o" :text="$t('icon2')" @click="onClickIcon" />
+        <buri-goods-action-button type="warning" :text="$t('button1')" @click="onClickButton" />
+        <buri-goods-action-button type="danger" :text="$t('button2')" @click="onClickButton" />
+      </buri-goods-action>
     </demo-block>
 
     <demo-block :title="$t('iconInfo')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" :text="$t('icon1')" />
-        <van-goods-action-icon icon="cart-o" info="5" :text="$t('icon2')" />
-        <van-goods-action-icon icon="shop-o" info="12" :text="$t('icon3')" />
-        <van-goods-action-button type="warning" :text="$t('button1')" />
-        <van-goods-action-button type="danger" :text="$t('button2')" />
-      </van-goods-action>
+      <buri-goods-action>
+        <buri-goods-action-icon icon="chat-o" :text="$t('icon1')" />
+        <buri-goods-action-icon icon="cart-o" info="5" :text="$t('icon2')" />
+        <buri-goods-action-icon icon="shop-o" info="12" :text="$t('icon3')" />
+        <buri-goods-action-button type="warning" :text="$t('button1')" />
+        <buri-goods-action-button type="danger" :text="$t('button2')" />
+      </buri-goods-action>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('customIconColor')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" :text="$t('icon1')" color="#07c160" />
-        <van-goods-action-icon icon="cart-o" :text="$t('icon2')" />
-        <van-goods-action-icon icon="star" :text="$t('collected')" color="#ff5000" />
-        <van-goods-action-button type="warning" :text="$t('button1')" />
-        <van-goods-action-button type="danger" :text="$t('button2')" />
-      </van-goods-action>
+      <buri-goods-action>
+        <buri-goods-action-icon icon="chat-o" :text="$t('icon1')" color="#07c160" />
+        <buri-goods-action-icon icon="cart-o" :text="$t('icon2')" />
+        <buri-goods-action-icon icon="star" :text="$t('collected')" color="#ff5000" />
+        <buri-goods-action-button type="warning" :text="$t('button1')" />
+        <buri-goods-action-button type="danger" :text="$t('button2')" />
+      </buri-goods-action>
     </demo-block>
 
     <demo-block :title="$t('customButtonColor')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" :text="$t('icon1')" />
-        <van-goods-action-icon icon="cart-o" :text="$t('icon2')" />
-        <van-goods-action-button color="#be99ff" type="warning" :text="$t('button1')" />
-        <van-goods-action-button color="#7232dd" type="danger" :text="$t('button2')" />
-      </van-goods-action>
+      <buri-goods-action>
+        <buri-goods-action-icon icon="chat-o" :text="$t('icon1')" />
+        <buri-goods-action-icon icon="cart-o" :text="$t('icon2')" />
+        <buri-goods-action-button color="#be99ff" type="warning" :text="$t('button1')" />
+        <buri-goods-action-button color="#7232dd" type="danger" :text="$t('button2')" />
+      </buri-goods-action>
     </demo-block>
   </demo-section>
 </template>
@@ -84,7 +84,7 @@ export default {
 
 <style lang="less">
 .demo-goods-action {
-  .van-goods-action {
+  .buri-goods-action {
     position: relative;
   }
 }

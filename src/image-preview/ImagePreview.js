@@ -329,7 +329,7 @@ export default createComponent({
     }
 
     return (
-      <transition name="van-fade">
+      <transition name="buri-fade">
         <div vShow={this.value} class={[bem(), this.className]}>
           {this.genImages()}
           {this.genIndex()}

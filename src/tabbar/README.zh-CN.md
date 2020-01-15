@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'buri';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```
@@ -16,12 +16,12 @@ Vue.use(Tabbar).use(TabbarItem);
 `v-model`默认绑定选中标签的索引值，通过修改`v-model`即可切换选中的标签
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item icon="home-o">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="search">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="friends-o">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">标签</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -39,12 +39,12 @@ export default {
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item name="home" icon="home-o">标签</buri-tabbar-item>
+  <buri-tabbar-item name="search" icon="search">标签</buri-tabbar-item>
+  <buri-tabbar-item name="friends" icon="friends-o">标签</buri-tabbar-item>
+  <buri-tabbar-item name="setting" icon="setting-o">标签</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -62,12 +62,12 @@ export default {
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`info`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" info="5">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" info="20">标签</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item icon="home-o">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="search" dot>标签</buri-tabbar-item>
+  <buri-tabbar-item icon="friends-o" info="5">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o" info="20">标签</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ### 自定义图标
@@ -75,18 +75,18 @@ export default {
 通过 icon 插槽自定义图标，可以通过 `slot-scope` 判断标签是否选中
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item info="3">
+<buri-tabbar v-model="active">
+  <buri-tabbar-item info="3">
     <span>自定义</span>
     <img
       slot="icon"
       slot-scope="props"
       :src="props.active ? icon.active : icon.inactive"
     >
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+  </buri-tabbar-item>
+  <buri-tabbar-item icon="search">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">标签</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -95,8 +95,8 @@ export default {
     return {
       active: 0,
       icon: {
-        active: 'https://img.yzcdn.cn/vant/user-active.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
+        active: 'https://img.yzcdn.cn/buri/user-active.png',
+        inactive: 'https://img.yzcdn.cn/buri/user-inactive.png'
       }
     }
   }
@@ -106,27 +106,27 @@ export default {
 ### 自定义颜色
 
 ```html
-<van-tabbar
+<buri-tabbar
   v-model="active"
   active-color="#07c160"
   inactive-color="#000"
 >
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-</van-tabbar>
+  <buri-tabbar-item icon="home-o">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="search">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="freinds-o">标签</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">标签</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ### 监听切换事件
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">标签1</van-tabbar-item>
-  <van-tabbar-item icon="search">标签2</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">标签3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签4</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active" @change="onChange">
+  <buri-tabbar-item icon="home-o">标签1</buri-tabbar-item>
+  <buri-tabbar-item icon="search">标签2</buri-tabbar-item>
+  <buri-tabbar-item icon="freinds-o">标签3</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">标签4</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```js
@@ -146,22 +146,22 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item
+<buri-tabbar route>
+  <buri-tabbar-item
     replace
     to="/home"
     icon="home-o"
   >
     标签
-  </van-tabbar-item>
-  <van-tabbar-item
+  </buri-tabbar-item>
+  <buri-tabbar-item
     replace
     to="/search"
     icon="search"
   >
     标签
-  </van-tabbar-item>
-</van-tabbar>
+  </buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ## API

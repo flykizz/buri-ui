@@ -1,4 +1,4 @@
-export class VanPopupMixin {
+export class BuriPopupMixin {
   open(): void;
   close(): void;
 }

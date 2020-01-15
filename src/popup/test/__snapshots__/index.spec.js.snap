@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`close-icon prop 1`] = `
-<div class="van-popup van-popup--center" name="van-fade"><i role="button" tabindex="0" class="van-icon van-icon-success van-popup__close-icon van-popup__close-icon--top-right">
+<div class="buri-popup buri-popup--center" name="buri-fade"><i role="button" tabindex="0" class="buri-icon buri-icon-success buri-popup__close-icon buri-popup__close-icon--top-right">
     <!----></i></div>
 `;
 
-exports[`duration prop 1`] = `<div class="van-popup van-popup--center" style="transition-duration: 0.5s;" name="van-fade"></div>`;
+exports[`duration prop 1`] = `<div class="buri-popup buri-popup--center" style="transition-duration: 0.5s;" name="buri-fade"></div>`;
 
-exports[`reset z-index 1`] = `<div class="van-popup van-popup--center" name="van-fade"></div>`;
+exports[`reset z-index 1`] = `<div class="buri-popup buri-popup--center" name="buri-fade"></div>`;
 
-exports[`round prop 1`] = `<div class="van-popup van-popup--round van-popup--center" name="van-fade"></div>`;
+exports[`round prop 1`] = `<div class="buri-popup buri-popup--round buri-popup--center" name="buri-fade"></div>`;

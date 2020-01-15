@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Notify } from 'vant';
+import { Notify } from 'buri';
 
 Vue.use(Notify);
 ```

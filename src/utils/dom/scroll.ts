@@ -18,7 +18,7 @@ export function getScroller(element: HTMLElement, rootParent: ScrollElement = wi
         return node;
       }
 
-      // see: https://github.com/youzan/vant/issues/3823
+      // see: https://github.com/flykizz/buri/issues/3823
       const { overflowY: htmlOverflowY } = window.getComputedStyle(<Element>node.parentNode);
       if (overflowScrollReg.test(<string>htmlOverflowY)) {
         return node;

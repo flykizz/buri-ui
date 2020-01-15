@@ -15,18 +15,18 @@ vue create hello-world
 vue ui
 ```
 
-![](https://img.yzcdn.cn/vant/vue-cli-demo-201809030812.png)
+![](https://img.yzcdn.cn/buri/vue-cli-demo-201809030812.png)
 
-In the GUI, click on 'Dependencies' -> `Install Dependencies` and add `vant` to the dependencies.
+In the GUI, click on 'Dependencies' -> `Install Dependencies` and add `buri` to the dependencies.
 
 ### Install
 
 ```bash
 # Using npm
-npm i vant -S
+npm i buri -S
 
 # Using yarn
-yarn add vant
+yarn add buri
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
+      "libraryName": "buri",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -57,17 +57,17 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: 'vant',
+      libraryName: 'buri',
       libraryDirectory: 'es',
       style: true
-    }, 'vant']
+    }, 'buri']
   ]
 };
 ```
 
 ```js
-// Then you can import components from vant
-import { Button } from 'vant';
+// Then you can import components from buri
+import { Button } from 'buri';
 ```
 
 > If you are using TypeScript，please use [ts-import-plugin](https://github.com/Brooooooklyn/ts-import-plugin) instead
@@ -75,43 +75,43 @@ import { Button } from 'vant';
 ### 2. Manually import
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/button/style';
+import Button from 'buri/lib/button';
+import 'buri/lib/button/style';
 ```
  
 ### 3. Import all components
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/index.css';
+import Burit from 'buri';
+import 'buri/lib/index.css';
 
-Vue.use(Vant);
+Vue.use(Burit);
 ```
 
 > If you configured babel-plugin-import, you won't be allowed to import all components.
 
 ### 4. CDN
 
-The easiest way to use Vant is to include a CDN link in the html file, after which you can access all components via the global variable `vant`.
+The easiest way to use Burit is to include a CDN link in the html file, after which you can access all components via the global variable `buri`.
 
 ```html
 <!-- import style -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.4/lib/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/buri@2.4/lib/index.css">
 
 <!-- import script -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vant@2.4/lib/vant.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/buri@2.4/lib/buri.min.js"></script>
 
 <script>
   // Render the Button component
   new Vue({
     el: '#app',
-    template: `<van-button>Button</van-button>`
+    template: `<buri-button>Button</buri-button>`
   });
 
   // Call function component
-  vant.Toast('Message');
+  buri.Toast('Message');
 </script>
 ```
 
@@ -119,7 +119,7 @@ The easiest way to use Vant is to include a CDN link in the html file, after whi
 
 ### Rem units
 
-Vant use `px` as size units by default，you can use tools such as `postcss-pxtorem` to transform units to `rem`.
+Burit use `px` as size units by default，you can use tools such as `postcss-pxtorem` to transform units to `rem`.
 
 - [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
 - [lib-flexible](https://github.com/amfe/lib-flexible)

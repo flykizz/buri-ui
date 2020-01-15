@@ -6,7 +6,7 @@ import Icon from '../icon';
 const [createComponent, bem] = createNamespace('goods-action-icon');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanGoodsAction')],
+  mixins: [ChildrenMixin('buriGoodsAction')],
 
   props: {
     ...routeProps,

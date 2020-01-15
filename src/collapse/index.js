@@ -5,7 +5,7 @@ import { BORDER_TOP_BOTTOM } from '../utils/constant';
 const [createComponent, bem] = createNamespace('collapse');
 
 export default createComponent({
-  mixins: [ParentMixin('vanCollapse')],
+  mixins: [ParentMixin('buriCollapse')],
 
   props: {
     accordion: Boolean,

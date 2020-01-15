@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Rate } from 'vant';
+import { Rate } from 'buri';
 
 Vue.use(Rate);
 ```
@@ -14,7 +14,7 @@ Vue.use(Rate);
 ### 基础用法
 
 ```html
-<van-rate v-model="value" />
+<buri-rate v-model="value" />
 ```
 
 ```javascript
@@ -30,7 +30,7 @@ export default {
 ### 自定义图标
 
 ```html
-<van-rate
+<buri-rate
   v-model="value"
   icon="like"
   void-icon="like-o"
@@ -40,7 +40,7 @@ export default {
 ### 自定义样式
 
 ```html
-<van-rate
+<buri-rate
   v-model="value"
   :size="25"
   color="#ee0a24"
@@ -52,7 +52,7 @@ export default {
 ### 半星
 
 ```html
-<van-rate
+<buri-rate
   v-model="value"
   allow-half
   void-icon="star"
@@ -73,19 +73,19 @@ export default {
 ### 自定义数量
 
 ```html
-<van-rate v-model="value" :count="6" />
+<buri-rate v-model="value" :count="6" />
 ```
 
 ### 禁用状态
 
 ```html
-<van-rate v-model="value" disabled />
+<buri-rate v-model="value" disabled />
 ```
 
 ### 只读状态
 
 ```html
-<van-rate v-model="value" readonly />
+<buri-rate v-model="value" readonly />
 ```
 
 ## API

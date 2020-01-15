@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button
+      <buri-button
         type="primary"
         :text="$t('showOverlay')"
         style="margin-left: 16px;"
         @click="show = true"
       />
 
-      <van-overlay :show="show" @click="show = false" />
+      <buri-overlay :show="show" @click="show = false" />
     </demo-block>
 
     <demo-block :title="$t('embeddedContent')">
-      <van-button
+      <buri-button
         type="primary"
         :text="$t('embeddedContent')"
         style="margin-left: 16px;"
         @click="showEmbedded = true"
       />
 
-      <van-overlay :show="showEmbedded" @click="showEmbedded = false">
+      <buri-overlay :show="showEmbedded" @click="showEmbedded = false">
         <div class="wrapper">
           <div class="block" />
         </div>
-      </van-overlay>
+      </buri-overlay>
     </demo-block>
   </demo-section>
 </template>

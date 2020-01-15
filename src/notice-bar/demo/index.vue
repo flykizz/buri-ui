@@ -1,21 +1,21 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-notice-bar
+      <buri-notice-bar
         :text="$t('text')"
         left-icon="volume-o"
       />
     </demo-block>
 
     <demo-block :title="$t('unscrollable')">
-      <van-notice-bar
+      <buri-notice-bar
         :scrollable="false"
         :text="$t('text')"
       />
     </demo-block>
 
     <demo-block :title="$t('wrapable')">
-      <van-notice-bar
+      <buri-notice-bar
         wrapable
         :scrollable="false"
         :text="$t('text')"
@@ -23,18 +23,18 @@
     </demo-block>
 
     <demo-block :title="$t('mode')">
-      <van-notice-bar
+      <buri-notice-bar
         mode="closeable"
         :text="$t('text')"
       />
-      <van-notice-bar
+      <buri-notice-bar
         mode="link"
         :text="$t('text')"
       />
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-notice-bar
+      <buri-notice-bar
         :text="$t('text')"
         color="#1989fa"
         background="#ecf9ff"
@@ -71,11 +71,11 @@ export default {
 .demo-notice-bar {
   background: @white;
 
-  .van-notice-bar:not(:first-of-type) {
+  .buri-notice-bar:not(:first-of-type) {
     margin-top: 4px;
   }
 
-  .van-doc-demo-block__title {
+  .buri-doc-demo-block__title {
     padding-top: 24px;
   }
 }

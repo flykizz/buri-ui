@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render bottom slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header">
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header">
+    <div class="buri-card__content">
       <div></div>
-      <div class="van-card__bottom">Custom Bottom</div>
+      <div class="buri-card__bottom">Custom Bottom</div>
     </div>
   </div>
 </div>
 `;
 
 exports[`render origin-price slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header">
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header">
+    <div class="buri-card__content">
       <div></div>
-      <div class="van-card__bottom">
-        <div class="van-card__origin-price">Custom Origin Price</div>
+      <div class="buri-card__bottom">
+        <div class="buri-card__origin-price">Custom Origin Price</div>
       </div>
     </div>
   </div>
@@ -25,13 +25,13 @@ exports[`render origin-price slot 1`] = `
 `;
 
 exports[`render price & num slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header">
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header">
+    <div class="buri-card__content">
       <div></div>
-      <div class="van-card__bottom">
-        <div class="van-card__price">Custom Price</div>
-        <div class="van-card__num">Custom Num</div>
+      <div class="buri-card__bottom">
+        <div class="buri-card__price">Custom Price</div>
+        <div class="buri-card__num">Custom Num</div>
       </div>
     </div>
   </div>
@@ -39,9 +39,9 @@ exports[`render price & num slot 1`] = `
 `;
 
 exports[`render thumb & tag slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header"><a class="van-card__thumb">Custom Thumb<div class="van-card__tag">Custom Tag</div></a>
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header"><a class="buri-card__thumb">Custom Thumb<div class="buri-card__tag">Custom Tag</div></a>
+    <div class="buri-card__content">
       <div></div>
     </div>
   </div>
@@ -49,9 +49,9 @@ exports[`render thumb & tag slot 1`] = `
 `;
 
 exports[`render title & desc slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header">
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header">
+    <div class="buri-card__content">
       <div>Custom TitleCustom desc</div>
     </div>
   </div>
@@ -59,11 +59,11 @@ exports[`render title & desc slot 1`] = `
 `;
 
 exports[`render price & price-top slot 1`] = `
-<div class="van-card">
-  <div class="van-card__header">
-    <div class="van-card__content">
+<div class="buri-card">
+  <div class="buri-card__header">
+    <div class="buri-card__content">
       <div></div>
-      <div class="van-card__bottom">Custom Price-top<div class="van-card__price">Custom Price</div>
+      <div class="buri-card__bottom">Custom Price-top<div class="buri-card__price">Custom Price</div>
       </div>
     </div>
   </div>

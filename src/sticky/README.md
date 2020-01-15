@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Sticky } from 'vant';
+import { Sticky } from 'buri';
 
 Vue.use(Sticky);
 ```
@@ -14,26 +14,26 @@ Vue.use(Sticky);
 ### Basic Usage
 
 ```html
-<van-sticky>
-  <van-button type="primary">Basic Usage</van-button>
-</van-sticky>
+<buri-sticky>
+  <buri-button type="primary">Basic Usage</buri-button>
+</buri-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="info">Offset Top</van-button>
-</van-sticky>
+<buri-sticky :offset-top="50">
+  <buri-button type="info">Offset Top</buri-button>
+</buri-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">Set Container</van-button>
-  </van-sticky>
+  <buri-sticky :container="container">
+    <buri-button type="warning">Set Container</buri-button>
+  </buri-sticky>
 </div>
 ```
 

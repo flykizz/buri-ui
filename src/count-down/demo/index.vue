@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-count-down :time="time" />
+      <buri-count-down :time="time" />
     </demo-block>
 
     <demo-block :title="$t('customFormat')">
-      <van-count-down :time="time" :format="$t('formatWithDay')" />
+      <buri-count-down :time="time" :format="$t('formatWithDay')" />
     </demo-block>
 
     <demo-block :title="$t('millisecond')">
-      <van-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+      <buri-count-down millisecond :time="time" format="HH:mm:ss:SS" />
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-count-down :time="time">
+      <buri-count-down :time="time">
         <template v-slot="currentTime">
           <span class="item">{{ currentTime.hours }}</span>
           <span class="item">{{ currentTime.minutes }}</span>
           <span class="item">{{ currentTime.seconds }}</span>
         </template>
-      </van-count-down>
+      </buri-count-down>
     </demo-block>
 
     <demo-block :title="$t('manualControl')">
-      <van-count-down
+      <buri-count-down
         ref="countDown"
         millisecond
         :time="3000"
@@ -31,19 +31,19 @@
         format="ss:SSS"
         @finish="$toast($t('finished'))"
       />
-      <van-grid clickable :column-num="3">
-        <van-grid-item
+      <buri-grid clickable :column-num="3">
+        <buri-grid-item
           icon="play-circle-o"
           :text="$t('start')"
           @click="start"
         />
-        <van-grid-item
+        <buri-grid-item
           icon="pause-circle-o"
           :text="$t('pause')"
           @click="pause"
         />
-        <van-grid-item icon="replay" :text="$t('reset')" @click="reset" />
-      </van-grid>
+        <buri-grid-item icon="replay" :text="$t('reset')" @click="reset" />
+      </buri-grid>
     </demo-block>
   </demo-section>
 </template>
@@ -103,7 +103,7 @@ export default {
 .demo-count-down {
   background-color: @white;
 
-  .van-count-down {
+  .buri-count-down {
     margin-left: @padding-md;
   }
 
@@ -118,7 +118,7 @@ export default {
     border-radius: 2px;
   }
 
-  .van-grid {
+  .buri-grid {
     margin-top: 10px;
   }
 }

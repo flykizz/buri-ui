@@ -8,7 +8,7 @@ import Icon from '../icon';
 const [createComponent, bem] = createNamespace('grid-item');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanGrid')],
+  mixins: [ChildrenMixin('buriGrid')],
 
   props: {
     ...routeProps,

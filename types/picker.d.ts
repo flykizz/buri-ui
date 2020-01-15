@@ -1,6 +1,6 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class Picker extends VanComponent {
+export class Picker extends BuriComponent {
   getValues(): string[];
 
   setValues(values: string[]): void;

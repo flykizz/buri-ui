@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Switch } from 'vant';
+import { Switch } from 'buri';
 
 Vue.use(Switch);
 ```
@@ -16,7 +16,7 @@ Vue.use(Switch);
 通过`v-model`绑定开关的选中状态，`true`表示开，`false`表示关
 
 ```html
-<van-switch v-model="checked" />
+<buri-switch v-model="checked" />
 ```
 
 ```javascript
@@ -34,7 +34,7 @@ export default {
 通过`disabled`属性来禁用开关，禁用状态下开关不可点击
 
 ```html
-<van-switch v-model="checked" disabled />
+<buri-switch v-model="checked" disabled />
 ```
 
 ### 加载状态
@@ -42,7 +42,7 @@ export default {
 通过`loading`属性设置开关为加载状态，加载状态下开关不可点击
 
 ```html
-<van-switch v-model="checked" loading />
+<buri-switch v-model="checked" loading />
 ```
 
 ### 自定义大小
@@ -50,7 +50,7 @@ export default {
 通过`size`属性自定义开关的大小
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<buri-switch v-model="checked" size="24px" />
 ```
 
 ### 自定义颜色
@@ -58,7 +58,7 @@ export default {
 `active-color`属性表示打开时的背景色，`inactive-color`表示关闭时的背景色
 
 ```html
-<van-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+<buri-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
 ```
 
 ### 异步控制
@@ -66,7 +66,7 @@ export default {
 需要异步控制开关时，可以使用`value`属性和`input`事件代替`v-model`，并在`input`事件回调函数中手动处理开关状态
 
 ```html
-<van-switch :value="checked" @input="onInput" />
+<buri-switch :value="checked" @input="onInput" />
 ```
 
 ```js
@@ -93,9 +93,9 @@ export default {
 ### 搭配单元格使用
 
 ```html
-<van-cell center title="标题">
-  <van-switch v-model="checked" slot="right-icon" size="24" />
-</van-cell>
+<buri-cell center title="标题">
+  <buri-switch v-model="checked" slot="right-icon" size="24" />
+</buri-cell>
 ```
 
 ## API

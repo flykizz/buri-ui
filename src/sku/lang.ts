@@ -4,7 +4,7 @@
 
 export default {
   'zh-CN': {
-    vanSku: {
+    buriSku: {
       select: '选择',
       selected: '已选',
       selectSku: '请先选择商品规格',
@@ -18,21 +18,21 @@ export default {
       quotaTip: (quota: number) => `每人限购${quota}件`,
       quotaUsedTip: (quota: number, count: number) => `每人限购${quota}件，你已购买${count}件`
     },
-    vanSkuActions: {
+    buriSkuActions: {
       buy: '立即购买',
       addCart: '加入购物车'
     },
-    vanSkuImgUploader: {
+    buriSkuImgUploader: {
       oversize: (maxSize: number) => `最大可上传图片为${maxSize}MB，请尝试压缩图片尺寸`,
       fail: '上传失败<br />重新上传'
     },
-    vanSkuStepper: {
+    buriSkuStepper: {
       quotaLimit: (quota: number) => `限购${quota}件`,
       quotaStart: (start: number) => `${start}件起售`,
       comma: '，',
       num: '购买数量'
     },
-    vanSkuMessages: {
+    buriSkuMessages: {
       fill: '请填写',
       upload: '请上传',
       imageLabel: '仅限一张',
@@ -53,7 +53,7 @@ export default {
         mobile: '输入手机号码'
       }
     },
-    vanSkuRow: {
+    buriSkuRow: {
       multiple: '可多选',
     },
   }

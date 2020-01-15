@@ -2,16 +2,16 @@
 
 exports[`renders demo correctly 1`] = `
 <div>
-  <div><span class="van-tag van-tag--default">标签</span> <span class="van-tag van-tag--primary">标签</span> <span class="van-tag van-tag--success">标签</span> <span class="van-tag van-tag--danger">标签</span> <span class="van-tag van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--round van-tag--default">标签</span> <span class="van-tag van-tag--round van-tag--primary">标签</span> <span class="van-tag van-tag--round van-tag--success">标签</span> <span class="van-tag van-tag--round van-tag--danger">标签</span> <span class="van-tag van-tag--round van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--mark van-tag--default">标签</span> <span class="van-tag van-tag--mark van-tag--primary">标签</span> <span class="van-tag van-tag--mark van-tag--success">标签</span> <span class="van-tag van-tag--mark van-tag--danger">标签</span> <span class="van-tag van-tag--mark van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--plain van-tag--default van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--primary van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--success van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--danger van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--warning van-hairline--surround">标签</span></div>
-  <div><span class="van-tag van-tag--default" style="background-color: rgb(242, 130, 106);">标签</span> <span class="van-tag van-tag--plain van-tag--default van-hairline--surround" style="color: rgb(242, 130, 106);">标签</span> <span class="van-tag van-tag--default" style="background-color: rgb(114, 50, 221);">标签</span> <span class="van-tag van-tag--plain van-tag--default van-hairline--surround" style="color: rgb(114, 50, 221);">标签</span> <span class="van-tag van-tag--default" style="background-color: rgb(255, 225, 225); color: rgb(173, 0, 0);">标签</span></div>
-  <div><span class="van-tag van-tag--success">标签</span> <span class="van-tag van-tag--medium van-tag--success">标签</span> <span class="van-tag van-tag--large van-tag--success">标签</span></div>
-  <div><span class="van-tag van-tag--medium van-tag--primary" name="van-fade">
+  <div><span class="buri-tag buri-tag--default">标签</span> <span class="buri-tag buri-tag--primary">标签</span> <span class="buri-tag buri-tag--success">标签</span> <span class="buri-tag buri-tag--danger">标签</span> <span class="buri-tag buri-tag--warning">标签</span></div>
+  <div><span class="buri-tag buri-tag--round buri-tag--default">标签</span> <span class="buri-tag buri-tag--round buri-tag--primary">标签</span> <span class="buri-tag buri-tag--round buri-tag--success">标签</span> <span class="buri-tag buri-tag--round buri-tag--danger">标签</span> <span class="buri-tag buri-tag--round buri-tag--warning">标签</span></div>
+  <div><span class="buri-tag buri-tag--mark buri-tag--default">标签</span> <span class="buri-tag buri-tag--mark buri-tag--primary">标签</span> <span class="buri-tag buri-tag--mark buri-tag--success">标签</span> <span class="buri-tag buri-tag--mark buri-tag--danger">标签</span> <span class="buri-tag buri-tag--mark buri-tag--warning">标签</span></div>
+  <div><span class="buri-tag buri-tag--plain buri-tag--default buri-hairline--surround">标签</span> <span class="buri-tag buri-tag--plain buri-tag--primary buri-hairline--surround">标签</span> <span class="buri-tag buri-tag--plain buri-tag--success buri-hairline--surround">标签</span> <span class="buri-tag buri-tag--plain buri-tag--danger buri-hairline--surround">标签</span> <span class="buri-tag buri-tag--plain buri-tag--warning buri-hairline--surround">标签</span></div>
+  <div><span class="buri-tag buri-tag--default" style="background-color: rgb(242, 130, 106);">标签</span> <span class="buri-tag buri-tag--plain buri-tag--default buri-hairline--surround" style="color: rgb(242, 130, 106);">标签</span> <span class="buri-tag buri-tag--default" style="background-color: rgb(114, 50, 221);">标签</span> <span class="buri-tag buri-tag--plain buri-tag--default buri-hairline--surround" style="color: rgb(114, 50, 221);">标签</span> <span class="buri-tag buri-tag--default" style="background-color: rgb(255, 225, 225); color: rgb(173, 0, 0);">标签</span></div>
+  <div><span class="buri-tag buri-tag--success">标签</span> <span class="buri-tag buri-tag--medium buri-tag--success">标签</span> <span class="buri-tag buri-tag--large buri-tag--success">标签</span></div>
+  <div><span class="buri-tag buri-tag--medium buri-tag--primary" name="buri-fade">
       标签
-    <i class="van-icon van-icon-cross van-tag__close"><!----></i></span> <span class="van-tag van-tag--medium van-tag--success" name="van-fade">
+    <i class="buri-icon buri-icon-cross buri-tag__close"><!----></i></span> <span class="buri-tag buri-tag--medium buri-tag--success" name="buri-fade">
       标签
-    <i class="van-icon van-icon-cross van-tag__close"><!----></i></span></div>
+    <i class="buri-icon buri-icon-cross buri-tag__close"><!----></i></span></div>
 </div>
 `;

@@ -69,7 +69,7 @@ export default createComponent({
             complete: !this.ellipsis
           }),
           {
-            'van-ellipsis': this.ellipsis
+            'buri-ellipsis': this.ellipsis
           }
         ]}
         style={this.style}

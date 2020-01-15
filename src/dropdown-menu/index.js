@@ -8,7 +8,7 @@ const [createComponent, bem] = createNamespace('dropdown-menu');
 
 export default createComponent({
   mixins: [
-    ParentMixin('vanDropdownMenu'),
+    ParentMixin('buriDropdownMenu'),
     ClickOutsideMixin({
       event: 'click',
       method: 'onClickOutside'
@@ -102,7 +102,7 @@ export default createComponent({
           ]}
           style={{ color: item.showPopup ? this.activeColor : '' }}
         >
-          <div class="van-ellipsis">{item.slots('title') || item.displayTitle}</div>
+          <div class="buri-ellipsis">{item.slots('title') || item.displayTitle}</div>
         </span>
       </div>
     ));

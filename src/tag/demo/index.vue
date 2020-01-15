@@ -1,53 +1,53 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-tag>{{ $t('tag') }}</van-tag>
-      <van-tag type="primary">{{ $t('tag') }}</van-tag>
-      <van-tag type="success">{{ $t('tag') }}</van-tag>
-      <van-tag type="danger">{{ $t('tag') }}</van-tag>
-      <van-tag type="warning">{{ $t('tag') }}</van-tag>
+      <buri-tag>{{ $t('tag') }}</buri-tag>
+      <buri-tag type="primary">{{ $t('tag') }}</buri-tag>
+      <buri-tag type="success">{{ $t('tag') }}</buri-tag>
+      <buri-tag type="danger">{{ $t('tag') }}</buri-tag>
+      <buri-tag type="warning">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('round')">
-      <van-tag round>{{ $t('tag') }}</van-tag>
-      <van-tag round type="primary">{{ $t('tag') }}</van-tag>
-      <van-tag round type="success">{{ $t('tag') }}</van-tag>
-      <van-tag round type="danger">{{ $t('tag') }}</van-tag>
-      <van-tag round type="warning">{{ $t('tag') }}</van-tag>
+      <buri-tag round>{{ $t('tag') }}</buri-tag>
+      <buri-tag round type="primary">{{ $t('tag') }}</buri-tag>
+      <buri-tag round type="success">{{ $t('tag') }}</buri-tag>
+      <buri-tag round type="danger">{{ $t('tag') }}</buri-tag>
+      <buri-tag round type="warning">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('mark')">
-      <van-tag mark>{{ $t('tag') }}</van-tag>
-      <van-tag mark type="primary">{{ $t('tag') }}</van-tag>
-      <van-tag mark type="success">{{ $t('tag') }}</van-tag>
-      <van-tag mark type="danger">{{ $t('tag') }}</van-tag>
-      <van-tag mark type="warning">{{ $t('tag') }}</van-tag>
+      <buri-tag mark>{{ $t('tag') }}</buri-tag>
+      <buri-tag mark type="primary">{{ $t('tag') }}</buri-tag>
+      <buri-tag mark type="success">{{ $t('tag') }}</buri-tag>
+      <buri-tag mark type="danger">{{ $t('tag') }}</buri-tag>
+      <buri-tag mark type="warning">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('plain')">
-      <van-tag plain>{{ $t('tag') }}</van-tag>
-      <van-tag plain type="primary">{{ $t('tag') }}</van-tag>
-      <van-tag plain type="success">{{ $t('tag') }}</van-tag>
-      <van-tag plain type="danger">{{ $t('tag') }}</van-tag>
-      <van-tag plain type="warning">{{ $t('tag') }}</van-tag>
+      <buri-tag plain>{{ $t('tag') }}</buri-tag>
+      <buri-tag plain type="primary">{{ $t('tag') }}</buri-tag>
+      <buri-tag plain type="success">{{ $t('tag') }}</buri-tag>
+      <buri-tag plain type="danger">{{ $t('tag') }}</buri-tag>
+      <buri-tag plain type="warning">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('customColor')">
-      <van-tag color="#f2826a">{{ $t('tag') }}</van-tag>
-      <van-tag color="#f2826a" plain>{{ $t('tag') }}</van-tag>
-      <van-tag color="#7232dd">{{ $t('tag') }}</van-tag>
-      <van-tag color="#7232dd" plain>{{ $t('tag') }}</van-tag>
-      <van-tag color="#ffe1e1" text-color="#ad0000">{{ $t('tag') }}</van-tag>
+      <buri-tag color="#f2826a">{{ $t('tag') }}</buri-tag>
+      <buri-tag color="#f2826a" plain>{{ $t('tag') }}</buri-tag>
+      <buri-tag color="#7232dd">{{ $t('tag') }}</buri-tag>
+      <buri-tag color="#7232dd" plain>{{ $t('tag') }}</buri-tag>
+      <buri-tag color="#ffe1e1" text-color="#ad0000">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('customSize')">
-      <van-tag type="success">{{ $t('tag') }}</van-tag>
-      <van-tag type="success" size="medium">{{ $t('tag') }}</van-tag>
-      <van-tag type="success" size="large">{{ $t('tag') }}</van-tag>
+      <buri-tag type="success">{{ $t('tag') }}</buri-tag>
+      <buri-tag type="success" size="medium">{{ $t('tag') }}</buri-tag>
+      <buri-tag type="success" size="large">{{ $t('tag') }}</buri-tag>
     </demo-block>
 
     <demo-block :title="$t('closeable')">
-      <van-tag
+      <buri-tag
         v-if="show.primary"
         size="medium"
         closeable
@@ -55,8 +55,8 @@
         @close="close('primary')"
       >
         {{ $t('tag') }}
-      </van-tag>
-      <van-tag
+      </buri-tag>
+      <buri-tag
         v-if="show.success"
         size="medium"
         closeable
@@ -64,7 +64,7 @@
         @close="close('success')"
       >
         {{ $t('tag') }}
-      </van-tag>
+      </buri-tag>
     </demo-block>
   </demo-section>
 </template>
@@ -113,11 +113,11 @@ export default {
 .demo-tag {
   background-color: @white;
 
-  .van-tag + .van-tag {
+  .buri-tag + .buri-tag {
     margin-left: @padding-xs;
   }
 
-  .van-tag {
+  .buri-tag {
     &:first-of-type {
       margin-left: @padding-md;
     }

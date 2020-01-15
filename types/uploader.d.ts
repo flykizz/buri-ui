@@ -1,5 +1,5 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class Uploader extends VanComponent {
+export class Uploader extends BuriComponent {
   closeImagePreview(): void;
 }

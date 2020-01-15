@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'buri';
 
 Vue.use(Tag);
 ```
@@ -16,11 +16,11 @@ Vue.use(Tag);
 通过`type`属性控制标签颜色，默认为灰色
 
 ```html
-<van-tag>标签</van-tag>
-<van-tag type="primary">标签</van-tag>
-<van-tag type="success">标签</van-tag>
-<van-tag type="danger">标签</van-tag>
-<van-tag type="warning">标签</van-tag>
+<buri-tag>标签</buri-tag>
+<buri-tag type="primary">标签</buri-tag>
+<buri-tag type="success">标签</buri-tag>
+<buri-tag type="danger">标签</buri-tag>
+<buri-tag type="warning">标签</buri-tag>
 ```
 
 ### 圆角样式
@@ -28,11 +28,11 @@ Vue.use(Tag);
 通过`round`设置为圆角样式
 
 ```html
-<van-tag round>标签</van-tag>
-<van-tag round type="primary">标签</van-tag>
-<van-tag round type="success">标签</van-tag>
-<van-tag round type="danger">标签</van-tag>
-<van-tag round type="warning">标签</van-tag>
+<buri-tag round>标签</buri-tag>
+<buri-tag round type="primary">标签</buri-tag>
+<buri-tag round type="success">标签</buri-tag>
+<buri-tag round type="danger">标签</buri-tag>
+<buri-tag round type="warning">标签</buri-tag>
 ```
 
 ### 标记样式
@@ -40,11 +40,11 @@ Vue.use(Tag);
 通过`mark`设置为标记样式(半圆角)
 
 ```html
-<van-tag mark>标签</van-tag>
-<van-tag mark type="primary">标签</van-tag>
-<van-tag mark type="success">标签</van-tag>
-<van-tag mark type="danger">标签</van-tag>
-<van-tag mark type="warning">标签</van-tag>
+<buri-tag mark>标签</buri-tag>
+<buri-tag mark type="primary">标签</buri-tag>
+<buri-tag mark type="success">标签</buri-tag>
+<buri-tag mark type="danger">标签</buri-tag>
+<buri-tag mark type="warning">标签</buri-tag>
 ```
 
 ### 空心样式
@@ -52,29 +52,29 @@ Vue.use(Tag);
 设置`plain`属性设置为空心样式
 
 ```html
-<van-tag plain>标签</van-tag>
-<van-tag plain type="primary">标签</van-tag>
-<van-tag plain type="success">标签</van-tag>
-<van-tag plain type="danger">标签</van-tag>
-<van-tag plain type="warning">标签</van-tag>
+<buri-tag plain>标签</buri-tag>
+<buri-tag plain type="primary">标签</buri-tag>
+<buri-tag plain type="success">标签</buri-tag>
+<buri-tag plain type="danger">标签</buri-tag>
+<buri-tag plain type="warning">标签</buri-tag>
 ```
 
 ### 自定义颜色
 
 ```html
-<van-tag color="#f2826a">标签</van-tag>
-<van-tag color="#f2826a" plain>标签</van-tag>
-<van-tag color="#7232dd">标签</van-tag>
-<van-tag color="#7232dd" plain>标签</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">标签</van-tag>
+<buri-tag color="#f2826a">标签</buri-tag>
+<buri-tag color="#f2826a" plain>标签</buri-tag>
+<buri-tag color="#7232dd">标签</buri-tag>
+<buri-tag color="#7232dd" plain>标签</buri-tag>
+<buri-tag color="#ffe1e1" text-color="#ad0000">标签</buri-tag>
 ```
 
 ### 标签大小
 
 ```html
-<van-tag type="danger">标签</van-tag>
-<van-tag type="danger" size="medium">标签</van-tag>
-<van-tag type="danger" size="large">标签</van-tag>
+<buri-tag type="danger">标签</buri-tag>
+<buri-tag type="danger" size="medium">标签</buri-tag>
+<buri-tag type="danger" size="large">标签</buri-tag>
 ```
 
 ### 可关闭标签
@@ -82,7 +82,7 @@ Vue.use(Tag);
 添加`closeable`属性表示标签是可关闭的，关闭标签时会触发`close`事件，在`close`事件中可以执行隐藏标签的逻辑
 
 ```html
-<van-tag
+<buri-tag
   v-if="show.primary"
   closeable
   size="medium"
@@ -90,8 +90,8 @@ Vue.use(Tag);
   @close="close('primary')"
 >
   标签
-</van-tag>
-<van-tag
+</buri-tag>
+<buri-tag
   v-if="show.success"
   closeable
   size="medium"
@@ -99,7 +99,7 @@ Vue.use(Tag);
   @close="close('success')"
 >
   标签
-</van-tag>
+</buri-tag>
 ```
 
 ```js

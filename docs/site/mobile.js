@@ -13,7 +13,7 @@ Locale.add({
   'en-US': enUS
 });
 
-// flag for vant-weapp demos
+// flag for buri-weapp demos
 const isWeapp = location.search.indexOf('weapp=1') !== -1;
 
 // helper for demo locales
@@ -23,7 +23,7 @@ Vue.mixin({
       const { name } = this.$options;
       const { lang = 'zh-CN' } = (this.$route && this.$route.meta) || {};
       const prefix = name ? camelize(name) + '.' : '';
-      const messages = this.$vantMessages[lang];
+      const messages = this.$buriMessages[lang];
 
       return (path, ...args) => {
         const message = get(messages, prefix + path) || get(messages, path);
@@ -88,7 +88,7 @@ Locale.add({
     disabled: '禁用状态',
     uneditable: '不可编辑',
     basicUsage: '基础用法',
-    advancedUsage: '高级用法',
+    adburicedUsage: '高级用法',
     loadingStatus: '加载状态',
     usernamePlaceholder: '请输入用户名',
     passwordPlaceholder: '请输入密码'
@@ -117,7 +117,7 @@ Locale.add({
     disabled: 'Disabled',
     uneditable: 'Uneditable',
     basicUsage: 'Basic Usage',
-    advancedUsage: 'Advanced Usage',
+    adburicedUsage: 'Adburiced Usage',
     usernamePlaceholder: 'Username',
     passwordPlaceholder: 'Password'
   }

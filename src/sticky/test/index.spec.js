@@ -3,9 +3,9 @@ import { mount, mockScrollTop } from '../../../test';
 test('sticky to top', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;">
+      <buri-sticky style="height: 10px;">
         Content
-      </van-sticky>
+      </buri-sticky>
     `
   });
 
@@ -18,9 +18,9 @@ test('sticky to top', () => {
 test('z-index prop', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" :z-index="0">
+      <buri-sticky style="height: 10px;" :z-index="0">
         Content
-      </van-sticky>
+      </buri-sticky>
     `
   });
 
@@ -32,9 +32,9 @@ test('z-index prop', () => {
 test('offset-top prop', () => {
   const wrapper = mount({
     template: `
-      <van-sticky style="height: 10px;" :offset-top="10">
+      <buri-sticky style="height: 10px;" :offset-top="10">
         Content
-      </van-sticky>
+      </buri-sticky>
     `
   });
 
@@ -47,9 +47,9 @@ test('container prop', () => {
   const wrapper = mount({
     template: `
       <div ref="container" style="height: 20px;">
-        <van-sticky ref="sticky" style="height: 10px;" :container="container">
+        <buri-sticky ref="sticky" style="height: 10px;" :container="container">
           Content
-        </van-sticky>
+        </buri-sticky>
       </div>
     `,
     data() {

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Field } from 'vant';
+import { Field } from 'buri';
 
 Vue.use(Field);
 ```
@@ -16,9 +16,9 @@ Vue.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" placeholder="Text" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-field v-model="value" placeholder="Text" />
+</buri-cell-group>
 ```
 
 ```js
@@ -36,11 +36,11 @@ export default {
 Use `type` prop to custom different type fields.
 
 ```html
-<van-field v-model="text" label="Text" />
-<van-field v-model="tel" type="tel" label="Phone" />
-<van-field v-model="digit" type="digit" label="Digit" />
-<van-field v-model="number" type="number" label="Number" />
-<van-field v-model="password" type="password" label="Password" />
+<buri-field v-model="text" label="Text" />
+<buri-field v-model="tel" type="tel" label="Phone" />
+<buri-field v-model="digit" type="digit" label="Digit" />
+<buri-field v-model="number" type="number" label="Number" />
+<buri-field v-model="password" type="password" label="Password" />
 ```
 
 ```js
@@ -60,31 +60,31 @@ export default {
 ### Disabled
 
 ```html
-<van-cell-group>
-  <van-field label="Text" value="Input Readonly" readonly />
-  <van-field label="Text" value="Input Disabled" disabled />
-</van-cell-group>
+<buri-cell-group>
+  <buri-field label="Text" value="Input Readonly" readonly />
+  <buri-field label="Text" value="Input Disabled" disabled />
+</buri-cell-group>
 ```
 
 ### Show Icon
 
 ```html
-<van-cell-group>
-  <van-field
+<buri-cell-group>
+  <buri-field
     v-model="value1"
     label="Text"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="Show Icon"
   />
-  <van-field
+  <buri-field
     v-model="value2"
     clearable
     label="Text"
     left-icon="music-o"
     placeholder="Show Clear Icon"
   />
-</van-cell-group>
+</buri-cell-group>
 ```
 
 ```js
@@ -103,22 +103,22 @@ export default {
 Use `error` or `error-message` to show error info
 
 ```html
-<van-cell-group>
-  <van-field
+<buri-cell-group>
+  <buri-field
     v-model="username"
     error
     required
     label="Username"
     placeholder="Username"
   />
-  <van-field
+  <buri-field
     v-model="phone"
     required
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
   />
-</van-cell-group>
+</buri-cell-group>
 ```
 
 ### Insert Button
@@ -126,15 +126,15 @@ Use `error` or `error-message` to show error info
 Use button slot to insert button
 
 ```html
-<van-field
+<buri-field
   v-model="sms"
   center
   clearable
   label="SMS"
   placeholder="SMS"
 >
-  <van-button slot="button" size="small" type="primary">Send SMS</van-button>
-</van-field>
+  <buri-button slot="button" size="small" type="primary">Send SMS</buri-button>
+</buri-field>
 ```
 
 ### Format Value
@@ -142,7 +142,7 @@ Use button slot to insert button
 Use `formatter` prop to format the input value
 
 ```html
-<van-field
+<buri-field
   v-model="value"
   label="Text"
   :formatter="formatter"
@@ -170,7 +170,7 @@ export default {
 Textarea Field can be auto resize when has `autosize` prop
 
 ```html
-<van-field
+<buri-field
   v-model="message"
   label="Message"
   type="textarea"
@@ -183,7 +183,7 @@ Textarea Field can be auto resize when has `autosize` prop
 ### Show Word Limit
 
 ```html
-<van-field
+<buri-field
   v-model="message"
   rows="2"
   autosize
@@ -200,7 +200,7 @@ Textarea Field can be auto resize when has `autosize` prop
 Use `input-align` prop to align the input value
 
 ```html
-<van-field
+<buri-field
   v-model="value"
   :label="Text"
   :placeholder="Input Align Right"

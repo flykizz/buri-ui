@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { RadioGroup, Radio } from 'vant';
+import { RadioGroup, Radio } from 'buri';
 
 Vue.use(RadioGroup);
 Vue.use(Radio);
@@ -17,10 +17,10 @@ Vue.use(Radio);
 通过`v-model`绑定值当前选中项的 name
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">单选框 1</van-radio>
-  <van-radio name="2">单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1">单选框 1</buri-radio>
+  <buri-radio name="2">单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ```javascript
@@ -38,10 +38,10 @@ export default {
 通过`disabled`属性禁止选项切换，在`Radio`上设置`disabled`可以禁用单个选项
 
 ```html
-<van-radio-group v-model="radio" disabled>
-  <van-radio name="1">单选框 1</van-radio>
-  <van-radio name="2">单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio" disabled>
+  <buri-radio name="1">单选框 1</buri-radio>
+  <buri-radio name="2">单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### 禁用文本点击
@@ -49,10 +49,10 @@ export default {
 设置`label-disabled`属性后，点击单选框图标以外的内容不会触发切换
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" icon-disabled>单选框 1</van-radio>
-  <van-radio name="2" icon-disabled>单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" icon-disabled>单选框 1</buri-radio>
+  <buri-radio name="2" icon-disabled>单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### 自定义形状
@@ -60,10 +60,10 @@ export default {
 通过`square`属性设置选中状态的图标颜色
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" shape="square">单选框 1</van-radio>
-  <van-radio name="2" shape="square">单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" shape="square">单选框 1</buri-radio>
+  <buri-radio name="2" shape="square">单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### 自定义颜色
@@ -71,10 +71,10 @@ export default {
 通过`checked-color`属性设置选中状态的图标颜色
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" checked-color="#07c160">单选框 1</van-radio>
-  <van-radio name="2" checked-color="#07c160">单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" checked-color="#07c160">单选框 1</buri-radio>
+  <buri-radio name="2" checked-color="#07c160">单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### 自定义大小
@@ -82,10 +82,10 @@ export default {
 通过`icon-size`属性可以自定义图标的大小
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" icon-size="24px">单选框 1</van-radio>
-  <van-radio name="2" icon-size="24px">单选框 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" icon-size="24px">单选框 1</buri-radio>
+  <buri-radio name="2" icon-size="24px">单选框 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### 自定义图标
@@ -93,32 +93,32 @@ export default {
 通过`icon`插槽自定义图标，并通过`slotProps`判断是否为选中状态
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">
+<buri-radio-group v-model="radio">
+  <buri-radio name="1">
     单选框 1
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-  <van-radio name="2">
+  </buri-radio>
+  <buri-radio name="2">
     单选框 2
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-</van-radio-group>
+  </buri-radio>
+</buri-radio-group>
 ```
 
 ```js
 export default {
   data() {
     radio: '1',
-    activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-    inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+    activeIcon: 'https://img.yzcdn.cn/buri/user-active.png',
+    inactiveIcon: 'https://img.yzcdn.cn/buri/user-inactive.png'
   }
 }
 ```
@@ -128,16 +128,16 @@ export default {
 此时你需要再引入`Cell`和`CellGroup`组件
 
 ```html
-<van-radio-group v-model="radio">
-  <van-cell-group>
-    <van-cell title="单选框 1" clickable @click="radio = '1'">
-      <van-radio slot="right-icon" name="1" />
-    </van-cell>
-    <van-cell title="单选框 2" clickable @click="radio = '2'">
-      <van-radio slot="right-icon" name="2" />
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-cell-group>
+    <buri-cell title="单选框 1" clickable @click="radio = '1'">
+      <buri-radio slot="right-icon" name="1" />
+    </buri-cell>
+    <buri-cell title="单选框 2" clickable @click="radio = '2'">
+      <buri-radio slot="right-icon" name="2" />
+    </buri-cell>
+  </buri-cell-group>
+</buri-radio-group>
 ```
 
 ## API

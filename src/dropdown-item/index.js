@@ -9,7 +9,7 @@ import Popup from '../popup';
 const [createComponent, bem] = createNamespace('dropdown-item');
 
 export default createComponent({
-  mixins: [PortalMixin({ ref: 'wrapper' }), ChildrenMixin('vanDropdownMenu')],
+  mixins: [PortalMixin({ ref: 'wrapper' }), ChildrenMixin('buriDropdownMenu')],
 
   props: {
     value: null,

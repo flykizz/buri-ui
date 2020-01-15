@@ -6,7 +6,7 @@ import Icon from '../icon';
 const [createComponent, bem] = createNamespace('step');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanSteps')],
+  mixins: [ChildrenMixin('buriSteps')],
 
   computed: {
     status() {

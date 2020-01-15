@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'buri';
 
 Vue.use(Tag);
 ```
@@ -14,65 +14,65 @@ Vue.use(Tag);
 ### Basic Usage
 
 ```html
-<van-tag>Tag</van-tag>
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="success">Tag</van-tag>
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="warning">Tag</van-tag>
+<buri-tag>Tag</buri-tag>
+<buri-tag type="primary">Tag</buri-tag>
+<buri-tag type="success">Tag</buri-tag>
+<buri-tag type="danger">Tag</buri-tag>
+<buri-tag type="warning">Tag</buri-tag>
 ```
 
 ### Round style
 
 ```html
-<van-tag round>Tag</van-tag>
-<van-tag round type="primary">Tag</van-tag>
-<van-tag round type="success">Tag</van-tag>
-<van-tag round type="danger">Tag</van-tag>
-<van-tag round type="warning">Tag</van-tag>
+<buri-tag round>Tag</buri-tag>
+<buri-tag round type="primary">Tag</buri-tag>
+<buri-tag round type="success">Tag</buri-tag>
+<buri-tag round type="danger">Tag</buri-tag>
+<buri-tag round type="warning">Tag</buri-tag>
 ```
 
 ### Mark style
 
 ```html
-<van-tag mark>Tag</van-tag>
-<van-tag mark type="primary">Tag</van-tag>
-<van-tag mark type="success">Tag</van-tag>
-<van-tag mark type="danger">Tag</van-tag>
-<van-tag mark type="warning">Tag</van-tag>
+<buri-tag mark>Tag</buri-tag>
+<buri-tag mark type="primary">Tag</buri-tag>
+<buri-tag mark type="success">Tag</buri-tag>
+<buri-tag mark type="danger">Tag</buri-tag>
+<buri-tag mark type="warning">Tag</buri-tag>
 ```
 
 ### Plain style
 
 ```html
-<van-tag plain>Tag</van-tag>
-<van-tag plain type="primary">Tag</van-tag>
-<van-tag plain type="success">Tag</van-tag>
-<van-tag plain type="danger">Tag</van-tag>
-<van-tag plain type="warning">Tag</van-tag>
+<buri-tag plain>Tag</buri-tag>
+<buri-tag plain type="primary">Tag</buri-tag>
+<buri-tag plain type="success">Tag</buri-tag>
+<buri-tag plain type="danger">Tag</buri-tag>
+<buri-tag plain type="warning">Tag</buri-tag>
 ```
 
 ### Custom Color
 
 ```html
-<van-tag color="#f2826a">Tag</van-tag>
-<van-tag color="#f2826a" plain>Tag</van-tag>
-<van-tag color="#7232dd">Tag</van-tag>
-<van-tag color="#7232dd" plain>Tag</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
+<buri-tag color="#f2826a">Tag</buri-tag>
+<buri-tag color="#f2826a" plain>Tag</buri-tag>
+<buri-tag color="#7232dd">Tag</buri-tag>
+<buri-tag color="#7232dd" plain>Tag</buri-tag>
+<buri-tag color="#ffe1e1" text-color="#ad0000">Tag</buri-tag>
 ```
 
 ### Custom Size
 
 ```html
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="danger" size="medium">Tag</van-tag>
-<van-tag type="danger" size="large">Tag</van-tag>
+<buri-tag type="danger">Tag</buri-tag>
+<buri-tag type="danger" size="medium">Tag</buri-tag>
+<buri-tag type="danger" size="large">Tag</buri-tag>
 ```
 
 ### Closeable
 
 ```html
-<van-tag
+<buri-tag
   v-if="show.primary"
   closeable
   size="medium"
@@ -80,8 +80,8 @@ Vue.use(Tag);
   @close="close('primary')"
 >
   Tag
-</van-tag>
-<van-tag
+</buri-tag>
+<buri-tag
   v-if="show.success"
   closeable
   size="medium"
@@ -89,7 +89,7 @@ Vue.use(Tag);
   @close="close('success')"
 >
   Tag
-</van-tag>
+</buri-tag>
 ```
 
 ```js

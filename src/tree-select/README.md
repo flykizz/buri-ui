@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { TreeSelect } from 'vant';
+import { TreeSelect } from 'buri';
 
 Vue.use(TreeSelect);
 ```
@@ -14,7 +14,7 @@ Vue.use(TreeSelect);
 ### Radio Mode
 
 ```html
-<van-tree-select
+<buri-tree-select
   :items="items"
   :active-id.sync="activeId"
   :main-active-index.sync="activeIndex"
@@ -36,7 +36,7 @@ export default {
 ### Multiple Mode
 
 ```html
-<van-tree-select
+<buri-tree-select
   :items="items"
   :active-id.sync="activeIds"
   :main-active-index.sync="activeIndex"
@@ -58,16 +58,16 @@ export default {
 ### Custom Content
 
 ```html
-<van-tree-select
+<buri-tree-select
   height="55vw"
   :items="items"
   :main-active-index.sync="activeIndex"
 >
   <template slot="content">
-    <van-image v-if="activeIndex === 0" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-    <van-image v-if="activeIndex === 1" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+    <buri-image v-if="activeIndex === 0" src="https://img.yzcdn.cn/buri/apple-1.jpg" />
+    <buri-image v-if="activeIndex === 1" src="https://img.yzcdn.cn/buri/apple-2.jpg" />
   </template>
-</van-tree-select>
+</buri-tree-select>
 ```
 
 ```js
@@ -84,7 +84,7 @@ export default {
 ### Show Info
 
 ```html
-<van-tree-select
+<buri-tree-select
   height="55vw"
   :items="items"
   :main-active-index.sync="activeIndex"

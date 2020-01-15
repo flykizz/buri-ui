@@ -1,88 +1,88 @@
 <template>
   <demo-section>
-    <van-tabs v-model="tab" sticky :color="BLUE">
-      <van-tab :title="$t('demo')">
+    <buri-tabs v-model="tab" sticky :color="BLUE">
+      <buri-tab :title="$t('demo')">
         <demo-block :title="$t('basicUsage')">
-          <van-col span="6" @click="copy(demoIcon)">
-            <van-icon :name="demoIcon" />
-          </van-col>
-          <van-col span="6" @click="copy(demoImage)">
-            <van-icon :name="demoImage" />
-          </van-col>
+          <buri-col span="6" @click="copy(demoIcon)">
+            <buri-icon :name="demoIcon" />
+          </buri-col>
+          <buri-col span="6" @click="copy(demoImage)">
+            <buri-icon :name="demoImage" />
+          </buri-col>
         </demo-block>
 
         <demo-block :title="$t('info')">
-          <van-col span="6" @click="copy(demoIcon, { dot: true })">
-            <van-icon :name="demoIcon" dot />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { info: '9' })">
-            <van-icon :name="demoIcon" info="9" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { info: '99+' })">
-            <van-icon :name="demoIcon" info="99+" />
-          </van-col>
+          <buri-col span="6" @click="copy(demoIcon, { dot: true })">
+            <buri-icon :name="demoIcon" dot />
+          </buri-col>
+          <buri-col span="6" @click="copy(demoIcon, { info: '9' })">
+            <buri-icon :name="demoIcon" info="9" />
+          </buri-col>
+          <buri-col span="6" @click="copy(demoIcon, { info: '99+' })">
+            <buri-icon :name="demoIcon" info="99+" />
+          </buri-col>
         </demo-block>
 
         <demo-block :title="$t('color')">
-          <van-col span="6" @click="copy(demoIcon, { color: BLUE })">
-            <van-icon :name="demoIcon" :color="BLUE" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { color: GREEN })">
-            <van-icon :name="demoIcon" :color="GREEN" />
-          </van-col>
+          <buri-col span="6" @click="copy(demoIcon, { color: BLUE })">
+            <buri-icon :name="demoIcon" :color="BLUE" />
+          </buri-col>
+          <buri-col span="6" @click="copy(demoIcon, { color: GREEN })">
+            <buri-icon :name="demoIcon" :color="GREEN" />
+          </buri-col>
         </demo-block>
 
         <demo-block :title="$t('size')">
-          <van-col span="6" @click="copy(demoIcon, { size: '40' })">
-            <van-icon :name="demoIcon" size="40" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { size: '3rem' })">
-            <van-icon :name="demoIcon" size="3rem" />
-          </van-col>
+          <buri-col span="6" @click="copy(demoIcon, { size: '40' })">
+            <buri-icon :name="demoIcon" size="40" />
+          </buri-col>
+          <buri-col span="6" @click="copy(demoIcon, { size: '3rem' })">
+            <buri-icon :name="demoIcon" size="3rem" />
+          </buri-col>
         </demo-block>
-      </van-tab>
+      </buri-tab>
 
-      <van-tab :title="$t('basic')">
-        <van-col
+      <buri-tab :title="$t('basic')">
+        <buri-col
           v-for="icon in icons.basic"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <buri-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </buri-col>
+      </buri-tab>
 
-      <van-tab :title="$t('outline')">
-        <van-col
+      <buri-tab :title="$t('outline')">
+        <buri-col
           v-for="icon in icons.outline"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <buri-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </buri-col>
+      </buri-tab>
 
-      <van-tab :title="$t('filled')">
-        <van-col
+      <buri-tab :title="$t('filled')">
+        <buri-col
           v-for="icon in icons.filled"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <buri-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
-    </van-tabs>
+        </buri-col>
+      </buri-tab>
+    </buri-tabs>
   </demo-section>
 </template>
 
 <script>
-import icons from '@vant/icons';
+import icons from '@buri-ui/icons';
 import { BLUE, GREEN } from '../../utils/constant';
 
 // from https://30secondsofcode.org
@@ -142,13 +142,13 @@ export default {
     return {
       tab: 0,
       demoIcon: 'chat-o',
-      demoImage: 'https://b.yzcdn.cn/vant/icon-demo-1126.png'
+      demoImage: 'https://b.yzcdn.cn/buri/icon-demo-1126.png'
     };
   },
 
   methods: {
     copy(icon, option = {}) {
-      let tag = `<van-icon name="${icon}"`;
+      let tag = `<buri-icon name="${icon}"`;
       if ('dot' in option) {
         tag = `${tag} ${option.dot ? 'dot' : ''}`;
       }
@@ -191,7 +191,7 @@ export default {
     font-size: 13px;
   }
 
-  .van-col {
+  .buri-col {
     display: inline-block;
     float: none;
     text-align: center;
@@ -212,13 +212,13 @@ export default {
     }
   }
 
-  .van-icon {
+  .buri-icon {
     margin: 16px 0 16px;
     color: @text-color;
     font-size: 32px;
   }
 
-  .van-tab__pane {
+  .buri-tab__pane {
     width: auto;
     margin: 20px;
     background-color: #fff;

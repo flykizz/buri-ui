@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tab, Tabs } from 'vant';
+import { Tab, Tabs } from 'buri';
 
 Vue.use(Tab).use(Tabs);
 ```
@@ -16,12 +16,12 @@ Vue.use(Tab).use(Tabs);
 通过`v-model`绑定当前激活标签对应的索引值，默认情况下启用第一个标签
 
 ```html
-<van-tabs v-model="active">
-  <van-tab title="标签 1">内容 1</van-tab>
-  <van-tab title="标签 2">内容 2</van-tab>
-  <van-tab title="标签 3">内容 3</van-tab>
-  <van-tab title="标签 4">内容 4</van-tab>
-</van-tabs>
+<buri-tabs v-model="active">
+  <buri-tab title="标签 1">内容 1</buri-tab>
+  <buri-tab title="标签 2">内容 2</buri-tab>
+  <buri-tab title="标签 3">内容 3</buri-tab>
+  <buri-tab title="标签 4">内容 4</buri-tab>
+</buri-tabs>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`
 
 ```html
-<van-tabs v-model="activeName">
-  <van-tab title="标签 1" name="a">内容 1</van-tab>
-  <van-tab title="标签 2" name="b">内容 2</van-tab>
-  <van-tab title="标签 3" name="c">内容 3</van-tab>
-</van-tabs>
+<buri-tabs v-model="activeName">
+  <buri-tab title="标签 1" name="a">内容 1</buri-tab>
+  <buri-tab title="标签 2" name="b">内容 2</buri-tab>
+  <buri-tab title="标签 3" name="c">内容 3</buri-tab>
+</buri-tabs>
 ```
 
 ```js
@@ -61,23 +61,23 @@ export default {
 标签数量超过 4 个时，标签栏可以在水平方向上滚动，切换时会自动将当前标签居中
 
 ```html
-<van-tabs>
-  <van-tab v-for="index in 8" :title="'标签 ' + index">
+<buri-tabs>
+  <buri-tab v-for="index in 8" :title="'标签 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ### 禁用标签
 
-设置`disabled`属性即可禁用标签。如果需要监听禁用标签的点击事件，可以在`van-tabs`上监听`disabled`事件
+设置`disabled`属性即可禁用标签。如果需要监听禁用标签的点击事件，可以在`buri-tabs`上监听`disabled`事件
 
 ```html
-<van-tabs @disabled="onClickDisabled">
-  <van-tab title="标签 1">内容 1</van-tab>
-  <van-tab title="标签 2" disabled>内容 2</van-tab>
-  <van-tab title="标签 3">内容 3</van-tab>
-</van-tabs>
+<buri-tabs @disabled="onClickDisabled">
+  <buri-tab title="标签 1">内容 1</buri-tab>
+  <buri-tab title="标签 2" disabled>内容 2</buri-tab>
+  <buri-tab title="标签 3">内容 3</buri-tab>
+</buri-tabs>
 ```
 
 ```javascript
@@ -95,22 +95,22 @@ export default {
 `Tab`支持两种样式风格：`line`和`card`，默认为`line`样式，可以通过`type`属性修改样式风格
 
 ```html
-<van-tabs type="card">
-  <van-tab title="标签 1">内容 1</van-tab>
-  <van-tab title="标签 2">内容 2</van-tab>
-  <van-tab title="标签 3">内容 3</van-tab>
-</van-tabs>
+<buri-tabs type="card">
+  <buri-tab title="标签 1">内容 1</buri-tab>
+  <buri-tab title="标签 2">内容 2</buri-tab>
+  <buri-tab title="标签 3">内容 3</buri-tab>
+</buri-tabs>
 ```
 
 ### 点击事件
 
-可以在`van-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
+可以在`buri-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
 
 ```html
-<van-tabs @click="onClick">
-  <van-tab title="标签 1">内容 1</van-tab>
-  <van-tab title="标签 2">内容 2</van-tab>
-</van-tabs>
+<buri-tabs @click="onClick">
+  <buri-tab title="标签 1">内容 1</buri-tab>
+  <buri-tab title="标签 2">内容 2</buri-tab>
+</buri-tabs>
 ```
 
 ```javascript
@@ -128,11 +128,11 @@ export default {
 通过`sticky`属性可以开启粘性布局，粘性布局下，当 Tab 滚动到顶部时会自动吸顶
 
 ```html
-<van-tabs v-model="active" sticky>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<buri-tabs v-model="active" sticky>
+  <buri-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ### 自定义标签
@@ -140,14 +140,14 @@ export default {
 通过 title 插槽可以自定义标签内容
 
 ```html
-<van-tabs v-model="active">
-  <van-tab v-for="index in 2">
+<buri-tabs v-model="active">
+  <buri-tab v-for="index in 2">
     <div slot="title">
-      <van-icon name="more-o" />选项
+      <buri-icon name="more-o" />选项
     </div>
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ### 切换动画
@@ -155,11 +155,11 @@ export default {
 通过`animated`属性可以开启切换标签内容时的转场动画
 
 ```html
-<van-tabs v-model="active" animated>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<buri-tabs v-model="active" animated>
+  <buri-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ### 滑动切换
@@ -167,11 +167,11 @@ export default {
 通过`swipeable`属性可以开启滑动切换标签页
 
 ```html
-<van-tabs v-model="active" swipeable>
-  <van-tab v-for="index in 4" :title="'选项 ' + index">
+<buri-tabs v-model="active" swipeable>
+  <buri-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ### 滚动导航
@@ -179,11 +179,11 @@ export default {
 通过`scrollspy`属性可以开启滚动导航模式，该模式下，内容将会平铺展示
 
 ```html
-<van-tabs v-model="active" scrollspy sticky>
-  <van-tab v-for="index in 8" :title="'选项 ' + index">
+<buri-tabs v-model="active" scrollspy sticky>
+  <buri-tab v-for="index in 8" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </buri-tab>
+</buri-tabs>
 ```
 
 ## API

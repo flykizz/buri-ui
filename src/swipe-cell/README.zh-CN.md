@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { SwipeCell } from 'vant';
+import { SwipeCell } from 'buri';
 
 Vue.use(SwipeCell);
 ```
@@ -16,18 +16,18 @@ Vue.use(SwipeCell);
 `SwipeCell`组件提供了`left`和`right`两个插槽，用于定义两侧滑动区域的内容
 
 ```html
-<van-swipe-cell>
+<buri-swipe-cell>
   <template slot="left">
-    <van-button square type="primary" text="选择" />
+    <buri-button square type="primary" text="选择" />
   </template>
 
-  <van-cell :border="false" title="单元格" value="内容" />
+  <buri-cell :border="false" title="单元格" value="内容" />
 
   <template slot="right">
-    <van-button square type="danger" text="删除" />
-    <van-button square type="primary" text="收藏"/>
+    <buri-button square type="danger" text="删除" />
+    <buri-button square type="primary" text="收藏"/>
   </template>
-</van-swipe-cell>
+</buri-swipe-cell>
 ```
 
 ### 异步关闭
@@ -35,17 +35,17 @@ Vue.use(SwipeCell);
 通过传入`before-close`回调函数，可以自定义两侧滑动内容关闭时的行为
 
 ```html
-<van-swipe-cell :before-close="beforeClose">
+<buri-swipe-cell :before-close="beforeClose">
   <template slot="left">
-    <van-button square type="primary" text="选择" />
+    <buri-button square type="primary" text="选择" />
   </template>
 
-  <van-cell :border="false" title="单元格" value="内容" />
+  <buri-cell :border="false" title="单元格" value="内容" />
 
   <template slot="right">
-    <van-button square type="danger" text="删除" />
+    <buri-button square type="danger" text="删除" />
   </template>
-</van-swipe-cell>
+</buri-swipe-cell>
 ```
 
 ```js

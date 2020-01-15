@@ -3,7 +3,7 @@
     <!-- 基础用法 -->
     <demo-block :title="$t('basicUsage')">
       <div class="sku-container">
-        <van-sku
+        <buri-sku
           v-model="showBase"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -23,20 +23,20 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button
+        <buri-button
           block
           type="primary"
           @click="showBase = true"
         >
           {{ $t('basicUsage') }}
-        </van-button>
+        </buri-button>
       </div>
     </demo-block>
 
     <!-- 自定义步进器 -->
     <demo-block :title="$t('title2')">
       <div class="sku-container">
-        <van-sku
+        <buri-sku
           v-model="showStepper"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -53,20 +53,20 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button
+        <buri-button
           block
           type="primary"
           @click="showStepper = true"
         >
           {{ $t('title2') }}
-        </van-button>
+        </buri-button>
       </div>
     </demo-block>
 
     <!-- 隐藏售罄sku -->
     <demo-block :title="$t('hideSoldoutSku')">
       <div class="sku-container">
-        <van-sku
+        <buri-sku
           v-model="showSoldout"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -84,19 +84,19 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button
+        <buri-button
           block
           type="primary"
           @click="showSoldout = true"
         >
           {{ $t('hideSoldoutSku') }}
-        </van-button>
+        </buri-button>
       </div>
     </demo-block>
 
-    <demo-block :title="$t('advancedUsage')">
+    <demo-block :title="$t('adburicedUsage')">
       <div class="sku-container">
-        <van-sku
+        <buri-sku
           v-model="showCustom"
           :stepper-title="$t('stepperTitle')"
           :sku="skuData.sku"
@@ -116,38 +116,38 @@
           @add-cart="onAddCartClicked"
         >
           <template #sku-header-price="{ price }">
-            <div class="van-sku__goods-price">
-              <span class="van-sku__price-symbol">￥</span><span class="van-sku__price-num">{{ price }}</span>
+            <div class="buri-sku__goods-price">
+              <span class="buri-sku__price-symbol">￥</span><span class="buri-sku__price-num">{{ price }}</span>
             </div>
           </template>
           <template #sku-actions="{ skuEventBus }">
-            <div class="van-sku-actions">
-              <van-button
+            <div class="buri-sku-actions">
+              <buri-button
                 square
                 size="large"
                 type="warning"
                 @click="onPointClicked"
               >
                 {{ $t('button1') }}
-              </van-button>
-              <van-button
+              </buri-button>
+              <buri-button
                 square
                 size="large"
                 type="danger"
                 @click="skuEventBus.$emit('sku:buy')"
               >
                 {{ $t('button2') }}
-              </van-button>
+              </buri-button>
             </div>
           </template>
-        </van-sku>
-        <van-button
+        </buri-sku>
+        <buri-button
           block
           type="primary"
           @click="showCustom = true"
         >
-          {{ $t('advancedUsage') }}
-        </van-button>
+          {{ $t('adburicedUsage') }}
+        </buri-button>
       </div>
     </demo-block>
   </demo-section>

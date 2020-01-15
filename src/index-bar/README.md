@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { IndexBar } from 'vant';
+import { IndexBar } from 'buri';
 
 Vue.use(IndexBar);
 ```
@@ -14,37 +14,37 @@ Vue.use(IndexBar);
 ### Basic Usage
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<buri-index-bar>
+  <buri-index-anchor index="A" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <buri-index-anchor index="B" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
 
   ...
-</van-index-bar>
+</buri-index-bar>
 ```
 
 ### Custom Index List
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">Title 1</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<buri-index-bar :index-list="indexList">
+  <buri-index-anchor index="1">Title 1</buri-index-anchor>
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
 
-  <van-index-anchor index="2">Title 2</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <buri-index-anchor index="2">Title 2</buri-index-anchor>
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
+  <buri-cell title="Text" />
 
   ...
-</van-index-bar>
+</buri-index-bar>
 ```
 
 ```js

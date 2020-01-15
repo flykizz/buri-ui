@@ -5,7 +5,7 @@ import { routeProps } from '../utils/router';
 const [createComponent, bem] = createNamespace('tab');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanTabs')],
+  mixins: [ChildrenMixin('buriTabs')],
 
   props: {
     ...routeProps,

@@ -1,45 +1,45 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-collapse v-model="active1">
-        <van-collapse-item :title="$t('title') + 1">{{ $t('text') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title') + 2">{{ $t('text') }}</van-collapse-item>
-        <van-collapse-item
+      <buri-collapse v-model="active1">
+        <buri-collapse-item :title="$t('title') + 1">{{ $t('text') }}</buri-collapse-item>
+        <buri-collapse-item :title="$t('title') + 2">{{ $t('text') }}</buri-collapse-item>
+        <buri-collapse-item
           :title="$t('title') + 3"
           disabled
         >
           {{ $t('text') }}
-        </van-collapse-item>
-      </van-collapse>
+        </buri-collapse-item>
+      </buri-collapse>
     </demo-block>
 
     <demo-block :title="$t('accordion')">
-      <van-collapse
+      <buri-collapse
         v-model="active2"
         accordion
       >
-        <van-collapse-item :title="$t('title') + 1">{{ $t('text') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title') + 2">{{ $t('text') }}</van-collapse-item>
-        <van-collapse-item :title="$t('title') + 3">{{ $t('text') }}</van-collapse-item>
-      </van-collapse>
+        <buri-collapse-item :title="$t('title') + 1">{{ $t('text') }}</buri-collapse-item>
+        <buri-collapse-item :title="$t('title') + 2">{{ $t('text') }}</buri-collapse-item>
+        <buri-collapse-item :title="$t('title') + 3">{{ $t('text') }}</buri-collapse-item>
+      </buri-collapse>
     </demo-block>
 
     <demo-block :title="$t('titleSlot')">
-      <van-collapse v-model="active3">
-        <van-collapse-item>
+      <buri-collapse v-model="active3">
+        <buri-collapse-item>
           <template #title>
-            {{ $t('title') + 1 }}<van-icon name="question-o" />
+            {{ $t('title') + 1 }}<buri-icon name="question-o" />
           </template>
           {{ $t('text') }}
-        </van-collapse-item>
-        <van-collapse-item
+        </buri-collapse-item>
+        <buri-collapse-item
           :title="$t('title') + 2"
           :value="$t('content')"
           icon="shop-o"
         >
           {{ $t('text') }}
-        </van-collapse-item>
-      </van-collapse>
+        </buri-collapse-item>
+      </buri-collapse>
     </demo-block>
   </demo-section>
 </template>
@@ -73,7 +73,7 @@ export default {
 @import '../../style/var';
 
 .demo-collapse {
-  .van-icon-question-o {
+  .buri-icon-question-o {
     margin-left: 5px;
     color: @blue;
     font-size: 15px;

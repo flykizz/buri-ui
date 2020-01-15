@@ -27,7 +27,7 @@ test('render image', async () => {
 
   await later();
 
-  const swipe = wrapper.find('.van-swipe__track');
+  const swipe = wrapper.find('.buri-swipe__track');
   triggerDrag(swipe, 500, 0);
   expect(wrapper.emitted('input')).toBeFalsy();
   triggerDrag(swipe, 0, 0);
@@ -52,7 +52,7 @@ test('async close prop', async () => {
     }
   });
 
-  const swipe = wrapper.find('.van-swipe__track');
+  const swipe = wrapper.find('.buri-swipe__track');
 
   // should not emit input or close event when tapped
   triggerDrag(swipe, 0, 0);
@@ -69,8 +69,8 @@ test('function call', done => {
   ImagePreview(images);
   ImagePreview(images.slice(0, 1));
   Vue.nextTick(() => {
-    const wrapper = document.querySelector('.van-image-preview');
-    const swipe = wrapper.querySelector('.van-swipe__track');
+    const wrapper = document.querySelector('.buri-image-preview');
+    const swipe = wrapper.querySelector('.buri-swipe__track');
     triggerDrag(swipe, 0, 0);
 
     expect(wrapper.querySelectorAll('img').length).toEqual(1);
@@ -81,7 +81,7 @@ test('function call', done => {
 test('double click', async done => {
   const instance = ImagePreview(images);
 
-  const swipe = instance.$el.querySelector('.van-swipe__track');
+  const swipe = instance.$el.querySelector('.buri-swipe__track');
   triggerDrag(swipe, 0, 0);
   triggerDrag(swipe, 0, 0);
   expect(instance.scale).toEqual(2);
@@ -118,7 +118,7 @@ test('onChange option', async done => {
     }
   });
 
-  const swipe = instance.$el.querySelector('.van-swipe__track');
+  const swipe = instance.$el.querySelector('.buri-swipe__track');
   triggerDrag(swipe, 1000, 0);
 });
 
@@ -156,9 +156,9 @@ test('set show-index prop to false', () => {
 test('index slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <buri-image-preview :value="true">
         <template #index>Custom Index</template>
-      </van-image-preview>
+      </buri-image-preview>
     `
   });
 
@@ -168,9 +168,9 @@ test('index slot', () => {
 test('cover slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <buri-image-preview :value="true">
         <template #cover>Custom Cover Content</template>
-      </van-image-preview>
+      </buri-image-preview>
     `
   });
 

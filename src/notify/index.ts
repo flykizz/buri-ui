@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VanNotify from './Notify';
+import BuriNotify from './Notify';
 import { WHITE } from '../utils/constant';
 import { isObj, isServer } from '../utils';
 import { mount } from '../utils/functional';
@@ -19,7 +19,7 @@ function Notify(options: NotifyOptions) {
   }
 
   if (!instance) {
-    instance = mount(VanNotify, {
+    instance = mount(BuriNotify, {
       on: {
         click(event: Event) {
           if (instance.onClick) {
@@ -87,7 +87,7 @@ Notify.resetDefaultOptions = () => {
 };
 
 Notify.install = () => {
-  Vue.use(VanNotify as any);
+  Vue.use(BuriNotify as any);
 };
 
 Vue.prototype.$notify = Notify;

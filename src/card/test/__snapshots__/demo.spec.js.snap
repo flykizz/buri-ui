@@ -3,83 +3,83 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/t-thirt.jpg" class="van-image__img" style="object-fit: contain;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="buri-card">
+      <div class="buri-card__header"><a class="buri-card__thumb">
+          <div class="buri-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/buri/t-thirt.jpg" class="buri-image__img" style="object-fit: contain;">
+            <div class="buri-image__loading"><i class="buri-icon buri-icon-photo-o buri-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="van-card__content">
+        <div class="buri-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
+            <div class="buri-card__title buri-multi-ellipsis--l2">商品名称</div>
+            <div class="buri-card__desc buri-ellipsis">描述信息</div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="buri-card__bottom">
+            <div class="buri-card__price">
+              <div><span class="buri-card__price-currency">¥</span><span class="buri-card__price-integer">2</span>.<span class="buri-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__num">x2</div>
+            <div class="buri-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/t-thirt.jpg" class="van-image__img" style="object-fit: contain;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="buri-card">
+      <div class="buri-card__header"><a class="buri-card__thumb">
+          <div class="buri-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/buri/t-thirt.jpg" class="buri-image__img" style="object-fit: contain;">
+            <div class="buri-image__loading"><i class="buri-icon buri-icon-photo-o buri-image__loading-icon">
                 <!----></i></div>
           </div>
-          <div class="van-card__tag"><span class="van-tag van-tag--mark van-tag--danger">标签</span></div>
+          <div class="buri-card__tag"><span class="buri-tag buri-tag--mark buri-tag--danger">标签</span></div>
         </a>
-        <div class="van-card__content">
+        <div class="buri-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
+            <div class="buri-card__title buri-multi-ellipsis--l2">商品名称</div>
+            <div class="buri-card__desc buri-ellipsis">描述信息</div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="buri-card__bottom">
+            <div class="buri-card__price">
+              <div><span class="buri-card__price-currency">¥</span><span class="buri-card__price-integer">2</span>.<span class="buri-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__origin-price">¥ 10.00</div>
-            <div class="van-card__num">x2</div>
+            <div class="buri-card__origin-price">¥ 10.00</div>
+            <div class="buri-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-card">
-      <div class="van-card__header"><a class="van-card__thumb">
-          <div class="van-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/t-thirt.jpg" class="van-image__img" style="object-fit: contain;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="buri-card">
+      <div class="buri-card__header"><a class="buri-card__thumb">
+          <div class="buri-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/buri/t-thirt.jpg" class="buri-image__img" style="object-fit: contain;">
+            <div class="buri-image__loading"><i class="buri-icon buri-icon-photo-o buri-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="van-card__content">
+        <div class="buri-card__content">
           <div>
-            <div class="van-card__title van-multi-ellipsis--l2">商品名称</div>
-            <div class="van-card__desc van-ellipsis">描述信息</div>
-            <div><span class="van-tag van-tag--plain van-tag--danger van-hairline--surround" style="margin-right: 5px;">
+            <div class="buri-card__title buri-multi-ellipsis--l2">商品名称</div>
+            <div class="buri-card__desc buri-ellipsis">描述信息</div>
+            <div><span class="buri-tag buri-tag--plain buri-tag--danger buri-hairline--surround" style="margin-right: 5px;">
             标签
-          </span> <span class="van-tag van-tag--plain van-tag--danger van-hairline--surround">
+          </span> <span class="buri-tag buri-tag--plain buri-tag--danger buri-hairline--surround">
             标签
           </span></div>
           </div>
-          <div class="van-card__bottom">
-            <div class="van-card__price">
-              <div><span class="van-card__price-currency">¥</span><span class="van-card__price-integer">2</span>.<span class="van-card__price-decimal">00</span></div>
+          <div class="buri-card__bottom">
+            <div class="buri-card__price">
+              <div><span class="buri-card__price-currency">¥</span><span class="buri-card__price-integer">2</span>.<span class="buri-card__price-decimal">00</span></div>
             </div>
-            <div class="van-card__num">x2</div>
+            <div class="buri-card__num">x2</div>
           </div>
         </div>
       </div>
-      <div class="van-card__footer">
-        <div><button class="van-button van-button--default van-button--mini van-button--round"><span class="van-button__text">
+      <div class="buri-card__footer">
+        <div><button class="buri-button buri-button--default buri-button--mini buri-button--round"><span class="buri-button__text">
             按钮
-          </span></button> <button class="van-button van-button--default van-button--mini van-button--round"><span class="van-button__text">
+          </span></button> <button class="buri-button buri-button--default buri-button--mini buri-button--round"><span class="buri-button__text">
             按钮
           </span></button></div>
       </div>

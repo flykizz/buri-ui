@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-switch v-model="checked" />
+      <buri-switch v-model="checked" />
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-switch v-model="checked" disabled />
+      <buri-switch v-model="checked" disabled />
     </demo-block>
 
     <demo-block :title="$t('loadingStatus')">
-      <van-switch v-model="checked" loading />
+      <buri-switch v-model="checked" loading />
     </demo-block>
 
     <demo-block :title="$t('customSize')">
-      <van-switch v-model="checked2" size="24px" />
+      <buri-switch v-model="checked2" size="24px" />
     </demo-block>
 
     <demo-block :title="$t('customColor')">
-      <van-switch
+      <buri-switch
         v-model="checked3"
         active-color="#07c160"
         inactive-color="#ee0a24"
@@ -25,13 +25,13 @@
     </demo-block>
 
     <demo-block :title="$t('asyncControl')">
-      <van-switch :value="checked4" @input="onInput" />
+      <buri-switch :value="checked4" @input="onInput" />
     </demo-block>
 
     <demo-block :title="$t('withCell')">
-      <van-cell center :title="$t('title')">
-        <van-switch v-model="checked5" slot="right-icon" size="24" />
-      </van-cell>
+      <buri-cell center :title="$t('title')">
+        <buri-switch v-model="checked5" slot="right-icon" size="24" />
+      </buri-cell>
     </demo-block>
   </demo-section>
 </template>
@@ -89,7 +89,7 @@ export default {
 @import '../../style/var';
 
 .demo-switch {
-  .van-switch {
+  .buri-switch {
     margin-left: @padding-md;
   }
 }

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Panel } from 'vant';
+import { Panel } from 'buri';
 
 Vue.use(Panel);
 ```
@@ -14,21 +14,21 @@ Vue.use(Panel);
 ### Basic Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<buri-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
-</van-panel>
+</buri-panel>
 ```
 
-### Advanced Usage
+### Adburiced Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<buri-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
   <div slot="footer">
-    <van-button size="small">Button</van-button>
-    <van-button size="small" type="danger">Button</van-button>
+    <buri-button size="small">Button</buri-button>
+    <buri-button size="small" type="danger">Button</buri-button>
   </div>
-</van-panel>
+</buri-panel>
 ```
 
 ## API

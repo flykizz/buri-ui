@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { ContactCard, ContactList, ContactEdit } from 'vant';
+import { ContactCard, ContactList, ContactEdit } from 'buri';
 
 Vue
   .use(ContactCard)
@@ -18,7 +18,7 @@ Vue
 
 ```html
 <!-- Contact Card -->
-<van-contact-card
+<buri-contact-card
   :type="cardType"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -26,25 +26,25 @@ Vue
 />
 
 <!-- Contact List -->
-<van-popup v-model="showList" position="bottom">
-  <van-contact-list
+<buri-popup v-model="showList" position="bottom">
+  <buri-contact-list
     v-model="chosenContactId"
     :list="list"
     @add="onAdd"
     @edit="onEdit"
     @select="onSelect"
   />
-</van-popup>
+</buri-popup>
 
 <!-- Contact Edit -->
-<van-popup v-model="showEdit" position="bottom">
-  <van-contact-edit
+<buri-popup v-model="showEdit" position="bottom">
+  <buri-contact-edit
     :contact-info="editingContact"
     :is-edit="isEdit"
     @save="onSave"
     @delete="onDelete"
   />
-</van-popup>
+</buri-popup>
 ```
 
 ``` javascript
@@ -123,7 +123,7 @@ export default {
 ### Uneditable
 
 ```html
-<van-contact-card
+<buri-contact-card
   type="edit"
   name="John Snow"
   tel="13000000000"

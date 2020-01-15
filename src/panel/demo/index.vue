@@ -1,32 +1,32 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-panel
+      <buri-panel
         :title="$t('title')"
         :desc="$t('desc')"
         :status="$t('status')"
       >
         <div>{{ $t('content') }}</div>
-      </van-panel>
+      </buri-panel>
     </demo-block>
 
-    <demo-block :title="$t('advancedUsage')">
-      <van-panel
+    <demo-block :title="$t('adburicedUsage')">
+      <buri-panel
         :title="$t('title')"
         :desc="$t('desc')"
         :status="$t('status')"
       >
         <div>{{ $t('content') }}</div>
         <template #footer>
-          <van-button size="small">{{ $t('button') }}</van-button>
-          <van-button
+          <buri-button size="small">{{ $t('button') }}</buri-button>
+          <buri-button
             size="small"
             type="danger"
           >
             {{ $t('button') }}
-          </van-button>
+          </buri-button>
         </template>
-      </van-panel>
+      </buri-panel>
     </demo-block>
   </demo-section>
 </template>
@@ -37,15 +37,15 @@ export default {};
 
 <style lang="less">
 .demo-panel {
-  .van-panel__footer {
+  .buri-panel__footer {
     text-align: right;
 
-    .van-button {
+    .buri-button {
       margin-left: 5px;
     }
   }
 
-  .van-panel__content {
+  .buri-panel__content {
     padding: 20px;
   }
 }

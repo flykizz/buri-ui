@@ -1,38 +1,38 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-divider />
+      <buri-divider />
     </demo-block>
 
     <demo-block :title="$t('withText')">
-      <van-divider>
+      <buri-divider>
         {{ $t('text') }}
-      </van-divider>
+      </buri-divider>
     </demo-block>
 
     <demo-block :title="$t('contentPosition')">
-      <van-divider content-position="left">
+      <buri-divider content-position="left">
         {{ $t('text') }}
-      </van-divider>
+      </buri-divider>
 
-      <van-divider content-position="right">
+      <buri-divider content-position="right">
         {{ $t('text') }}
-      </van-divider>
+      </buri-divider>
     </demo-block>
 
     <demo-block :title="$t('dashed')">
-      <van-divider
+      <buri-divider
         dashed
         :hairline="false"
       >
         {{ $t('text') }}
-      </van-divider>
+      </buri-divider>
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-divider :style="{ borderColor: BLUE, color: BLUE, padding: '0 16px' }">
+      <buri-divider :style="{ borderColor: BLUE, color: BLUE, padding: '0 16px' }">
         {{ $t('text') }}
-      </van-divider>
+      </buri-divider>
     </demo-block>
   </demo-section>
 </template>
@@ -72,7 +72,7 @@ export default {
 .demo-divider {
   background-color: @white;
 
-  .van-doc-demo-block__title {
+  .buri-doc-demo-block__title {
     padding-top: @padding-md;
   }
 }

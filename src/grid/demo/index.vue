@@ -1,55 +1,55 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-grid>
-        <van-grid-item v-for="i in 4" :key="i" icon="photo-o" :text="$t('text')" />
-      </van-grid>
+      <buri-grid>
+        <buri-grid-item v-for="i in 4" :key="i" icon="photo-o" :text="$t('text')" />
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('columnNum')">
-      <van-grid :column-num="3">
-        <van-grid-item v-for="i in 6" :key="i" icon="photo-o" :text="$t('text')" />
-      </van-grid>
+      <buri-grid :column-num="3">
+        <buri-grid-item v-for="i in 6" :key="i" icon="photo-o" :text="$t('text')" />
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('customContent')">
-      <van-grid :border="false" :column-num="3">
-        <van-grid-item>
-          <van-image fit="contain" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image fit="contain" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-        </van-grid-item>
-        <van-grid-item>
-          <van-image fit="contain" src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-        </van-grid-item>
-      </van-grid>
+      <buri-grid :border="false" :column-num="3">
+        <buri-grid-item>
+          <buri-image fit="contain" src="https://img.yzcdn.cn/buri/apple-1.jpg" />
+        </buri-grid-item>
+        <buri-grid-item>
+          <buri-image fit="contain" src="https://img.yzcdn.cn/buri/apple-2.jpg" />
+        </buri-grid-item>
+        <buri-grid-item>
+          <buri-image fit="contain" src="https://img.yzcdn.cn/buri/apple-3.jpg" />
+        </buri-grid-item>
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('square')">
-      <van-grid square>
-        <van-grid-item v-for="i in 8" :key="i" icon="photo-o" :text="$t('text')" />
-      </van-grid>
+      <buri-grid square>
+        <buri-grid-item v-for="i in 8" :key="i" icon="photo-o" :text="$t('text')" />
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('gutter')">
-      <van-grid :gutter="10">
-        <van-grid-item v-for="i in 8" :key="i" icon="photo-o" :text="$t('text')" />
-      </van-grid>
+      <buri-grid :gutter="10">
+        <buri-grid-item v-for="i in 8" :key="i" icon="photo-o" :text="$t('text')" />
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('route')">
-      <van-grid clickable :column-num="2">
-        <van-grid-item icon="home-o" :text="$t('vueRoute')" to="/" />
-        <van-grid-item icon="search" :text="$t('urlRoute')" url="/vant/mobile.html" />
-      </van-grid>
+      <buri-grid clickable :column-num="2">
+        <buri-grid-item icon="home-o" :text="$t('vueRoute')" to="/" />
+        <buri-grid-item icon="search" :text="$t('urlRoute')" url="/buri/mobile.html" />
+      </buri-grid>
     </demo-block>
 
     <demo-block :title="$t('showInfo')">
-      <van-grid :column-num="2">
-        <van-grid-item icon="home-o" :text="$t('text')" dot />
-        <van-grid-item icon="search" :text="$t('text')" info="99+" />
-      </van-grid>
+      <buri-grid :column-num="2">
+        <buri-grid-item icon="home-o" :text="$t('text')" dot />
+        <buri-grid-item icon="search" :text="$t('text')" info="99+" />
+      </buri-grid>
     </demo-block>
   </demo-section>
 </template>

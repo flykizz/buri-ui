@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Button } from 'vant';
+import { Button } from 'buri';
 
 Vue.use(Button);
 ```
@@ -14,84 +14,84 @@ Vue.use(Button);
 ### Type
 
 ```html
-<van-button type="default">Default</van-button>
-<van-button type="primary">Primary</van-button>
-<van-button type="info">Info</van-button>
-<van-button type="danger">Danger</van-button>
-<van-button type="warning">Warning</van-button>
+<buri-button type="default">Default</buri-button>
+<buri-button type="primary">Primary</buri-button>
+<buri-button type="info">Info</buri-button>
+<buri-button type="danger">Danger</buri-button>
+<buri-button type="warning">Warning</buri-button>
 ```
 
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="info">Danger</van-button>
+<buri-button plain type="primary">Primary</buri-button>
+<buri-button plain type="info">Danger</buri-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="info">Hairline</van-button>
+<buri-button plain hairline type="primary">Hairline</buri-button>
+<buri-button plain hairline type="info">Hairline</buri-button>
 ```
 
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Diabled</van-button>
-<van-button disabled type="info">Diabled</van-button>
+<buri-button disabled type="primary">Diabled</buri-button>
+<buri-button disabled type="info">Diabled</buri-button>
 ```
 
 ### Loading
 
 ```html 
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="Loading..." />
+<buri-button loading type="primary" />
+<buri-button loading type="primary" loading-type="spinner" />
+<buri-button loading type="info" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html 
-<van-button square type="primary">Square</van-button>
-<van-button round type="info">Round</van-button>
+<buri-button square type="primary">Square</buri-button>
+<buri-button round type="info">Round</buri-button>
 ```
 
 ### Icon
 
 ```html 
-<van-button icon="star-o" type="primary" />
-<van-button icon="star-o" type="primary">Button</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">Button</van-button>
+<buri-button icon="star-o" type="primary" />
+<buri-button icon="star-o" type="primary">Button</buri-button>
+<buri-button icon="https://img.yzcdn.cn/buri/logo.png" type="info">Button</buri-button>
 ```
 
 ### Size
 
 ```html 
-<van-button type="primary" size="large">Large</van-button>
-<van-button type="primary" size="normal">Normal</van-button>
-<van-button type="primary" size="small">Small</van-button>
-<van-button type="primary" size="mini">Mini</van-button>
+<buri-button type="primary" size="large">Large</buri-button>
+<buri-button type="primary" size="normal">Normal</buri-button>
+<buri-button type="primary" size="small">Small</buri-button>
+<buri-button type="primary" size="mini">Mini</buri-button>
 ```
 
 ### Route
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL</van-button>
-<van-button type="primary" to="index">Vue Router</van-button>
+<buri-button type="primary" url="/buri/mobile.html">URL</buri-button>
+<buri-button type="primary" to="index">Vue Router</buri-button>
 ```
 
 ### Custom Color
 
 ```html
-<van-button color="#7232dd">Pure</van-button>
-<van-button color="#7232dd" plain>Pure</van-button>
-<van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</van-button>
+<buri-button color="#7232dd">Pure</buri-button>
+<buri-button color="#7232dd" plain>Pure</buri-button>
+<buri-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</buri-button>
 ```
 
 ### Block Element
 ```html
-<van-button type="primary" block>Block Element</van-button>
+<buri-button type="primary" block>Block Element</buri-button>
 ```
 
 ## API

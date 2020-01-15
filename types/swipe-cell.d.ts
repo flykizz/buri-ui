@@ -1,6 +1,6 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class SwipeCell extends VanComponent {
+export class SwipeCell extends BuriComponent {
   open(position: 'left' | 'right'): void;
 
   close(): void;

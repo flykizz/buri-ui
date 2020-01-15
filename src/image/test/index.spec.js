@@ -13,7 +13,7 @@ test('click event', () => {
 test('load event', () => {
   const wrapper = mount(Image, {
     propsData: {
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     }
   });
 
@@ -29,7 +29,7 @@ test('load event', () => {
 test('error event', () => {
   const wrapper = mount(Image, {
     propsData: {
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     }
   });
 
@@ -41,7 +41,7 @@ test('error event', () => {
 test('lazy load', () => {
   const wrapper = mount(Image, {
     propsData: {
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg',
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg',
       lazyLoad: true
     }
   });
@@ -53,7 +53,7 @@ test('lazy-load load event', done => {
   const wrapper = mount(Image, {
     propsData: {
       lazyLoad: true,
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     },
     mocks: {
       $Lazyload: {
@@ -116,7 +116,7 @@ test('show-error prop', () => {
   const wrapper = mount(Image, {
     propsData: {
       showError: false,
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     }
   });
 
@@ -129,7 +129,7 @@ test('error-icon prop', () => {
   const wrapper = mount(Image, {
     propsData: {
       errorIcon: 'error',
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     }
   });
 
@@ -152,7 +152,7 @@ test('radius prop', () => {
   const wrapper = mount(Image, {
     propsData: {
       radius: 3,
-      src: 'https://img.yzcdn.cn/vant/cat.jpeg'
+      src: 'https://img.yzcdn.cn/buri/cat.jpeg'
     }
   });
 

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'buri';
 
 Vue.use(Grid).use(GridItem);
 ```
@@ -14,85 +14,85 @@ Vue.use(Grid).use(GridItem);
 ### Basic Usage
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-</van-grid>
+<buri-grid>
+  <buri-grid-item icon="photo-o" text="Text" />
+  <buri-grid-item icon="photo-o" text="Text" />
+  <buri-grid-item icon="photo-o" text="Text" />
+  <buri-grid-item icon="photo-o" text="Text" />
+</buri-grid>
 ```
 
 ### Column Num
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item
+<buri-grid :column-num="3">
+  <buri-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</buri-grid>
 ```
 
 ### Custom Content
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<buri-grid :border="false" :column-num="3">
+  <buri-grid-item>
+    <buri-image src="https://img.yzcdn.cn/buri/apple-1.jpg" />
+  </buri-grid-item>
+  <buri-grid-item>
+    <buri-image src="https://img.yzcdn.cn/buri/apple-2.jpg" />
+  </buri-grid-item>
+  <buri-grid-item>
+    <buri-image src="https://img.yzcdn.cn/buri/apple-3.jpg" />
+  </buri-grid-item>
+</buri-grid>
 ```
 
 ### Square
 
 ```html
-<van-grid square>
-  <van-grid-item
+<buri-grid square>
+  <buri-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</buri-grid>
 ```
 
 ### Gutter
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item
+<buri-grid :gutter="10">
+  <buri-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</buri-grid>
 ```
 
 ### Route
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="Vue Router" to="/" />
-  <van-grid-item icon="search" text="URL" url="/vant/mobile.html" />
-</van-grid>
+<buri-grid clickable :column-num="2">
+  <buri-grid-item icon="home-o" text="Vue Router" to="/" />
+  <buri-grid-item icon="search" text="URL" url="/buri/mobile.html" />
+</buri-grid>
 ```
 
 ### Show Info
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="Text" dot />
-  <van-grid-item icon="search" text="Text" info="99+" />
-</van-grid>
+<buri-grid :column-num="2">
+  <buri-grid-item icon="home-o" text="Text" dot />
+  <buri-grid-item icon="search" text="Text" info="99+" />
+</buri-grid>
 ```
 
 ## API

@@ -171,7 +171,7 @@ export default createComponent({
       }
 
       if (this.title) {
-        return <div class={['van-ellipsis', bem('title')]}>{this.title}</div>;
+        return <div class={['buri-ellipsis', bem('title')]}>{this.title}</div>;
       }
     },
 

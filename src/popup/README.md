@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Popup } from 'vant';
+import { Popup } from 'buri';
 
 Vue.use(Popup);
 ```
@@ -14,9 +14,9 @@ Vue.use(Popup);
 ### Basic Usage
 
 ```html
-<van-cell is-link @click="showPopup">Show Popup</van-cell>
+<buri-cell is-link @click="showPopup">Show Popup</buri-cell>
 
-<van-popup v-model="show">Content</van-popup>
+<buri-popup v-model="show">Content</buri-popup>
 ```
 
 ```javascript
@@ -40,7 +40,7 @@ export default {
 Use `position` prop to set popup display position
 
 ```html
-<van-popup
+<buri-popup
   v-model="show"
   position="top"
   :style="{ height: '20%' }"
@@ -50,7 +50,7 @@ Use `position` prop to set popup display position
 ### Close Icon
 
 ```html
-<van-popup
+<buri-popup
   v-model="show"
   closeable
   position="bottom"
@@ -58,7 +58,7 @@ Use `position` prop to set popup display position
 />
 
 <!-- Custom Icon -->
-<van-popup
+<buri-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -67,7 +67,7 @@ Use `position` prop to set popup display position
 />
 
 <!-- Icon Position -->
-<van-popup
+<buri-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -79,7 +79,7 @@ Use `position` prop to set popup display position
 ### Round Corner
 
 ```html
-<van-popup
+<buri-popup
   v-model="show"
   round
   position="bottom"
@@ -93,13 +93,13 @@ Use `get-container` prop to specify mount location
 
 ```html
 <!-- mount to body -->
-<van-popup v-model="show" get-container="body" />
+<buri-popup v-model="show" get-container="body" />
 
 <!-- mount to #app -->
-<van-popup v-model="show" get-container="#app" />
+<buri-popup v-model="show" get-container="#app" />
 
 <!-- Specify the mount location by function -->
-<van-popup v-model="show" :get-container="getContainer" />
+<buri-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

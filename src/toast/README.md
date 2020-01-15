@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'buri';
 
 Vue.use(Toast);
 ```
@@ -49,7 +49,7 @@ Toast({
 
 Toast({
   message: 'Custom Image',
-  icon: 'https://img.yzcdn.cn/vant/logo.png'
+  icon: 'https://img.yzcdn.cn/buri/logo.png'
 });
 ```
 
@@ -142,7 +142,7 @@ Toast.resetDefaultOptions('loading');
 | position | Can be set to `top` `middle` `bottom` | *string* | `middle` |
 | message | Message | *string* | `''` |
 | icon `v2.0.1` | Custom icon | *string* | - |
-| iconPrefix `v2.0.9` | Icon className prefix | *string* | `van-icon` |
+| iconPrefix `v2.0.9` | Icon className prefix | *string* | `buri-icon` |
 | overlay `v2.2.13` | Whether to show overlay | *boolean* | `false` |
 | forbidClick | Whether to forbid click background | *boolean* | `false` |
 | closeOnClick `v2.1.5` | Whether to close after clicked | *boolean* | `false` |

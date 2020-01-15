@@ -18,7 +18,7 @@ const [createComponent, bem] = createNamespace('index-bar');
 export default createComponent({
   mixins: [
     TouchMixin,
-    ParentMixin('vanIndexBar'),
+    ParentMixin('buriIndexBar'),
     BindEventMixin(function(bind) {
       if (!this.scroller) {
         this.scroller = getScroller(this.$el);

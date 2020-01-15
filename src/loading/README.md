@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Loading } from 'vant';
+import { Loading } from 'buri';
 
 Vue.use(Loading);
 ```
@@ -14,27 +14,27 @@ Vue.use(Loading);
 ### Type
 
 ```html
-<van-loading />
-<van-loading type="spinner" />
+<buri-loading />
+<buri-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<van-loading color="#1989fa" />
-<van-loading type="spinner" color="#1989fa" />
+<buri-loading color="#1989fa" />
+<buri-loading type="spinner" color="#1989fa" />
 ```
 
 ### Text
 
 ```html
-<van-loading size="24px">Loading...</van-loading>
+<buri-loading size="24px">Loading...</buri-loading>
 ```
 
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<buri-loading size="24px" vertical>Loading...</buri-loading>
 ```
 
 ## API

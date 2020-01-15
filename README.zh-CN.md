@@ -1,24 +1,24 @@
 <p align="center">
-    <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="https://img.yzcdn.cn/buri/logo.png" width="120" style="margin-bottom: 10px;">
 </p>
 <h3 align="center" style="margin: 30px 0 35px;">轻量、可靠的移动端 Vue 组件库</h3>
 
 <p align="center">
-    <img src="https://img.shields.io/npm/v/vant.svg?style=flat-square" alt="npm version" />
-    <img src="https://img.shields.io/codecov/c/github/youzan/vant/dev.svg?style=flat-square" alt="Coverage Status" />
-    <img src="https://travis-ci.org/youzan/vant.svg?branch=master" alt="Build Status" />
-    <img src="https://img.shields.io/npm/dt/vant.svg?style=flat-square" alt="downloads" />
-    <img src="https://img.shields.io/npm/dm/vant.svg?style=flat-square" alt="downloads" />
-    <img src="https://img.badgesize.io/https://unpkg.com/vant/lib/vant.min.js?compression=gzip&style=flat-square&label=JS%20gzip%20size" alt="JS Gzip Size" />
-    <img src="https://img.badgesize.io/https://unpkg.com/vant/lib/index.css?compression=gzip&style=flat-square&label=CSS%20gzip%20size" alt="CSS Gzip Size" />
+    <img src="https://img.shields.io/npm/v/buri.svg?style=flat-square" alt="npm version" />
+    <img src="https://img.shields.io/codecov/c/github/flykizz/buri/dev.svg?style=flat-square" alt="Coverage Status" />
+    <img src="https://travis-ci.org/flykizz/buri.svg?branch=master" alt="Build Status" />
+    <img src="https://img.shields.io/npm/dt/buri.svg?style=flat-square" alt="downloads" />
+    <img src="https://img.shields.io/npm/dm/buri.svg?style=flat-square" alt="downloads" />
+    <img src="https://img.badgesize.io/https://unpkg.com/buri/lib/buri.min.js?compression=gzip&style=flat-square&label=JS%20gzip%20size" alt="JS Gzip Size" />
+    <img src="https://img.badgesize.io/https://unpkg.com/buri/lib/index.css?compression=gzip&style=flat-square&label=CSS%20gzip%20size" alt="CSS Gzip Size" />
 </p>
 
 <p align="center">
-  🔥 <a href="https://youzan.github.io/vant">文档网站</a>
+  🔥 <a href="https://flykizz.github.io/buri">文档网站</a>
   &nbsp;
   🇬🇧 <a href="./README.md">英文版介绍</a>
   &nbsp;
-  🚀 <a href="https://github.com/youzan/vant-weapp" target="_blank">小程序版</a>
+  🚀 <a href="https://github.com/flykizz/buri-weapp" target="_blank">小程序版</a>
 </p>
 
 ---
@@ -38,29 +38,29 @@
 
 ```bash
 # 通过 npm 安装
-npm i vant -S
+npm i buri -S
 
 # 通过 yarn 安装
-yarn add vant
+yarn add buri
 ```
 
 ## 快速上手
 
 ```js
 import Vue from 'vue';
-import { Button } from 'vant';
-import 'vant/lib/index.css';
+import { Button } from 'buri';
+import 'buri/lib/index.css';
 
 Vue.use(Button);
 ```
 
-vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手](https://youzan.github.io/vant#/zh-CN/quickstart).
+buri 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手](https://flykizz.github.io/buri#/zh-CN/quickstart).
 
 ## 贡献代码
 
-修改代码请阅读我们的 [开发指南](https://youzan.github.io/vant/#/zh-CN/contribution)。
+修改代码请阅读我们的 [开发指南](https://flykizz.github.io/buri/#/zh-CN/contribution)。
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/vant/pulls)。
+使用过程中发现任何问题都可以提 [Issue](https://github.com/flykizz/buri/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/flykizz/buri/pulls)。
 
 ## 浏览器支持
 
@@ -76,29 +76,29 @@ vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 
 我们正在寻找更多优秀的小伙伴，一起拓展前端技术的边界，期待你的加入！
 
-- <a target="_blank" href="https://app.mokahr.com/apply/youzan/6252#/job/96f5d2c7-e657-4d31-9244-195edc443a7f?_k=jf2141">职位详情</a>（Base: 杭州/深圳）
-- <a target="_blank" href="https://tech.youzan.com/tag/front-end/">团队博客</a>
-- <a target="_blank" href="https://github.com/youzan">开源项目</a>
+- <a target="_blank" href="https://app.mokahr.com/apply/flykizz/6252#/job/96f5d2c7-e657-4d31-9244-195edc443a7f?_k=jf2141">职位详情</a>（Base: 杭州/深圳）
+- <a target="_blank" href="https://tech.flykizz.com/tag/front-end/">团队博客</a>
+- <a target="_blank" href="https://github.com/flykizz">开源项目</a>
 
 ## 链接
 
-* [详细文档](https://youzan.github.io/vant)
-* [更新日志](https://youzan.github.io/vant#/zh-CN/changelog)
-* [码云镜像](https://gitee.com/organizations/vant-contrib)
-* [Vant 示例仓库](https://github.com/youzan/vant-demo)
-* [VantWeapp 小程序组件](https://github.com/youzan/vant-weapp)
+* [详细文档](https://flykizz.github.io/buri)
+* [更新日志](https://flykizz.github.io/buri#/zh-CN/changelog)
+* [码云镜像](https://gitee.com/organizations/buri-contrib)
+* [Burit 示例仓库](https://github.com/flykizz/buri-demo)
+* [BuritWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
 
 ## 手机预览
 
 可以手机扫码以下二维码访问手机端 demo：
 
-<img src="https://img.yzcdn.cn/vant/preview_qrcode_20180528.png" width="220" height="220" >
+<img src="https://img.yzcdn.cn/buri/preview_qrcode_20180528.png" width="220" height="220" >
 
 ## 微信讨论群
 
-欢迎大家加入 Vant 交流群一起讨论，添加下方微信并注明『加入 Vant 交流群』即可
+欢迎大家加入 Burit 交流群一起讨论，添加下方微信并注明『加入 Burit 交流群』即可
 
-<img src="https://img.yzcdn.cn/vant/wechat_20180606.png" width="220" height="292" >
+<img src="https://img.yzcdn.cn/buri/wechat_20180606.png" width="220" height="292" >
 
 ## 开源协议
 

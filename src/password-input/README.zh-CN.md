@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { PasswordInput, NumberKeyboard } from 'vant';
+import { PasswordInput, NumberKeyboard } from 'buri';
 
 Vue.use(PasswordInput).use(NumberKeyboard);
 ```
@@ -19,7 +19,7 @@ Vue.use(PasswordInput).use(NumberKeyboard);
 
 ```html
 <!-- 密码输入框 -->
-<van-password-input
+<buri-password-input
   :value="value"
   info="密码为 6 位数字"
   :focused="showKeyboard"
@@ -27,7 +27,7 @@ Vue.use(PasswordInput).use(NumberKeyboard);
 />
 
 <!-- 数字键盘 -->
-<van-number-keyboard
+<buri-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"
@@ -58,7 +58,7 @@ export default {
 ### 自定义长度
 
 ```html
-<van-password-input
+<buri-password-input
   :value="value"
   :length="4"
   :gutter="15"
@@ -70,7 +70,7 @@ export default {
 ### 明文展示
 
 ```html
-<van-password-input
+<buri-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -84,7 +84,7 @@ export default {
 
 ```html
 <!-- 密码输入框 -->
-<van-password-input
+<buri-password-input
   :value="value"
   :error-info="errorInfo"
   :focused="showKeyboard"
@@ -92,7 +92,7 @@ export default {
 />
 
 <!-- 数字键盘 -->
-<van-number-keyboard
+<buri-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"

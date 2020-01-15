@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'buri';
 
 Vue.use(Swipe).use(SwipeItem);
 ```
@@ -16,12 +16,12 @@ Vue.use(Swipe).use(SwipeItem);
 Use `autoplay` prop to set autoplay interval
 
 ```html
-<van-swipe :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<buri-swipe :autoplay="3000" indicator-color="white">
+  <buri-swipe-item>1</buri-swipe-item>
+  <buri-swipe-item>2</buri-swipe-item>
+  <buri-swipe-item>3</buri-swipe-item>
+  <buri-swipe-item>4</buri-swipe-item>
+</buri-swipe>
 ```
 
 ### Image Lazyload
@@ -29,11 +29,11 @@ Use `autoplay` prop to set autoplay interval
 Use [Lazyload](#/en-US/lazyload) component to lazyload image
 
 ```html
-<van-swipe>
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<buri-swipe>
+  <buri-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </buri-swipe-item>
+</buri-swipe>
 ```
 
 ```javascript
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
+        'https://img.yzcdn.cn/buri/apple-1.jpg',
+        'https://img.yzcdn.cn/buri/apple-2.jpg'
       ]
     }
   }
@@ -52,12 +52,12 @@ export default {
 ### Change Event
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<buri-swipe @change="onChange">
+  <buri-swipe-item>1</buri-swipe-item>
+  <buri-swipe-item>2</buri-swipe-item>
+  <buri-swipe-item>3</buri-swipe-item>
+  <buri-swipe-item>4</buri-swipe-item>
+</buri-swipe>
 ```
 
 ```js
@@ -73,23 +73,23 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<van-swipe :autoplay="3000" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<buri-swipe :autoplay="3000" vertical>
+  <buri-swipe-item>1</buri-swipe-item>
+  <buri-swipe-item>2</buri-swipe-item>
+  <buri-swipe-item>3</buri-swipe-item>
+  <buri-swipe-item>4</buri-swipe-item>
+</buri-swipe>
 ```
 
 ### Set SwipeItem Size
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<buri-swipe :loop="false" :width="300">
+  <buri-swipe-item>1</buri-swipe-item>
+  <buri-swipe-item>2</buri-swipe-item>
+  <buri-swipe-item>3</buri-swipe-item>
+  <buri-swipe-item>4</buri-swipe-item>
+</buri-swipe>
 ```
 
 > It's not supported to set SwipeItem size in the loop mode
@@ -97,16 +97,16 @@ export default {
 ### Custom Indicator
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<buri-swipe @change="onChange">
+  <buri-swipe-item>1</buri-swipe-item>
+  <buri-swipe-item>2</buri-swipe-item>
+  <buri-swipe-item>3</buri-swipe-item>
+  <buri-swipe-item>4</buri-swipe-item>
 
   <div class="custom-indicator" slot="indicator">
     {{ current + 1 }}/4
   </div>
-</van-swipe>
+</buri-swipe>
 ```
 
 ```js

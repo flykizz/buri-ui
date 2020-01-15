@@ -26,14 +26,14 @@ export default createComponent({
     return (
       <span
         class={[
-          'van-sku-row__item',
+          'buri-sku-row__item',
           {
-            'van-sku-row__item--active': choosed,
+            'buri-sku-row__item--active': choosed,
           }
         ]}
         onClick={this.onSelect}
       >
-        <span class="van-sku-row__item-name">{this.skuValue.name}</span>
+        <span class="buri-sku-row__item-name">{this.skuValue.name}</span>
       </span>
     );
   }

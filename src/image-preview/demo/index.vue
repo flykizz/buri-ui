@@ -1,35 +1,35 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button type="primary" @click="showImagePreview">
+      <buri-button type="primary" @click="showImagePreview">
         {{ $t('button1') }}
-      </van-button>
+      </buri-button>
     </demo-block>
 
     <demo-block :title="$t('button2')">
-      <van-button type="primary" @click="showImagePreview(1)">
+      <buri-button type="primary" @click="showImagePreview(1)">
         {{ $t('button2') }}
-      </van-button>
+      </buri-button>
     </demo-block>
 
     <demo-block :title="$t('button3')">
-      <van-button type="primary" @click="showImagePreview(0, 3000)">
+      <buri-button type="primary" @click="showImagePreview(0, 3000)">
         {{ $t('button3') }}
-      </van-button>
+      </buri-button>
     </demo-block>
 
     <demo-block :title="$t('componentCall')">
-      <van-button type="primary" @click="componentCall">
+      <buri-button type="primary" @click="componentCall">
         {{ $t('componentCall') }}
-      </van-button>
-      <van-image-preview
+      </buri-button>
+      <buri-image-preview
         v-model="show"
         :images="images"
         :swipe-duration="300"
         @change="onChange"
       >
         <template #index>{{ $t('index', index) }}</template>
-      </van-image-preview>
+      </buri-image-preview>
     </demo-block>
   </demo-section>
 </template>
@@ -38,10 +38,10 @@
 import ImagePreview from '..';
 
 const images = [
-  'https://img.yzcdn.cn/vant/apple-1.jpg',
-  'https://img.yzcdn.cn/vant/apple-2.jpg',
-  'https://img.yzcdn.cn/vant/apple-3.jpg',
-  'https://img.yzcdn.cn/vant/apple-4.jpg'
+  'https://img.yzcdn.cn/buri/apple-1.jpg',
+  'https://img.yzcdn.cn/buri/apple-2.jpg',
+  'https://img.yzcdn.cn/buri/apple-3.jpg',
+  'https://img.yzcdn.cn/buri/apple-4.jpg'
 ];
 
 export default {
@@ -105,7 +105,7 @@ export default {
 .demo-image-preview {
   background-color: @white;
 
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 }

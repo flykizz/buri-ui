@@ -1,47 +1,47 @@
 <template>
   <demo-section>
-    <van-tabs>
-      <van-tab :title="$t('basicUsage')">
-        <van-pull-refresh
+    <buri-tabs>
+      <buri-tab :title="$t('basicUsage')">
+        <buri-pull-refresh
           v-model="list[0].refreshing"
           @refresh="onRefresh(0)"
         >
-          <van-list
+          <buri-list
             v-model="list[0].loading"
             :finished="list[0].finished"
             :finished-text="$t('finishedText')"
             @load="onLoad(0)"
           >
-            <van-cell
+            <buri-cell
               v-for="item in list[0].items"
               :key="item"
               :title="item"
             />
-          </van-list>
-        </van-pull-refresh>
-      </van-tab>
+          </buri-list>
+        </buri-pull-refresh>
+      </buri-tab>
 
-      <van-tab :title="$t('errorInfo')">
-        <van-pull-refresh
+      <buri-tab :title="$t('errorInfo')">
+        <buri-pull-refresh
           v-model="list[1].refreshing"
           @refresh="onRefresh(1)"
         >
-          <van-list
+          <buri-list
             v-model="list[1].loading"
             :finished="list[1].finished"
             :error.sync="list[1].error"
             :error-text="$t('errorText')"
             @load="onLoad(1)"
           >
-            <van-cell
+            <buri-cell
               v-for="item in list[1].items"
               :key="item"
               :title="item"
             />
-          </van-list>
-        </van-pull-refresh>
-      </van-tab>
-    </van-tabs>
+          </buri-list>
+        </buri-pull-refresh>
+      </buri-tab>
+    </buri-tabs>
   </demo-section>
 </template>
 
@@ -123,7 +123,7 @@ export default {
 @import '../../style/var';
 
 .demo-list {
-  .van-cell {
+  .buri-cell {
     text-align: center;
   }
 
@@ -143,7 +143,7 @@ export default {
     }
   }
 
-  .van-checkbox__label {
+  .buri-checkbox__label {
     color: @gray-7;
   }
 }

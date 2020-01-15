@@ -1,97 +1,97 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-cell-group>
-        <van-field v-model="value" :placeholder="$t('textPlaceholder')" />
-      </van-cell-group>
+      <buri-cell-group>
+        <buri-field v-model="value" :placeholder="$t('textPlaceholder')" />
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('customType')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="text"
           :label="$t('text')"
           :placeholder="$t('textPlaceholder')"
         />
 
-        <van-field
+        <buri-field
           v-model="phone"
           type="tel"
           :label="$t('phone')"
           :placeholder="$t('phonePlaceholder')"
         />
 
-        <van-field
+        <buri-field
           v-model="digit"
           type="digit"
           :label="$t('digit')"
           :placeholder="$t('digitPlaceholder')"
         />
 
-        <van-field
+        <buri-field
           v-model="number"
           type="number"
           :label="$t('number')"
           :placeholder="$t('numberPlaceholder')"
         />
 
-        <van-field
+        <buri-field
           v-model="password"
           type="password"
           :label="$t('password')"
           :placeholder="$t('passwordPlaceholder')"
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-cell-group>
-        <van-field :value="$t('inputReadonly')" :label="$t('text')" readonly />
-        <van-field :value="$t('inputDisabled')" :label="$t('text')" disabled />
-      </van-cell-group>
+      <buri-cell-group>
+        <buri-field :value="$t('inputReadonly')" :label="$t('text')" readonly />
+        <buri-field :value="$t('inputDisabled')" :label="$t('text')" disabled />
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('showIcon')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="icon1"
           :label="$t('text')"
           left-icon="smile-o"
           right-icon="warning-o"
           :placeholder="$t('showIcon')"
         />
-        <van-field
+        <buri-field
           v-model="icon2"
           clearable
           :label="$t('text')"
           left-icon="music-o"
           :placeholder="$t('showClearIcon')"
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('errorInfo')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="username"
           required
           :label="$t('username')"
           :placeholder="$t('usernamePlaceholder')"
           error
         />
-        <van-field
+        <buri-field
           v-model="phone2"
           required
           :label="$t('phone')"
           :placeholder="$t('phonePlaceholder')"
           :error-message="$t('phoneError')"
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('insertButton')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           center
           clearable
           v-model="sms"
@@ -99,28 +99,28 @@
           :placeholder="$t('smsPlaceholder')"
         >
           <template #button>
-            <van-button size="small" type="primary">
+            <buri-button size="small" type="primary">
               {{ $t('sendSMS') }}
-            </van-button>
+            </buri-button>
           </template>
-        </van-field>
-      </van-cell-group>
+        </buri-field>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('formatValue')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="formatValue"
           :label="$t('text')"
           :formatter="formatter"
           :placeholder="$t('formatValue')"
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('textareaAutosize')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="message"
           :label="$t('message')"
           type="textarea"
@@ -128,12 +128,12 @@
           rows="1"
           autosize
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('showWordLimit')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="message2"
           :label="$t('message')"
           :placeholder="$t('messagePlaceholder')"
@@ -143,18 +143,18 @@
           type="textarea"
           show-word-limit
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('inputAlign')">
-      <van-cell-group>
-        <van-field
+      <buri-cell-group>
+        <buri-field
           v-model="value"
           :label="$t('text')"
           :placeholder="$t('alignPlaceHolder')"
           input-align="right"
         />
-      </van-cell-group>
+      </buri-cell-group>
     </demo-block>
   </demo-section>
 </template>

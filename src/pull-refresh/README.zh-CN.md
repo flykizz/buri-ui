@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'buri';
 
 Vue.use(PullRefresh);
 ```
@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 下拉刷新时会触发 `refresh` 事件，在事件的回调函数中可以进行同步或异步操作，操作完成后将 `v-model` 设置为 `false`，表示加载完成。
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<buri-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 ```
 
 ```javascript
@@ -47,13 +47,13 @@ export default {
 通过`success-text`可以设置刷新成功后的顶部提示文案
 
 ```html
-<van-pull-refresh
+<buri-pull-refresh
   v-model="isLoading"
   success-text="刷新成功"
   @refresh="onRefresh"
 >
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 ```
 
 ### 自定义提示
@@ -61,29 +61,29 @@ export default {
 通过插槽可以自定义下拉刷新过程中的提示内容
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<buri-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
   <img
     class="doge"
     slot="pulling"
     slot-scope="props"
-    src="https://img.yzcdn.cn/vant/doge.png"
+    src="https://img.yzcdn.cn/buri/doge.png"
     :style="{ transform: `scale(${props.distance / 80})` }"
   >
   <!-- 释放提示 -->
   <img
     class="doge"
     slot="loosing"
-    src="https://img.yzcdn.cn/vant/doge.png"
+    src="https://img.yzcdn.cn/buri/doge.png"
   >
   <!-- 加载提示 -->
   <img
     class="doge"
     slot="loading"
-    src="https://img.yzcdn.cn/vant/doge-fire.jpg"
+    src="https://img.yzcdn.cn/buri/doge-fire.jpg"
   >
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 
 <style>
 .doge {

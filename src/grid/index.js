@@ -5,7 +5,7 @@ import { BORDER_TOP } from '../utils/constant';
 const [createComponent, bem] = createNamespace('grid');
 
 export default createComponent({
-  mixins: [ParentMixin('vanGrid')],
+  mixins: [ParentMixin('buriGrid')],
 
   props: {
     square: Boolean,

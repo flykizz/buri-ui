@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Icon } from 'vant';
+import { Icon } from 'buri';
 
 Vue.use(Icon);
 ```
@@ -16,8 +16,8 @@ Vue.use(Icon);
 Use `name` prop to set icon name or icon URL
 
 ```html
-<van-icon name="chat-o" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<buri-icon name="chat-o" />
+<buri-icon name="https://b.yzcdn.cn/buri/icon-demo-1126.png" />
 ```
 
 ### Show Info
@@ -27,9 +27,9 @@ Use `dot` prop, a small red dot will be displayed in the upper right corner of t
 Use `info` prop, the info will be displayed in the upper right corner of the icon.
 
 ```html
-<van-icon name="chat-o" dot />
-<van-icon name="chat-o" info="9" />
-<van-icon name="chat-o" info="99+" />
+<buri-icon name="chat-o" dot />
+<buri-icon name="chat-o" info="9" />
+<buri-icon name="chat-o" info="99+" />
 ```
 
 ### Icon Color
@@ -37,8 +37,8 @@ Use `info` prop, the info will be displayed in the upper right corner of the ico
 Use `color` prop to set icon color
 
 ```html
-<van-icon name="chat-o" color="#1989fa" />
-<van-icon name="chat-o" color="#07c160" />
+<buri-icon name="chat-o" color="#1989fa" />
+<buri-icon name="chat-o" color="#07c160" />
 ```
 
 ### Icon Size
@@ -46,8 +46,8 @@ Use `color` prop to set icon color
 Use `size` prop to set icon size
 
 ```html
-<van-icon name="chat-o" size="40" />
-<van-icon name="chat-o" size="3rem" />
+<buri-icon name="chat-o" size="40" />
+<buri-icon name="chat-o" size="3rem" />
 ```
 
 ### Use local font file
@@ -55,7 +55,7 @@ Use `size` prop to set icon size
 Icon uses font file in `yzcdn.cn` by default，if you want to use the local font file，please import the following css file.
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'buri/lib/icon/local.css';
 ```
 
 ### Add custom iconfont
@@ -76,7 +76,7 @@ import 'vant/lib/icon/local.css';
 ```
 
 ```html
-<van-icon class-prefix="my-icon" name="extra" />
+<buri-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -90,7 +90,7 @@ import 'vant/lib/icon/local.css';
 | info | Content of the badge | *string \| number* | `''` |
 | color | Icon color | *string* | `inherit` |
 | size | Icon size | *string \| number* | `inherit` |
-| class-prefix | ClassName prefix | *string* | `van-icon` |
+| class-prefix | ClassName prefix | *string* | `buri-icon` |
 | tag | HTML Tag | *string* | `i` |
 
 ### Events

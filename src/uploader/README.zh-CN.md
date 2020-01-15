@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Uploader } from 'vant';
+import { Uploader } from 'buri';
 
 Vue.use(Uploader);
 ```
@@ -16,7 +16,7 @@ Vue.use(Uploader);
 文件上传完毕后会触发`after-read`回调函数，获取到对应的`file`对象
 
 ```html
-<van-uploader :after-read="afterRead" />
+<buri-uploader :after-read="afterRead" />
 ```
 
 ```javascript
@@ -35,7 +35,7 @@ export default {
 通过`v-model`可以绑定已经上传的图片列表，并展示图片列表的预览图
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<buri-uploader v-model="fileList" multiple />
 ```
 
 ```javascript
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       fileList: [
-        { url: 'https://img.yzcdn.cn/vant/leaf.jpg' },
+        { url: 'https://img.yzcdn.cn/buri/leaf.jpg' },
         // Uploader 根据文件后缀来判断是否为图片文件
         // 如果图片 URL 中不包含类型信息，可以添加 isImage 标记来声明
         { url: 'https://cloud-image', isImage: true }
@@ -58,7 +58,7 @@ export default {
 通过`max-count`属性可以限制上传文件的数量，上传数量达到限制后，会自动隐藏上传区域
 
 ```html
-<van-uploader
+<buri-uploader
   v-model="fileList"
   multiple
   :max-count="2"
@@ -80,9 +80,9 @@ export default {
 通过插槽可以自定义上传区域的样式
 
 ```html
-<van-uploader>
-  <van-button icon="photo" type="primary">上传图片</van-button>
-</van-uploader>
+<buri-uploader>
+  <buri-button icon="photo" type="primary">上传图片</buri-button>
+</buri-uploader>
 ```
 
 ### 上传前校验
@@ -90,7 +90,7 @@ export default {
 通过传入`beforeRead`函数可以在上传前进行校验，返回`true`表示校验通过，返回`false`表示校验失败。支持返回`Promise`进行异步校验
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<buri-uploader :before-read="beforeRead" />
 ```
 
 ```js

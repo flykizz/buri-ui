@@ -136,9 +136,9 @@ export default createComponent({
   computed: {
     skuGroupClass() {
       return [
-        'van-sku-group-container',
+        'buri-sku-group-container',
         {
-          'van-sku-group-container--hide-soldout': !this.showSoldoutSku
+          'buri-sku-group-container--hide-soldout': !this.showSoldoutSku
         }
       ];
     },
@@ -577,10 +577,10 @@ export default createComponent({
     const Header = slots('sku-header') || (
       <SkuHeader sku={sku} goods={goods} skuEventBus={skuEventBus} selectedSku={selectedSku}>
         {slots('sku-header-price') || (
-          <div class="van-sku__goods-price">
-            <span class="van-sku__price-symbol">￥</span>
-            <span class="van-sku__price-num">{price}</span>
-            {this.priceTag && <span class="van-sku__price-tag">{this.priceTag}</span>}
+          <div class="buri-sku__goods-price">
+            <span class="buri-sku__price-symbol">￥</span>
+            <span class="buri-sku__price-num">{price}</span>
+            {this.priceTag && <span class="buri-sku__price-tag">{this.priceTag}</span>}
           </div>
         )}
         {slots('sku-header-origin-price') || (
@@ -590,7 +590,7 @@ export default createComponent({
         )}
         {!this.hideStock && (
           <SkuHeaderItem>
-            <span class="van-sku__stock">{this.stockText}</span>
+            <span class="buri-sku__stock">{this.stockText}</span>
           </SkuHeaderItem>
         )}
         {this.hasSkuOrAttr && !this.hideSelectedText && (
@@ -678,13 +678,13 @@ export default createComponent({
         round
         closeable
         position="bottom"
-        class="van-sku-container"
+        class="buri-sku-container"
         getContainer={this.getContainer}
         closeOnClickOverlay={this.closeOnClickOverlay}
         safeAreaInsetBottom={this.safeAreaInsetBottom}
       >
         {Header}
-        <div class="van-sku-body" style={this.bodyStyle}>
+        <div class="buri-sku-body" style={this.bodyStyle}>
           {slots('sku-body-top')}
           {Group}
           {slots('extra-sku-group')}

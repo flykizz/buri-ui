@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NoticeBar } from 'vant';
+import { NoticeBar } from 'buri';
 
 Vue.use(NoticeBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NoticeBar);
 ### 基础用法
 
 ```html
-<van-notice-bar
+<buri-notice-bar
   text="通知内容"
   left-icon="volume-o"
 />
@@ -25,9 +25,9 @@ Vue.use(NoticeBar);
 文字内容多于一行时，可通过`scrollable`参数控制是否开启滚动
 
 ```html
-<van-notice-bar :scrollable="false">
+<buri-notice-bar :scrollable="false">
   通知内容
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### 多行展示
@@ -35,9 +35,9 @@ Vue.use(NoticeBar);
 禁用滚动时，可以设置`wrapable`来开启多行展示
 
 ```html
-<van-notice-bar wrapable :scrollable="false">
+<buri-notice-bar wrapable :scrollable="false">
   通知内容
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### 通知栏模式
@@ -46,26 +46,26 @@ Vue.use(NoticeBar);
 
 ```html
 <!-- closeable 模式，在右侧显示关闭按钮 -->
-<van-notice-bar mode="closeable">
+<buri-notice-bar mode="closeable">
   通知内容
-</van-notice-bar>
+</buri-notice-bar>
 
 <!-- link 模式，在右侧显示链接箭头 -->
-<van-notice-bar mode="link">
+<buri-notice-bar mode="link">
   通知内容
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### 自定义样式
 
 ```html
-<van-notice-bar
+<buri-notice-bar
   color="#1989fa"
   background="#ecf9ff"
   left-icon="info-o"
 >
   通知内容
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ## API

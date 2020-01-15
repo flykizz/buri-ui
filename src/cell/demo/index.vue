@@ -1,62 +1,62 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-cell-group>
-        <van-cell :title="$t('cell')" :value="$t('content')" />
-        <van-cell :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
-      </van-cell-group>
+      <buri-cell-group>
+        <buri-cell :title="$t('cell')" :value="$t('content')" />
+        <buri-cell :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('largeSize')">
-      <van-cell :title="$t('cell')" :value="$t('content')" size="large" />
-      <van-cell :title="$t('cell')" :value="$t('content')" size="large" :label="$t('desc')" />
+      <buri-cell :title="$t('cell')" :value="$t('content')" size="large" />
+      <buri-cell :title="$t('cell')" :value="$t('content')" size="large" :label="$t('desc')" />
     </demo-block>
 
     <demo-block :title="$t('showIcon')">
-      <van-cell :title="$t('cell')" :value="$t('content')" icon="location-o" />
+      <buri-cell :title="$t('cell')" :value="$t('content')" icon="location-o" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('valueOnly')">
-      <van-cell :value="$t('content')" />
+      <buri-cell :value="$t('content')" />
     </demo-block>
 
     <demo-block :title="$t('showArrow')">
-      <van-cell :title="$t('cell')" is-link />
-      <van-cell :title="$t('cell')" is-link :value="$t('content')" />
-      <van-cell :title="$t('cell')" is-link arrow-direction="down" :value="$t('content')" />
+      <buri-cell :title="$t('cell')" is-link />
+      <buri-cell :title="$t('cell')" is-link :value="$t('content')" />
+      <buri-cell :title="$t('cell')" is-link arrow-direction="down" :value="$t('content')" />
     </demo-block>
 
     <demo-block :title="$t('router')">
-      <van-cell :title="$t('urlRoute')" is-link url="/vant/mobile.html" />
-      <van-cell :title="$t('vueRoute')" is-link to="index" />
+      <buri-cell :title="$t('urlRoute')" is-link url="/buri/mobile.html" />
+      <buri-cell :title="$t('vueRoute')" is-link to="index" />
     </demo-block>
 
     <demo-block :title="$t('groupTitle')">
-      <van-cell-group :title="`${$t('group')} 1`">
-        <van-cell :title="$t('cell')" :value="$t('content')" />
-      </van-cell-group>
-      <van-cell-group :title="`${$t('group')} 2`">
-        <van-cell :title="$t('cell')" :value="$t('content')" />
-      </van-cell-group>
+      <buri-cell-group :title="`${$t('group')} 1`">
+        <buri-cell :title="$t('cell')" :value="$t('content')" />
+      </buri-cell-group>
+      <buri-cell-group :title="`${$t('group')} 2`">
+        <buri-cell :title="$t('cell')" :value="$t('content')" />
+      </buri-cell-group>
     </demo-block>
 
     <demo-block :title="$t('useSlots')">
-      <van-cell :value="$t('content')" is-link>
+      <buri-cell :value="$t('content')" is-link>
         <template #title>
           <span class="custom-title">{{ $t('cell') }}</span>
-          <van-tag type="danger">{{ $t('tag') }}</van-tag>
+          <buri-tag type="danger">{{ $t('tag') }}</buri-tag>
         </template>
-      </van-cell>
+      </buri-cell>
 
-      <van-cell icon="shop-o" :title="$t('cell')">
+      <buri-cell icon="shop-o" :title="$t('cell')">
         <template #right-icon>
-          <van-icon name="search" style="line-height: inherit;" />
+          <buri-icon name="search" style="line-height: inherit;" />
         </template>
-      </van-cell>
+      </buri-cell>
     </demo-block>
 
     <demo-block :title="$t('verticalCenter')">
-      <van-cell center :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
+      <buri-cell center :title="$t('cell')" :value="$t('content')" :label="$t('desc')" />
     </demo-block>
   </demo-section>
 </template>

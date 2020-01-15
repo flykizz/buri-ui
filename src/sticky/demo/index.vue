@@ -1,22 +1,22 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-sticky>
-        <van-button type="primary" style="margin-left: 15px;">{{ $t('basicUsage') }}</van-button>
-      </van-sticky>
+      <buri-sticky>
+        <buri-button type="primary" style="margin-left: 15px;">{{ $t('basicUsage') }}</buri-button>
+      </buri-sticky>
     </demo-block>
 
     <demo-block :title="$t('offsetTop')">
-      <van-sticky :offset-top="50">
-        <van-button type="info" style="margin-left: 115px;">{{ $t('offsetTop') }}</van-button>
-      </van-sticky>
+      <buri-sticky :offset-top="50">
+        <buri-button type="info" style="margin-left: 115px;">{{ $t('offsetTop') }}</buri-button>
+      </buri-sticky>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('setContainer')">
       <div ref="container" style="height: 150px; background-color: #fff;">
-        <van-sticky :container="container">
-          <van-button type="warning" style="margin-left: 215px;">{{ $t('setContainer') }}</van-button>
-        </van-sticky>
+        <buri-sticky :container="container">
+          <buri-button type="warning" style="margin-left: 215px;">{{ $t('setContainer') }}</buri-button>
+        </buri-sticky>
       </div>
     </demo-block>
   </demo-section>
@@ -53,7 +53,7 @@ export default {
 .demo-sticky {
   height: 200vh;
 
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 }

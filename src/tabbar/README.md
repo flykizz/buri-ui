@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'buri';
 
 Vue.use(Tabbar).use(TabbarItem);
 ```
@@ -14,12 +14,12 @@ Vue.use(Tabbar).use(TabbarItem);
 ### Basic Usage
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item icon="home-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="search">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="friends-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">Tab</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -35,12 +35,12 @@ export default {
 ### Match by name
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item name="home" icon="home-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item name="search" icon="search">Tab</buri-tabbar-item>
+  <buri-tabbar-item name="friends" icon="friends-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item name="setting" icon="setting-o">Tab</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -56,12 +56,12 @@ export default {
 ### Show Badge
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" info="5">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" info="20">Tab</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active">
+  <buri-tabbar-item icon="home-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="search" dot>Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="friends-o" info="5">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o" info="20">Tab</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ### Custom Icon
@@ -69,18 +69,18 @@ export default {
 Use `icon` slot to custom icon
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item info="3">
+<buri-tabbar v-model="active">
+  <buri-tabbar-item info="3">
     <span>Custom</span>
     <img
       slot="icon"
       slot-scope="props"
       :src="props.active ? icon.active : icon.inactive"
     >
-  </van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+  </buri-tabbar-item>
+  <buri-tabbar-item icon="search">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">Tab</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```javascript
@@ -89,8 +89,8 @@ export default {
     return {
       active: 0,
       icon: {
-        active: 'https://img.yzcdn.cn/vant/user-active.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
+        active: 'https://img.yzcdn.cn/buri/user-active.png',
+        inactive: 'https://img.yzcdn.cn/buri/user-inactive.png'
       }
     }
   }
@@ -100,28 +100,28 @@ export default {
 ### Custom Color
 
 ```html
-<van-tabbar
+<buri-tabbar
   v-model="active"
   active-color="#07c160"
   inactive-color="#000"
 >
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
-</van-tabbar>
+  <buri-tabbar-item icon="home-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="search">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="freinds-o">Tab</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">Tab</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 
 ### Change Event
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">Tab1</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab2</van-tabbar-item>
-  <van-tabbar-item icon="freinds-o">Tab3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab4</van-tabbar-item>
-</van-tabbar>
+<buri-tabbar v-model="active" @change="onChange">
+  <buri-tabbar-item icon="home-o">Tab1</buri-tabbar-item>
+  <buri-tabbar-item icon="search">Tab2</buri-tabbar-item>
+  <buri-tabbar-item icon="freinds-o">Tab3</buri-tabbar-item>
+  <buri-tabbar-item icon="setting-o">Tab4</buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ```js
@@ -139,22 +139,22 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item
+<buri-tabbar route>
+  <buri-tabbar-item
     replace
     to="/home"
     icon="home-o"
   >
     Tab
-  </van-tabbar-item>
-  <van-tabbar-item
+  </buri-tabbar-item>
+  <buri-tabbar-item
     replace
     to="/search"
     icon="search"
   >
     Tab
-  </van-tabbar-item>
-</van-tabbar>
+  </buri-tabbar-item>
+</buri-tabbar>
 ```
 
 ## API

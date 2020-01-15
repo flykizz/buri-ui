@@ -3,58 +3,58 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--center van-cell--borderless van-contact-card van-contact-card--add"><i class="van-icon van-icon-add-square van-cell__left-icon">
+    <div role="button" tabindex="0" class="buri-cell buri-cell--clickable buri-cell--center buri-cell--borderless buri-contact-card buri-contact-card--add"><i class="buri-icon buri-icon-add-square buri-cell__left-icon">
         <!----></i>
-      <div class="van-cell__value van-cell__value--alone van-contact-card__value">添加联系人</div><i class="van-icon van-icon-arrow van-cell__right-icon">
+      <div class="buri-cell__value buri-cell__value--alone buri-contact-card__value">添加联系人</div><i class="buri-icon buri-icon-arrow buri-cell__right-icon">
         <!----></i>
     </div>
-    <div class="van-popup van-popup--bottom" style="display: none;" name="van-popup-slide-bottom">
-      <div class="van-contact-list">
-        <div role="radiogroup" class="van-radio-group van-contact-list__group">
-          <div role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--center van-contact-list__item"><i class="van-icon van-icon-edit van-contact-list__edit">
+    <div class="buri-popup buri-popup--bottom" style="display: none;" name="buri-popup-slide-bottom">
+      <div class="buri-contact-list">
+        <div role="radiogroup" class="buri-radio-group buri-contact-list__group">
+          <div role="button" tabindex="0" class="buri-cell buri-cell--clickable buri-cell--center buri-contact-list__item"><i class="buri-icon buri-icon-edit buri-contact-list__edit">
               <!----></i>
-            <div class="van-cell__value van-cell__value--alone van-contact-list__item-value">张三，13000000000<span class="van-tag van-tag--round van-tag--danger van-contact-list__item-tag">默认</span></div>
-            <div role="radio" tabindex="-1" aria-checked="false" class="van-radio">
-              <div class="van-radio__icon van-radio__icon--round" style="font-size: 16px;"><i class="van-icon van-icon-success">
+            <div class="buri-cell__value buri-cell__value--alone buri-contact-list__item-value">张三，13000000000<span class="buri-tag buri-tag--round buri-tag--danger buri-contact-list__item-tag">默认</span></div>
+            <div role="radio" tabindex="-1" aria-checked="false" class="buri-radio">
+              <div class="buri-radio__icon buri-radio__icon--round" style="font-size: 16px;"><i class="buri-icon buri-icon-success">
                   <!----></i></div>
             </div>
           </div>
         </div>
-        <div class="van-contact-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-contact-list__add"><span class="van-button__text">新建联系人</span></button></div>
+        <div class="buri-contact-list__bottom"><button class="buri-button buri-button--danger buri-button--normal buri-button--block buri-button--round buri-contact-list__add"><span class="buri-button__text">新建联系人</span></button></div>
       </div>
     </div>
-    <div class="van-popup van-popup--bottom" style="display: none;" name="van-popup-slide-bottom">
-      <div class="van-contact-edit">
-        <div class="van-contact-edit__fields">
-          <div class="van-cell van-field">
-            <div class="van-cell__title van-field__label"><span>张三</span></div>
-            <div class="van-cell__value">
-              <div class="van-field__body"><input type="text" placeholder="请填写姓名" class="van-field__control"></div>
+    <div class="buri-popup buri-popup--bottom" style="display: none;" name="buri-popup-slide-bottom">
+      <div class="buri-contact-edit">
+        <div class="buri-contact-edit__fields">
+          <div class="buri-cell buri-field">
+            <div class="buri-cell__title buri-field__label"><span>张三</span></div>
+            <div class="buri-cell__value">
+              <div class="buri-field__body"><input type="text" placeholder="请填写姓名" class="buri-field__control"></div>
             </div>
           </div>
-          <div class="van-cell van-field">
-            <div class="van-cell__title van-field__label"><span>电话</span></div>
-            <div class="van-cell__value">
-              <div class="van-field__body"><input type="tel" placeholder="请填写电话" class="van-field__control"></div>
-            </div>
-          </div>
-        </div>
-        <div class="van-cell van-cell--borderless van-contact-edit__switch-cell">
-          <div class="van-cell__title"><span>设为默认联系人</span></div>
-          <div class="van-cell__value">
-            <div role="switch" aria-checked="false" class="van-switch" style="font-size: 24px;">
-              <div class="van-switch__node"></div>
+          <div class="buri-cell buri-field">
+            <div class="buri-cell__title buri-field__label"><span>电话</span></div>
+            <div class="buri-cell__value">
+              <div class="buri-field__body"><input type="tel" placeholder="请填写电话" class="buri-field__control"></div>
             </div>
           </div>
         </div>
-        <div class="van-contact-edit__buttons"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round"><span class="van-button__text">保存</span></button></div>
+        <div class="buri-cell buri-cell--borderless buri-contact-edit__switch-cell">
+          <div class="buri-cell__title"><span>设为默认联系人</span></div>
+          <div class="buri-cell__value">
+            <div role="switch" aria-checked="false" class="buri-switch" style="font-size: 24px;">
+              <div class="buri-switch__node"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buri-contact-edit__buttons"><button class="buri-button buri-button--danger buri-button--normal buri-button--block buri-button--round"><span class="buri-button__text">保存</span></button></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell van-cell--center van-cell--borderless van-contact-card van-contact-card--edit"><i class="van-icon van-icon-contact van-cell__left-icon">
+    <div class="buri-cell buri-cell--center buri-cell--borderless buri-contact-card buri-contact-card--edit"><i class="buri-icon buri-icon-contact buri-cell__left-icon">
         <!----></i>
-      <div class="van-cell__value van-cell__value--alone van-contact-card__value">
+      <div class="buri-cell__value buri-cell__value--alone buri-contact-card__value">
         <div>张三：张三</div>
         <div>电话：13000000000</div>
       </div>

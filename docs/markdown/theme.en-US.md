@@ -2,13 +2,13 @@
 
 ### Intro
 
-Vant provides a set of default themes, if you want to custom the theme color or other styles, you can use the following methods:
+Burit provides a set of default themes, if you want to custom the theme color or other styles, you can use the following methods:
 
 ### Less variables
 
-Vant use [Less](http://lesscss.org/) as css preprocessor，you can modify less variables to custom theme.
+Burit use [Less](http://lesscss.org/) as css preprocessor，you can modify less variables to custom theme.
 
-There are some basic variables below, all available variables could be found in [var.less](https://github.com/youzan/vant/blob/dev/src/style/var.less)。
+There are some basic variables below, all available variables could be found in [var.less](https://github.com/flykizz/buri/blob/dev/src/style/var.less)。
 
 ```less
 // Component Colors
@@ -36,12 +36,12 @@ module.exports = {
     [
       'import',
       {
-        libraryName: 'vant',
+        libraryName: 'buri',
         libraryDirectory: 'es',
         // specify less file path
         style: name => `${name}/style/less`
       },
-      'vant'
+      'buri'
     ]
   ]
 };
@@ -51,10 +51,10 @@ module.exports = {
 
 ```js
 // import all styles
-import 'vant/lib/index.less';
+import 'buri/lib/index.less';
 
 // import style of single component
-import 'vant/lib/button/style/less';
+import 'buri/lib/button/style/less';
 ```
 
 ### Step 2: modify less variables

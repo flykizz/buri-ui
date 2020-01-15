@@ -11,7 +11,7 @@
 Dialog 是一个函数而不是组件，因此可以直接调用，展示对应的提示弹窗
 
 ```js
-import { Dialog } from 'vant';
+import { Dialog } from 'buri';
 
 Dialog({ message: '提示' });
 ```
@@ -22,7 +22,7 @@ Dialog({ message: '提示' });
 
 ```js
 import Vue from 'vue';
-import { Dialog } from 'vant';
+import { Dialog } from 'buri';
 
 // 全局注册
 Vue.use(Dialog);
@@ -108,13 +108,13 @@ export default {
 如果需要在弹窗内嵌入组件或其他自定义内容，可以使用组件调用的方式
 
 ```html
-<van-dialog
+<buri-dialog
   v-model="show"
   title="标题"
   show-cancel-button
 >
-  <img src="https://img.yzcdn.cn/vant/apple-3.jpg">
-</van-dialog>
+  <img src="https://img.yzcdn.cn/buri/apple-3.jpg">
+</buri-dialog>
 ```
 
 ```js

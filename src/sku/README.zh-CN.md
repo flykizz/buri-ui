@@ -4,7 +4,7 @@
 
 ```javascript
 import Vue from 'vue';
-import { Sku } from 'vant';
+import { Sku } from 'buri';
 
 Vue.use(Sku);
 ```
@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### 基础用法
 
 ```html
-<van-sku
+<buri-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -50,7 +50,7 @@ export default {
 ### 自定义步进器
 
 ```html
-<van-sku
+<buri-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -67,7 +67,7 @@ export default {
 ### 高级用法
 
 ```html
-<van-sku
+<buri-sku
   v-model="show"
   stepper-title="我要买"
   :sku="sku"
@@ -84,34 +84,34 @@ export default {
 >
   <!-- 自定义 sku-header-price -->
   <template slot="sku-header-price" slot-scope="props">
-    <div class="van-sku__goods-price">
-      <span class="van-sku__price-symbol">￥</span><span class="van-sku__price-num">{{ props.price }}</span>
+    <div class="buri-sku__goods-price">
+      <span class="buri-sku__price-symbol">￥</span><span class="buri-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- 自定义 sku actions -->
   <template slot="sku-actions" slot-scope="props">
-    <div class="van-sku-actions">
-      <van-button
+    <div class="buri-sku-actions">
+      <buri-button
         square
         size="large"
         type="warning"
         @click="onPointClicked"
       >
         积分兑换
-      </van-button>
+      </buri-button>
       <!-- 直接触发 sku 内部事件，通过内部事件执行 onBuyClicked 回调 -->
-      <van-button
+      <buri-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         买买买
-      </van-button>
+      </buri-button>
     </div>
   </template>
-</van-sku>
+</buri-sku>
 ```
 
 ## API

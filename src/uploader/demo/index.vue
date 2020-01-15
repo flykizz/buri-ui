@@ -1,25 +1,25 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-uploader :after-read="afterRead" />
+      <buri-uploader :after-read="afterRead" />
     </demo-block>
 
     <demo-block :title="$t('preview')">
-      <van-uploader v-model="fileList" multiple accept="*" />
+      <buri-uploader v-model="fileList" multiple accept="*" />
     </demo-block>
 
     <demo-block :title="$t('maxCount')">
-      <van-uploader v-model="fileList2" multiple :max-count="2" />
+      <buri-uploader v-model="fileList2" multiple :max-count="2" />
     </demo-block>
 
     <demo-block :title="$t('uploadStyle')">
-      <van-uploader>
-        <van-button type="primary" icon="photo">{{ this.$t('upload') }}</van-button>
-      </van-uploader>
+      <buri-uploader>
+        <buri-button type="primary" icon="photo">{{ this.$t('upload') }}</buri-button>
+      </buri-uploader>
     </demo-block>
 
     <demo-block :title="$t('beforeRead')">
-      <van-uploader v-model="fileList3" :before-read="beforeRead" />
+      <buri-uploader v-model="fileList3" :before-read="beforeRead" />
     </demo-block>
   </demo-section>
 </template>
@@ -48,10 +48,10 @@ export default {
   data() {
     return {
       fileList: [
-        { url: 'https://img.yzcdn.cn/vant/leaf.jpg' },
-        { url: 'https://img.yzcdn.cn/vant/tree.jpg' }
+        { url: 'https://img.yzcdn.cn/buri/leaf.jpg' },
+        { url: 'https://img.yzcdn.cn/buri/tree.jpg' }
       ],
-      fileList2: [{ url: 'https://img.yzcdn.cn/vant/sand.jpg' }],
+      fileList2: [{ url: 'https://img.yzcdn.cn/buri/sand.jpg' }],
       fileList3: []
     };
   },
@@ -79,7 +79,7 @@ export default {
 .demo-uploader {
   background-color: @white;
 
-  .van-uploader {
+  .buri-uploader {
     margin-left: @padding-md;
   }
 }

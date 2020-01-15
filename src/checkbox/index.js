@@ -7,7 +7,7 @@ export default createComponent({
   mixins: [CheckboxMixin({
     bem,
     role: 'checkbox',
-    parent: 'vanCheckbox'
+    parent: 'buriCheckbox'
   })],
 
   computed: {

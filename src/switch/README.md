@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Switch } from 'vant';
+import { Switch } from 'buri';
 
 Vue.use(Switch);
 ```
@@ -14,7 +14,7 @@ Vue.use(Switch);
 ### Basic Usage
 
 ```html
-<van-switch v-model="checked" />
+<buri-switch v-model="checked" />
 ```
 
 ```javascript
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<van-switch v-model="checked" disabled />
+<buri-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<van-switch v-model="checked" loading />
+<buri-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<buri-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<van-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+<buri-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
 ```
 
 ### Async Control
 
 ```html
-<van-switch :value="checked" @input="onInput" />
+<buri-switch :value="checked" @input="onInput" />
 ```
 
 ```js
@@ -81,9 +81,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-cell center title="Title">
-  <van-switch v-model="checked" slot="right-icon" size="24" />
-</van-cell>
+<buri-cell center title="Title">
+  <buri-switch v-model="checked" slot="right-icon" size="24" />
+</buri-cell>
 ```
 
 ## API

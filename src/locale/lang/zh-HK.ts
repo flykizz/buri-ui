@@ -12,7 +12,7 @@ export default {
   nameInvalid: '請輸入正確的姓名',
   confirmDelete: '確定要刪除嗎',
   telInvalid: '請填寫正確的電話',
-  vanCalendar: {
+  buriCalendar: {
     end: '結束',
     start: '開始',
     title: '日期選擇',
@@ -21,34 +21,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}年${month}月`,
     rangePrompt: (maxRange: Number) => `選擇天數不能超過 ${maxRange} 天`
   },
-  vanContactCard: {
+  buriContactCard: {
     addText: '添加聯系人'
   },
-  vanContactList: {
+  buriContactList: {
     addText: '新建聯系人'
   },
-  vanPagination: {
+  buriPagination: {
     prev: '上一頁',
     next: '下一頁'
   },
-  vanPullRefresh: {
+  buriPullRefresh: {
     pulling: '下拉即可刷新...',
     loosing: '釋放即可刷新...'
   },
-  vanSubmitBar: {
+  buriSubmitBar: {
     label: '合計：'
   },
-  vanCoupon: {
+  buriCoupon: {
     unlimited: '無使用門檻',
     discount: (discount: number) => `${discount}折`,
     condition: (condition: number) => `滿${condition}元可用`
   },
-  vanCouponCell: {
+  buriCouponCell: {
     title: '優惠券',
     tips: '暫無可用',
     count: (count: number) => `${count}張可用`
   },
-  vanCouponList: {
+  buriCouponList: {
     empty: '暫無優惠券',
     exchange: '兌換',
     close: '不使用優惠',
@@ -56,7 +56,7 @@ export default {
     disabled: '不可使用優惠券',
     placeholder: '請輸入優惠碼'
   },
-  vanAddressEdit: {
+  buriAddressEdit: {
     area: '地區',
     postal: '郵政編碼',
     areaEmpty: '請選擇地區',
@@ -67,11 +67,11 @@ export default {
     namePlaceholder: '收貨人姓名',
     areaPlaceholder: '選擇省 / 市 / 區'
   },
-  vanAddressEditDetail: {
+  buriAddressEditDetail: {
     label: '詳細地址',
     placeholder: '街道門牌、樓層房間號等信息'
   },
-  vanAddressList: {
+  buriAddressList: {
     add: '新增地址'
   }
 };

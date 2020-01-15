@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { ImagePreview } from 'vant';
+import { ImagePreview } from 'buri';
 
 Vue.use(ImagePreview);
 ```
@@ -15,8 +15,8 @@ Vue.use(ImagePreview);
 
 ```javascript
 ImagePreview([
-  'https://img.yzcdn.cn/vant/apple-1.jpg',
-  'https://img.yzcdn.cn/vant/apple-2.jpg'
+  'https://img.yzcdn.cn/buri/apple-1.jpg',
+  'https://img.yzcdn.cn/buri/apple-2.jpg'
 ]);
 ```
 
@@ -25,8 +25,8 @@ ImagePreview([
 ```javascript
 ImagePreview({
   images: [
-    'https://img.yzcdn.cn/vant/apple-1.jpg',
-    'https://img.yzcdn.cn/vant/apple-2.jpg'
+    'https://img.yzcdn.cn/buri/apple-1.jpg',
+    'https://img.yzcdn.cn/buri/apple-2.jpg'
   ],
   startPosition: 1,
   onClose() {
@@ -40,8 +40,8 @@ ImagePreview({
 ```javascript
 const instance = ImagePreview({
   images: [
-    'https://img.yzcdn.cn/vant/apple-1.jpg',
-    'https://img.yzcdn.cn/vant/apple-2.jpg'
+    'https://img.yzcdn.cn/buri/apple-1.jpg',
+    'https://img.yzcdn.cn/buri/apple-2.jpg'
   ],
   asyncClose: true
 });
@@ -54,13 +54,13 @@ setTimeout(() => {
 ### Component Call
 
 ```html
-<van-image-preview
+<buri-image-preview
   v-model="show"
   :images="images"
   @change="onChange"
 >
   <template v-slot:index>Page: {{ index }}</template>
-</van-image-preview>
+</buri-image-preview>
 ```
 
 ```js

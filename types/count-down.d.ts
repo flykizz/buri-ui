@@ -1,6 +1,6 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class CountDown extends VanComponent {
+export class CountDown extends BuriComponent {
   start(): void;
 
   pause(): void;

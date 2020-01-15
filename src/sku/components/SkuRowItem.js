@@ -42,16 +42,16 @@ export default createComponent({
     return (
       <span
         class={[
-          'van-sku-row__item',
+          'buri-sku-row__item',
           {
-            'van-sku-row__item--active': choosed,
-            'van-sku-row__item--disabled': !this.choosable
+            'buri-sku-row__item--active': choosed,
+            'buri-sku-row__item--disabled': !this.choosable
           }
         ]}
         onClick={this.onSelect}
       >
-        {imgUrl && <img class="van-sku-row__item-img" src={imgUrl} />}
-        <span class="van-sku-row__item-name">{this.skuValue.name}</span>
+        {imgUrl && <img class="buri-sku-row__item-img" src={imgUrl} />}
+        <span class="buri-sku-row__item-name">{this.skuValue.name}</span>
       </span>
     );
   }

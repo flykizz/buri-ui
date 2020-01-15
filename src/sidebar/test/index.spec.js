@@ -6,9 +6,9 @@ test('click event & change event', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-sidebar @change="onChange">
-        <van-sidebar-item @click="onClick">Text</van-sidebar-item>
-      </van-sidebar>
+      <buri-sidebar @change="onChange">
+        <buri-sidebar-item @click="onClick">Text</buri-sidebar-item>
+      </buri-sidebar>
     `,
     methods: {
       onClick,
@@ -16,7 +16,7 @@ test('click event & change event', () => {
     }
   });
 
-  wrapper.find('.van-sidebar-item').trigger('click');
+  wrapper.find('.buri-sidebar-item').trigger('click');
   expect(onClick).toHaveBeenCalledWith(0);
   expect(onChange).toHaveBeenCalledWith(0);
   wrapper.vm.$destroy();
@@ -25,10 +25,10 @@ test('click event & change event', () => {
 test('v-model', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item>Text</van-sidebar-item>
-      </van-sidebar>
+      <buri-sidebar v-model="active">
+        <buri-sidebar-item>Text</buri-sidebar-item>
+        <buri-sidebar-item>Text</buri-sidebar-item>
+      </buri-sidebar>
     `,
     data() {
       return {
@@ -37,17 +37,17 @@ test('v-model', () => {
     }
   });
 
-  wrapper.findAll('.van-sidebar-item').at(1).trigger('click');
+  wrapper.findAll('.buri-sidebar-item').at(1).trigger('click');
   expect(wrapper.vm.active).toEqual(1);
 });
 
 test('disabled prop', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item disabled>Text</van-sidebar-item>
-      </van-sidebar>
+      <buri-sidebar v-model="active">
+        <buri-sidebar-item>Text</buri-sidebar-item>
+        <buri-sidebar-item disabled>Text</buri-sidebar-item>
+      </buri-sidebar>
     `,
     data() {
       return {
@@ -56,7 +56,7 @@ test('disabled prop', () => {
     }
   });
 
-  wrapper.findAll('.van-sidebar-item').at(1).trigger('click');
+  wrapper.findAll('.buri-sidebar-item').at(1).trigger('click');
   expect(wrapper.vm.active).toEqual(0);
 });
 

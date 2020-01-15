@@ -5,7 +5,7 @@ import { BORDER_BOTTOM } from '../utils/constant';
 const [createComponent, bem] = createNamespace('index-anchor');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanIndexBar', { indexKey: 'childrenIndex' })],
+  mixins: [ChildrenMixin('buriIndexBar', { indexKey: 'childrenIndex' })],
 
   props: {
     index: [Number, String]

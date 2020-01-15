@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { CouponCell, CouponList } from 'vant';
+import { CouponCell, CouponList } from 'buri';
 
 Vue.use(CouponCell).use(CouponList);
 ```
@@ -15,27 +15,27 @@ Vue.use(CouponCell).use(CouponList);
 
 ```html
 <!-- Coupon Cell -->
-<van-coupon-cell
+<buri-coupon-cell
   :coupons="coupons"
   :chosen-coupon="chosenCoupon"
   @click="showList = true"
 />
 
 <!-- Coupon List -->
-<van-popup
+<buri-popup
   v-model="showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <van-coupon-list
+  <buri-coupon-list
     :coupons="coupons"
     :chosen-coupon="chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</van-popup>
+</buri-popup>
 ```
 
 ```javascript
@@ -103,7 +103,7 @@ export default {
 | close-button-text | Close button text | *string* | `Close` |
 | input-placeholder | Input placeholder | *string* | `Coupon code` |
 | currency | Currency symbol |  *string* | `¥` |
-| empty-image | Placeholder image when list is empty | *string* | `https://img.yzcdn.cn/vant/coupon-empty.png` |
+| empty-image | Placeholder image when list is empty | *string* | `https://img.yzcdn.cn/buri/coupon-empty.png` |
 | show-count `v2.3.0` | Whether to show coupon count in tab title | *boolean* | `true` |
 
 ### CouponList Events

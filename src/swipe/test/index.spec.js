@@ -2,11 +2,11 @@ import { mount, triggerDrag, later } from '../../../test';
 
 const Component = {
   template: `
-    <van-swipe ref="swipe" v-bind="$props">
-      <van-swipe-item :style="style">1</van-swipe-item>
-      <van-swipe-item :style="style">2</van-swipe-item>
-      <van-swipe-item :style="style">3</van-swipe-item>
-    </van-swipe>
+    <buri-swipe ref="swipe" v-bind="$props">
+      <buri-swipe-item :style="style">1</buri-swipe-item>
+      <buri-swipe-item :style="style">2</buri-swipe-item>
+      <buri-swipe-item :style="style">3</buri-swipe-item>
+    </buri-swipe>
   `,
   props: {
     vertical: Boolean,
@@ -86,7 +86,7 @@ test('vertical swipe', () => {
     }
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.buri-swipe__track');
 
   triggerDrag(track, 0, -100);
   expect(swipe.active).toEqual(1);
@@ -99,7 +99,7 @@ test('untouchable', () => {
     }
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.buri-swipe__track');
 
   triggerDrag(track, 100, 0);
   expect(swipe.active).toEqual(0);
@@ -108,7 +108,7 @@ test('untouchable', () => {
 test('loop', () => {
   const wrapper = mount(Component);
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.buri-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);
@@ -133,7 +133,7 @@ test('not loop', () => {
     }
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.buri-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);

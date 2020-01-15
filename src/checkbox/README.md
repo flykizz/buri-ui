@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'buri';
 
 Vue.use(Checkbox).use(CheckboxGroup);
 ```
@@ -14,7 +14,7 @@ Vue.use(Checkbox).use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<van-checkbox v-model="checked">Checkbox</van-checkbox>
+<buri-checkbox v-model="checked">Checkbox</buri-checkbox>
 ```
 
 ```javascript
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<van-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
+<buri-checkbox v-model="checked" disabled>Checkbox</buri-checkbox>
 ```
 
 ### Disabled Label Click
 
 ```html
-<van-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
+<buri-checkbox v-model="checked" label-disabled>Checkbox</buri-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<van-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
+<buri-checkbox v-model="checked" shape="square">Checkbox</buri-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<van-checkbox v-model="checked" checked-color="#07c160">Checkbox</van-checkbox>
+<buri-checkbox v-model="checked" checked-color="#07c160">Checkbox</buri-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
+<buri-checkbox v-model="checked" icon-size="24px">Checkbox</buri-checkbox>
 ```
 
 ### Custom Icon
@@ -62,14 +62,14 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-checkbox v-model="checked">
+<buri-checkbox v-model="checked">
   Custom Icon
   <img
     slot="icon"
     slot-scope="props"
     :src="props.checked ? activeIcon : inactiveIcon"
   >
-</van-checkbox>
+</buri-checkbox>
 ```
 
 ```js
@@ -77,8 +77,8 @@ export default {
   data() {
     return {
       checked: true,
-      activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-      inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+      activeIcon: 'https://img.yzcdn.cn/buri/user-active.png',
+      inactiveIcon: 'https://img.yzcdn.cn/buri/user-inactive.png'
     };
   }
 };
@@ -89,11 +89,11 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<buri-checkbox-group v-model="result">
+  <buri-checkbox name="a">Checkbox a</buri-checkbox>
+  <buri-checkbox name="b">Checkbox b</buri-checkbox>
+  <buri-checkbox name="c">Checkbox c</buri-checkbox>
+</buri-checkbox-group>
 ```
 
 ```javascript
@@ -109,24 +109,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<buri-checkbox-group v-model="result" :max="2">
+  <buri-checkbox name="a">Checkbox a</buri-checkbox>
+  <buri-checkbox name="b">Checkbox b</buri-checkbox>
+  <buri-checkbox name="c">Checkbox c</buri-checkbox>
+</buri-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<van-checkbox-group v-model="result" ref="checkboxGroup">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<buri-checkbox-group v-model="result" ref="checkboxGroup">
+  <buri-checkbox name="a">Checkbox a</buri-checkbox>
+  <buri-checkbox name="b">Checkbox b</buri-checkbox>
+  <buri-checkbox name="c">Checkbox c</buri-checkbox>
+</buri-checkbox-group>
 
-<van-button type="primary" @click="checkAll">Check All</van-button>
-<van-button type="info" @click="toggleAll">Toggle All</van-button>
+<buri-button type="primary" @click="checkAll">Check All</buri-button>
+<buri-button type="info" @click="toggleAll">Toggle All</buri-button>
 ```
 
 ```js
@@ -151,23 +151,23 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell
+<buri-checkbox-group v-model="result">
+  <buri-cell-group>
+    <buri-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
       :title="`Checkbox ${item}`"
       @click="toggle(index)"
     >
-      <van-checkbox
+      <buri-checkbox
         :name="item"
         ref="checkboxes"
         slot="right-icon"
       />
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </buri-cell>
+  </buri-cell-group>
+</buri-checkbox-group>
 ```
 
 ```js

@@ -1,31 +1,31 @@
 <template>
   <demo-section>
     <demo-block :title="$t('type')">
-      <van-loading />
-      <van-loading type="spinner" />
+      <buri-loading />
+      <buri-loading type="spinner" />
     </demo-block>
 
     <demo-block :title="$t('color')">
-      <van-loading color="#1989fa" />
-      <van-loading
+      <buri-loading color="#1989fa" />
+      <buri-loading
         type="spinner"
         color="#1989fa"
       />
     </demo-block>
 
     <demo-block :title="$t('text')">
-      <van-loading size="24px">
+      <buri-loading size="24px">
         {{ $t('loading') }}
-      </van-loading>
+      </buri-loading>
     </demo-block>
 
     <demo-block :title="$t('vertical')">
-      <van-loading
+      <buri-loading
         size="24px"
         vertical
       >
         {{ $t('loading') }}
-      </van-loading>
+      </buri-loading>
     </demo-block>
   </demo-section>
 </template>
@@ -55,7 +55,7 @@ export default {
 .demo-loading {
   background: @white;
 
-  .van-loading {
+  .buri-loading {
     display: inline-block;
     margin: 5px 0 5px 20px;
 

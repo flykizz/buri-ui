@@ -1,14 +1,14 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-skeleton
+      <buri-skeleton
         title
         :row="3"
       />
     </demo-block>
 
     <demo-block :title="$t('showAvatar')">
-      <van-skeleton
+      <buri-skeleton
         title
         avatar
         :row="3"
@@ -16,24 +16,24 @@
     </demo-block>
 
     <demo-block :title="$t('showChildren')">
-      <van-switch
+      <buri-switch
         v-model="show"
         size="24px"
       />
-      <van-skeleton
+      <buri-skeleton
         title
         avatar
         :row="3"
         :loading="!show"
       >
         <div class="demo-preview">
-          <img src="https://img.yzcdn.cn/vant/logo.png">
+          <img src="https://img.yzcdn.cn/buri/logo.png">
           <div class="demo-content">
             <h3>{{ $t('title') }}</h3>
             <p>{{ $t('desc') }}</p>
           </div>
         </div>
-      </van-skeleton>
+      </buri-skeleton>
     </demo-block>
   </demo-section>
 </template>
@@ -44,14 +44,14 @@ export default {
     'zh-CN': {
       showAvatar: '显示头像',
       showChildren: '显示子组件',
-      title: '关于 Vant',
-      desc: 'Vant 是一套轻量、可靠的移动端 Vue 组件库，提供了丰富的基础组件和业务组件，帮助开发者快速搭建移动应用。'
+      title: '关于 Burit',
+      desc: 'Burit 是一套轻量、可靠的移动端 Vue 组件库，提供了丰富的基础组件和业务组件，帮助开发者快速搭建移动应用。'
     },
     'en-US': {
       showAvatar: 'Show Avatar',
       showChildren: 'Show Children',
-      title: 'About Vant',
-      desc: 'Vant is a set of Mobile UI Components built on Vue.'
+      title: 'About Burit',
+      desc: 'Burit is a set of Mobile UI Components built on Vue.'
     }
   },
 
@@ -69,7 +69,7 @@ export default {
 .demo-skeleton {
   background-color: @white;
 
-  .van-switch {
+  .buri-switch {
     margin: 0 @padding-md @padding-xs;
   }
 

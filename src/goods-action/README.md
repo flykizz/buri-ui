@@ -8,7 +8,7 @@ import {
   GoodsAction,
   GoodsActionButton,
   GoodsActionIcon
-} from 'vant';
+} from 'buri';
 
 Vue
   .use(GoodsAction)
@@ -21,12 +21,12 @@ Vue
 ### Basic Usage
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <van-goods-action-button type="warning" text="Button1" @click="onClickButton" />
-  <van-goods-action-button type="danger" text="Button2" @click="onClickButton" />
-</van-goods-action>
+<buri-goods-action>
+  <buri-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <buri-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <buri-goods-action-button type="warning" text="Button1" @click="onClickButton" />
+  <buri-goods-action-button type="danger" text="Button2" @click="onClickButton" />
+</buri-goods-action>
 ```
 
 ```javascript
@@ -47,36 +47,36 @@ export default {
 Use `info` prop to show badge in icon
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" info="5" />
-  <van-goods-action-icon icon="shop-o" text="Icon3" info="12" />
-  <van-goods-action-button type="warning" text="Button1" />
-  <van-goods-action-button type="danger" text="Button2" />
-</van-goods-action>
+<buri-goods-action>
+  <buri-goods-action-icon icon="chat-o" text="Icon1" />
+  <buri-goods-action-icon icon="cart-o" text="Icon2" info="5" />
+  <buri-goods-action-icon icon="shop-o" text="Icon3" info="12" />
+  <buri-goods-action-button type="warning" text="Button1" />
+  <buri-goods-action-button type="danger" text="Button2" />
+</buri-goods-action>
 ```
 
 ### Custom Icon Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" color="#07c160" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" />
-  <van-goods-action-icon icon="star" text="Collected" color="#ff5000" />
-  <van-goods-action-button type="warning" text="Button1" />
-  <van-goods-action-button type="danger" text="Button2" />
-</van-goods-action>
+<buri-goods-action>
+  <buri-goods-action-icon icon="chat-o" text="Icon1" color="#07c160" />
+  <buri-goods-action-icon icon="cart-o" text="Icon2" />
+  <buri-goods-action-icon icon="star" text="Collected" color="#ff5000" />
+  <buri-goods-action-button type="warning" text="Button1" />
+  <buri-goods-action-button type="danger" text="Button2" />
+</buri-goods-action>
 ```
 
 ### Custom Button Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="shop-o" text="Icon2" />
-  <van-goods-action-button color="#be99ff" type="warning" text="Button1" />
-  <van-goods-action-button color="#7232dd" type="danger" text="Button2" />
-</van-goods-action>
+<buri-goods-action>
+  <buri-goods-action-icon icon="chat-o" text="Icon1" />
+  <buri-goods-action-icon icon="shop-o" text="Icon2" />
+  <buri-goods-action-button color="#be99ff" type="warning" text="Button1" />
+  <buri-goods-action-button color="#7232dd" type="danger" text="Button2" />
+</buri-goods-action>
 ```
 
 ## API

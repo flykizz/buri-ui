@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-field {
+.buri-field {
   &__label {
     flex: none;
     width: @field-label-width;
@@ -84,8 +84,8 @@
     cursor: pointer;
   }
 
-  &__left-icon .van-icon,
-  &__right-icon .van-icon {
+  &__left-icon .buri-icon,
+  &__right-icon .buri-icon {
     display: block;
     min-width: 1em;
     font-size: @field-icon-size;
@@ -127,7 +127,7 @@
   }
 
   &--error {
-    .van-field__control {
+    .buri-field__control {
       &,
       &::placeholder {
         color: @field-input-error-text-color;
@@ -137,7 +137,7 @@
   }
 
   &--min-height {
-    .van-field__control {
+    .buri-field__control {
       min-height: @field-text-area-min-height;
     }
   }

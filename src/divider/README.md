@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Divider } from 'vant';
+import { Divider } from 'buri';
 
 Vue.use(Divider);
 ```
@@ -14,34 +14,34 @@ Vue.use(Divider);
 ### Basic Usage
 
 ```html
-<van-divider />
+<buri-divider />
 ```
 
 ### With Text
 
 ```html
-<van-divider>Text</van-divider>
+<buri-divider>Text</buri-divider>
 ```
 
 ### Content Position
 
 ```html
-<van-divider content-position="left">Text</van-divider>
-<van-divider content-position="right">Text</van-divider>
+<buri-divider content-position="left">Text</buri-divider>
+<buri-divider content-position="right">Text</buri-divider>
 ```
 
 ### Dashed
 
 ```html
-<van-divider dashed>Text</van-divider>
+<buri-divider dashed>Text</buri-divider>
 ```
 
 ### Custom Style
 
 ```html
-<van-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
+<buri-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
   Text
-</van-divider>
+</buri-divider>
 ```
 
 ## API

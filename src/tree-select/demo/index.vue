@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('radioMode')">
-      <van-tree-select
+      <buri-tree-select
         :items="items"
         :active-id.sync="activeId"
         :main-active-index.sync="activeIndex"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="$t('multipleMode')">
-      <van-tree-select
+      <buri-tree-select
         :items="items"
         :active-id.sync="activeIds"
         :main-active-index.sync="activeIndex2"
@@ -17,16 +17,16 @@
     </demo-block>
 
     <demo-block :title="$t('customContent')">
-      <van-tree-select height="55vw" :items="simpleItems" :main-active-index.sync="activeIndex3">
+      <buri-tree-select height="55vw" :items="simpleItems" :main-active-index.sync="activeIndex3">
         <template slot="content">
-          <van-image v-if="activeIndex3 === 0" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-          <van-image v-if="activeIndex3 === 1" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+          <buri-image v-if="activeIndex3 === 0" src="https://img.yzcdn.cn/buri/apple-1.jpg" />
+          <buri-image v-if="activeIndex3 === 1" src="https://img.yzcdn.cn/buri/apple-2.jpg" />
         </template>
-      </van-tree-select>
+      </buri-tree-select>
     </demo-block>
 
     <demo-block :title="$t('showInfo')">
-      <van-tree-select height="55vw" :items="infoItems" :active-id.sync="activeId2" :main-active-index.sync="activeIndex4" />
+      <buri-tree-select height="55vw" :items="infoItems" :active-id.sync="activeId2" :main-active-index.sync="activeIndex4" />
     </demo-block>
   </demo-section>
 </template>

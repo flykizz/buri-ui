@@ -1,39 +1,39 @@
 <template>
   <demo-section>
     <demo-block :title="$t('ellipsis')">
-      <div class="van-ellipsis">{{ $t('text1') }}</div>
-      <div class="van-multi-ellipsis--l2">{{ $t('text2') }}</div>
+      <div class="buri-ellipsis">{{ $t('text1') }}</div>
+      <div class="buri-multi-ellipsis--l2">{{ $t('text2') }}</div>
     </demo-block>
 
     <demo-block :title="$t('hairline')">
-      <div class="van-hairline--top" />
+      <div class="buri-hairline--top" />
     </demo-block>
 
     <demo-block :title="$t('animation')">
-      <van-cell
+      <buri-cell
         is-link
         title="Fade"
-        @click="animate('van-fade')"
+        @click="animate('buri-fade')"
       />
-      <van-cell
+      <buri-cell
         is-link
         title="Slide Up"
-        @click="animate('van-slide-up')"
+        @click="animate('buri-slide-up')"
       />
-      <van-cell
+      <buri-cell
         is-link
         title="Slide Down"
-        @click="animate('van-slide-down')"
+        @click="animate('buri-slide-down')"
       />
-      <van-cell
+      <buri-cell
         is-link
         title="Slide Left"
-        @click="animate('van-slide-left')"
+        @click="animate('buri-slide-left')"
       />
-      <van-cell
+      <buri-cell
         is-link
         title="Slide Right"
-        @click="animate('van-slide-right')"
+        @click="animate('buri-slide-right')"
       />
     </demo-block>
 
@@ -91,19 +91,19 @@ export default {
 @import '../../style/var';
 
 .demo-style {
-  .van-ellipsis,
-  .van-multi-ellipsis--l2 {
+  .buri-ellipsis,
+  .buri-multi-ellipsis--l2 {
     max-width: 300px;
     margin-left: @padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .van-ellipsis {
+  .buri-ellipsis {
     margin-bottom: @padding-md;
   }
 
-  .van-hairline--top {
+  .buri-hairline--top {
     height: 30px;
     background-color: @white;
 

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
 export type SkuData = {
   price: string;
@@ -65,7 +65,7 @@ export type SkuGoodsData = {
 
 export type SelectedSkuData = Record<string, string>;
 
-export class Sku extends VanComponent {
+export class Sku extends BuriComponent {
   getSkuData(): SkuData;
 
   resetSelectedSku(): void;

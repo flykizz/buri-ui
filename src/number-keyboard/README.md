@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'buri';
 
 Vue.use(NumberKeyboard);
 ```
@@ -14,11 +14,11 @@ Vue.use(NumberKeyboard);
 ### Default Style
 
 ```html
-<van-button @touchstart.stop="show = true">
+<buri-button @touchstart.stop="show = true">
   Show Keyboard
-</van-button>
+</buri-button>
 
-<van-number-keyboard
+<buri-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="Close"
@@ -50,7 +50,7 @@ export default {
 ### Custom Style
 
 ```html
-<van-number-keyboard
+<buri-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -64,14 +64,14 @@ export default {
 ### Bind Value
 
 ```html
-<van-field
+<buri-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
 
-<van-number-keyboard
+<buri-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"
@@ -95,11 +95,11 @@ export default {
 Use `extra-key` prop to set the content of bottom left button
 
 ```html
-<van-button plain type="primary" @touchstart.stop="show = true'">
+<buri-button plain type="primary" @touchstart.stop="show = true'">
   Show Id Card Number Keyboard
-</van-button>
+</buri-button>
 
-<van-number-keyboard
+<buri-number-keyboard
   :show="show"
   close-button-text="Close"
   extra-key="X"
@@ -114,11 +114,11 @@ Use `extra-key` prop to set the content of bottom left button
 Use `title` prop to set keyboard title
 
 ```html
-<van-button plain type="info" @touchstart.stop="show = true'">
+<buri-button plain type="info" @touchstart.stop="show = true'">
   Show Custom Title Keyboard
-</van-button>
+</buri-button>
 
-<van-number-keyboard
+<buri-number-keyboard
   :show="show"
   close-button-text="Close"
   title="Keyboard Title"

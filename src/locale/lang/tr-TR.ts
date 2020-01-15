@@ -12,7 +12,7 @@ export default {
   nameInvalid: 'Geçersiz isim',
   confirmDelete: 'Silmek istediğinize emin misiniz?',
   telInvalid: 'Geçersiz tel. numarası',
-  vanCalendar: {
+  buriCalendar: {
     end: 'Son',
     start: 'Başlat',
     title: 'Takvim',
@@ -20,34 +20,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}/${month}`,
     rangePrompt: (maxRange: Number) => `En fazla ${maxRange} gün seçin`
   },
-  vanContactCard: {
+  buriContactCard: {
     addText: 'Kişi bilgisi ekle'
   },
-  vanContactList: {
+  buriContactList: {
     addText: 'Yeni kişi ekle'
   },
-  vanPagination: {
+  buriPagination: {
     prev: 'Önceki',
     next: 'Sonraki'
   },
-  vanPullRefresh: {
+  buriPullRefresh: {
     pulling: 'Yenilemek için çekin...',
     loosing: 'Yenilemek için bırakın...'
   },
-  vanSubmitBar: {
+  buriSubmitBar: {
     label: 'Toplam:'
   },
-  vanCoupon: {
+  buriCoupon: {
     unlimited: 'Sınırsız',
     discount: (discount: number) => `%${discount * 10} indirim`,
     condition: (condition: number) => `En az ${condition}`
   },
-  vanCouponCell: {
+  buriCouponCell: {
     title: 'Kupon',
     tips: 'Kupon yok',
     count: (count: number) => `${count} adet teklif var`
   },
-  vanCouponList: {
+  buriCouponList: {
     empty: 'Kupon yok',
     exchange: 'Takas',
     close: 'Kapat',
@@ -55,7 +55,7 @@ export default {
     disabled: 'Mevcut değil',
     placeholder: 'Kupon kodu'
   },
-  vanAddressEdit: {
+  buriAddressEdit: {
     area: 'Alan',
     postal: 'Posta',
     areaEmpty: 'Lütfen alıcı alanını seçin',
@@ -66,11 +66,11 @@ export default {
     namePlaceholder: 'İsim',
     areaPlaceholder: 'Alan'
   },
-  vanAddressEditDetail: {
+  buriAddressEditDetail: {
     label: 'Adres',
     placeholder: 'Adres'
   },
-  vanAddressList: {
+  buriAddressList: {
     add: 'Yeni adres ekle'
   }
 };

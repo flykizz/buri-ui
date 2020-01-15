@@ -1,4 +1,4 @@
-import { VanPopupMixin } from './mixins/popup';
+import { BuriPopupMixin } from './mixins/popup';
 
 export type ImagePreviewOptions = string[] | {
   loop?: boolean;
@@ -17,7 +17,7 @@ export type ImagePreviewOptions = string[] | {
   onChange?: (index: number) => void;
 };
 
-export class VanImagePreview extends VanPopupMixin {
+export class BuriImagePreview extends BuriPopupMixin {
   images: string[];
 
   showIndex: boolean;
@@ -26,7 +26,7 @@ export class VanImagePreview extends VanPopupMixin {
 }
 
 export interface ImagePreview {
-  (options: ImagePreviewOptions, startPosition?: number): VanImagePreview;
+  (options: ImagePreviewOptions, startPosition?: number): BuriImagePreview;
   install(): void;
 }
 

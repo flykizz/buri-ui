@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { RadioGroup, Radio } from 'vant';
+import { RadioGroup, Radio } from 'buri';
 
 Vue.use(RadioGroup);
 Vue.use(Radio);
@@ -17,10 +17,10 @@ Vue.use(Radio);
 Use `v-model` to bind the name of checked radio
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1">Radio 1</buri-radio>
+  <buri-radio name="2">Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ```javascript
@@ -36,46 +36,46 @@ export default {
 ### Disabled
 
 ```html
-<van-radio-group v-model="radio" disabled>
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio" disabled>
+  <buri-radio name="1">Radio 1</buri-radio>
+  <buri-radio name="2">Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### Disabled Label Click
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" icon-disabled>Radio 1</van-radio>
-  <van-radio name="2" icon-disabled>Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" icon-disabled>Radio 1</buri-radio>
+  <buri-radio name="2" icon-disabled>Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### Custom Shape
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" shape="square">Radio 1</van-radio>
-  <van-radio name="2" shape="square">Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" shape="square">Radio 1</buri-radio>
+  <buri-radio name="2" shape="square">Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" checked-color="#07c160">Radio 1</van-radio>
-  <van-radio name="2" checked-color="#07c160">Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" checked-color="#07c160">Radio 1</buri-radio>
+  <buri-radio name="2" checked-color="#07c160">Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" icon-size="24px">Radio 1</van-radio>
-  <van-radio name="2" icon-size="24px">Radio 2</van-radio>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-radio name="1" icon-size="24px">Radio 1</buri-radio>
+  <buri-radio name="2" icon-size="24px">Radio 2</buri-radio>
+</buri-radio-group>
 ```
 
 ### Custom Icon
@@ -83,24 +83,24 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">
+<buri-radio-group v-model="radio">
+  <buri-radio name="1">
     Radio 1
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-  <van-radio name="2">
+  </buri-radio>
+  <buri-radio name="2">
     Radio 2
     <img
       slot="icon"
       slot-scope="props"
       :src="props.checked ? activeIcon : inactiveIcon"
     >
-  </van-radio>
-</van-radio-group>
+  </buri-radio>
+</buri-radio-group>
 ```
 
 ```js
@@ -108,8 +108,8 @@ export default {
   data() {
     return {
       radio: '1',
-      activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-      inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+      activeIcon: 'https://img.yzcdn.cn/buri/user-active.png',
+      inactiveIcon: 'https://img.yzcdn.cn/buri/user-inactive.png'
     };
   }
 };
@@ -118,16 +118,16 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-radio-group v-model="radio">
-  <van-cell-group>
-    <van-cell title="Radio 1" clickable @click="radio = '1'">
-      <van-radio slot="right-icon" name="1" />
-    </van-cell>
-    <van-cell title="Radio 2" clickable @click="radio = '2'">
-      <van-radio slot="right-icon" name="2" />
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+<buri-radio-group v-model="radio">
+  <buri-cell-group>
+    <buri-cell title="Radio 1" clickable @click="radio = '1'">
+      <buri-radio slot="right-icon" name="1" />
+    </buri-cell>
+    <buri-cell title="Radio 2" clickable @click="radio = '2'">
+      <buri-radio slot="right-icon" name="2" />
+    </buri-cell>
+  </buri-cell-group>
+</buri-radio-group>
 ```
 
 ## API

@@ -6,7 +6,7 @@
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'buri';
 
 // options 为可选参数，无则不传
 Vue.use(Lazyload, options);
@@ -27,8 +27,8 @@ export default {
   data() {
     return {
       imageList: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
+        'https://img.yzcdn.cn/buri/apple-1.jpg',
+        'https://img.yzcdn.cn/buri/apple-2.jpg'
       ]
     };
   }

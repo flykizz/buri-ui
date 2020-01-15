@@ -1,18 +1,18 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button type="primary" @click="show1 = true">{{ $t('buttonText') }}</van-button>
-      <van-action-sheet v-model="show1" :actions="simpleActions" @select="onSelect" />
+      <buri-button type="primary" @click="show1 = true">{{ $t('buttonText') }}</buri-button>
+      <buri-action-sheet v-model="show1" :actions="simpleActions" @select="onSelect" />
     </demo-block>
 
     <demo-block :title="$t('status')">
-      <van-button type="primary" @click="show2 = true">{{ $t('buttonText') }}</van-button>
-      <van-action-sheet v-model="show2" close-on-click-action :actions="statusActions" />
+      <buri-button type="primary" @click="show2 = true">{{ $t('buttonText') }}</buri-button>
+      <buri-action-sheet v-model="show2" close-on-click-action :actions="statusActions" />
     </demo-block>
 
     <demo-block :title="$t('showCancel')">
-      <van-button type="primary" @click="show3 = true">{{ $t('buttonText') }}</van-button>
-      <van-action-sheet
+      <buri-button type="primary" @click="show3 = true">{{ $t('buttonText') }}</buri-button>
+      <buri-action-sheet
         v-model="show3"
         :actions="simpleActions"
         close-on-click-action
@@ -22,8 +22,8 @@
     </demo-block>
 
     <demo-block :title="$t('showDescription')">
-      <van-button type="primary" @click="show4 = true">{{ $t('buttonText') }}</van-button>
-      <van-action-sheet
+      <buri-button type="primary" @click="show4 = true">{{ $t('buttonText') }}</buri-button>
+      <buri-action-sheet
         v-model="show4"
         :actions="simpleActions"
         close-on-click-action
@@ -32,10 +32,10 @@
     </demo-block>
 
     <demo-block :title="$t('showTitle')">
-      <van-button type="primary" @click="show5 = true">{{ $t('buttonText') }}</van-button>
-      <van-action-sheet v-model="show5" :title="$t('title')">
+      <buri-button type="primary" @click="show5 = true">{{ $t('buttonText') }}</buri-button>
+      <buri-action-sheet v-model="show5" :title="$t('title')">
         <p>{{ $t('content') }}</p>
-      </van-action-sheet>
+      </buri-action-sheet>
     </demo-block>
   </demo-section>
 </template>
@@ -114,7 +114,7 @@ export default {
 .demo-action-sheet {
   background-color: @white;
 
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 

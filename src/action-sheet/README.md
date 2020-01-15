@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { ActionSheet } from 'vant';
+import { ActionSheet } from 'buri';
 
 Vue.use(ActionSheet);
 ```
@@ -16,7 +16,7 @@ Vue.use(ActionSheet);
 Use `actions` prop to set options of action-sheet. 
 
 ```html
-<van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+<buri-action-sheet v-model="show" :actions="actions" @select="onSelect" />
 ```
 
 ```javascript
@@ -44,7 +44,7 @@ export default {
 ### Status
 
 ```html
-<van-action-sheet v-model="show" :actions="actions" />
+<buri-action-sheet v-model="show" :actions="actions" />
 ```
 
 ```javascript
@@ -65,7 +65,7 @@ export default {
 ### ActionSheet with cancel button
 
 ```html
-<van-action-sheet
+<buri-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -93,7 +93,7 @@ export default {
 ### Show Description
 
 ```html
-<van-action-sheet
+<buri-action-sheet
   v-model="show"
   :actions="actions"
   description="Description"
@@ -103,9 +103,9 @@ export default {
 ### ActionSheet with title
 
 ```html
-<van-action-sheet v-model="show" title="Title">
+<buri-action-sheet v-model="show" title="Title">
   <p>Content</p>
-</van-action-sheet>
+</buri-action-sheet>
 ```
 
 ## API

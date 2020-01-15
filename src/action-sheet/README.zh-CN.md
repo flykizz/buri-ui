@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { ActionSheet } from 'vant';
+import { ActionSheet } from 'buri';
 
 Vue.use(ActionSheet);
 ```
@@ -16,7 +16,7 @@ Vue.use(ActionSheet);
 `ActionSheet`通过`actions`数组来定义展示的选项，数组的每一项是一个对象，对象属性见文档下方表格。
 
 ```html
-<van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+<buri-action-sheet v-model="show" :actions="actions" @select="onSelect" />
 ```
 
 ```javascript
@@ -48,7 +48,7 @@ export default {
 选项可以设置为加载状态或禁用状态，也可以通过`color`设置选项颜色
 
 ```html
-<van-action-sheet v-model="show" :actions="actions" />
+<buri-action-sheet v-model="show" :actions="actions" />
 ```
 
 ```javascript
@@ -71,7 +71,7 @@ export default {
 设置`cancel-text`属性后，会在底部展示取消按钮，点击后关闭当前菜单
 
 ```html
-<van-action-sheet
+<buri-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="取消"
@@ -101,7 +101,7 @@ export default {
 设置`description`属性后，会在选项上方显示描述信息
 
 ```html
-<van-action-sheet
+<buri-action-sheet
   v-model="show"
   :actions="actions"
   description="这是一段描述信息"
@@ -113,9 +113,9 @@ export default {
 通过设置`title`属性展示标题栏，同时可以使用插槽自定义菜单内容
 
 ```html
-<van-action-sheet v-model="show" title="标题">
+<buri-action-sheet v-model="show" title="标题">
   <p>内容</p>
-</van-action-sheet>
+</buri-action-sheet>
 ```
 
 ## API

@@ -188,7 +188,7 @@ export default createComponent({
     );
 
     return (
-      <transition name={this.transition ? 'van-slide-up' : ''}>
+      <transition name={this.transition ? 'buri-slide-up' : ''}>
         <div
           vShow={this.show}
           style={{ zIndex: this.zIndex }}

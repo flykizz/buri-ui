@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Loading } from 'vant';
+import { Loading } from 'buri';
 
 Vue.use(Loading);
 ```
@@ -14,27 +14,27 @@ Vue.use(Loading);
 ### 加载类型
 
 ```html
-<van-loading />
-<van-loading type="spinner" />
+<buri-loading />
+<buri-loading type="spinner" />
 ```
 
 ### 自定义颜色
 
 ```html
-<van-loading color="#1989fa" />
-<van-loading type="spinner" color="#1989fa" />
+<buri-loading color="#1989fa" />
+<buri-loading type="spinner" color="#1989fa" />
 ```
 
 ### 加载文案
 
 ```html
-<van-loading size="24px">加载中...</van-loading>
+<buri-loading size="24px">加载中...</buri-loading>
 ```
 
 ### 垂直排列
 
 ```html
-<van-loading size="24px" vertical>加载中...</van-loading>
+<buri-loading size="24px" vertical>加载中...</buri-loading>
 ```
 
 ## API

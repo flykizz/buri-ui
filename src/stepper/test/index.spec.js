@@ -26,8 +26,8 @@ test('disable button', async () => {
     }
   });
 
-  const plus = wrapper.find('.van-stepper__plus');
-  const minus = wrapper.find('.van-stepper__minus');
+  const plus = wrapper.find('.buri-stepper__plus');
+  const minus = wrapper.find('.buri-stepper__minus');
 
   minus.trigger('click');
 
@@ -56,8 +56,8 @@ test('click button', () => {
     }
   });
 
-  const plus = wrapper.find('.van-stepper__plus');
-  const minus = wrapper.find('.van-stepper__minus');
+  const plus = wrapper.find('.buri-stepper__plus');
+  const minus = wrapper.find('.buri-stepper__minus');
 
   plus.trigger('click');
   plus.trigger('click');
@@ -75,7 +75,7 @@ test('long press', async () => {
     }
   });
 
-  const plus = wrapper.find('.van-stepper__plus');
+  const plus = wrapper.find('.buri-stepper__plus');
 
   plus.trigger('touchstart');
   plus.trigger('touchend');
@@ -96,7 +96,7 @@ test('filter value during user input', () => {
     }
   });
 
-  const input = wrapper.find('.van-stepper__input');
+  const input = wrapper.find('.buri-stepper__input');
   input.element.value = '';
   input.trigger('input');
   expect(wrapper.emitted('input')).toBeFalsy();
@@ -186,7 +186,7 @@ test('async-change prop', () => {
     }
   });
 
-  const plus = wrapper.find('.van-stepper__plus');
+  const plus = wrapper.find('.buri-stepper__plus');
   plus.trigger('click');
 
   expect(wrapper.emitted('input')[0][0]).toEqual(2);
@@ -238,7 +238,7 @@ test('decimal-length prop', () => {
 
   expect(wrapper.emitted('input')[0][0]).toEqual('1.00');
 
-  const plus = wrapper.find('.van-stepper__plus');
+  const plus = wrapper.find('.buri-stepper__plus');
   plus.trigger('click');
   expect(wrapper.emitted('input')[1][0]).toEqual('1.20');
 });
@@ -262,7 +262,7 @@ test('should limit decimal-length when input', () => {
 test('name prop', () => {
   const wrapper = mount(Stepper);
 
-  const plus = wrapper.find('.van-stepper__plus');
+  const plus = wrapper.find('.buri-stepper__plus');
 
   plus.trigger('click');
   expect(wrapper.emitted('change')[0][1]).toEqual({ name: '' });

@@ -4,7 +4,7 @@ import { ParentMixin } from '../mixins/relation';
 const [createComponent, bem] = createNamespace('checkbox-group');
 
 export default createComponent({
-  mixins: [ParentMixin('vanCheckbox')],
+  mixins: [ParentMixin('buriCheckbox')],
 
   props: {
     max: Number,

@@ -15,7 +15,7 @@ export type NotifyOptions = {
   onClick?: ((event: Event) => void) | null;
 };
 
-export interface VanNotify extends Vue {
+export interface BuriNotify extends Vue {
   message: NotifyMessage;
   color: string;
   background: string;
@@ -23,7 +23,7 @@ export interface VanNotify extends Vue {
 }
 
 export interface Notify {
-  (message: NotifyOptions | NotifyMessage): VanNotify;
+  (message: NotifyOptions | NotifyMessage): BuriNotify;
   clear(): void;
   install(): void;
   currentOptions: NotifyOptions;

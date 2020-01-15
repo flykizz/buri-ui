@@ -22,8 +22,8 @@ test('simple columns confirm & cancel event', () => {
     }
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.buri-picker__confirm').trigger('click');
+  wrapper.find('.buri-picker__cancel').trigger('click');
   expect(wrapper.emitted('confirm')[0]).toEqual(['1990', 0]);
   expect(wrapper.emitted('cancel')[0]).toEqual(['1990', 0]);
   wrapper.destroy();
@@ -36,8 +36,8 @@ test('multiple columns confirm & cancel event', () => {
     }
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.buri-picker__confirm').trigger('click');
+  wrapper.find('.buri-picker__cancel').trigger('click');
   expect(wrapper.emitted('confirm')[0]).toEqual([[], []]);
   expect(wrapper.emitted('cancel')[0]).toEqual([[], []]);
 });
@@ -87,8 +87,8 @@ test('drag columns', () => {
     }
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.buri-picker-column'), 0, -100);
+  wrapper.find('.buri-picker-column ul').trigger('transitionend');
 
   // 由于在极短的时间（大约几毫秒）移动 `100px`，因此再计算惯性滚动的距离时，
   // 会得到一个很大的值，导致会滚动到且选中列表的最后一项
@@ -102,8 +102,8 @@ test('drag simple columns', () => {
     }
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.buri-picker-column'), 0, -100);
+  wrapper.find('.buri-picker-column ul').trigger('transitionend');
 
   // 由于在极短的时间（大约几毫秒）移动 `100px`，因此再计算惯性滚动的距离时，
   // 会得到一个很大的值，导致会滚动到且选中列表的最后一项
@@ -162,9 +162,9 @@ test('simulation finger swipe again before transitionend', () => {
     }
   });
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -5);
-  triggerDrag(wrapper.find('.van-picker-column'), -5, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.buri-picker-column'), 0, -5);
+  triggerDrag(wrapper.find('.buri-picker-column'), -5, -100);
+  wrapper.find('.buri-picker-column ul').trigger('transitionend');
   expect(wrapper.emitted('change')[0][1]).toEqual('1995');
 });
 
@@ -181,7 +181,7 @@ test('click column\'s item', () => {
     }
   });
 
-  wrapper.findAll('.van-picker-column__item').at(3).trigger('click');
+  wrapper.findAll('.buri-picker-column__item').at(3).trigger('click');
   expect(wrapper.emitted('change')[0][1]).toEqual(columns[1]);
 });
 

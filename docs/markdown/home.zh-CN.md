@@ -1,7 +1,7 @@
 <div class="card">
-  <div class="van-doc-intro">
-    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
+  <div class="buri-doc-intro">
+    <img class="buri-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/buri/logo.png">
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Burit</h2>
     <p>轻量、可靠的移动端 Vue 组件库</p>
   </div>
 </div>
@@ -25,7 +25,7 @@
 
 修改代码请阅读我们的 [开发指南](#/zh-CN/contribution)
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/youzan/vant/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/youzan/vant/pulls)
+使用过程中发现任何问题都可以提 [Issue](https://github.com/flykizz/buri/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/flykizz/buri/pulls)
 
 ### 浏览器支持
 
@@ -41,17 +41,17 @@
 
 我们正在寻找更多优秀的小伙伴，一起拓展前端技术的边界，期待你的加入！
 
-- <a target="_blank" href="https://app.mokahr.com/apply/youzan/6252#/job/96f5d2c7-e657-4d31-9244-195edc443a7f?_k=jf2141">职位详情</a>（Base: 杭州/深圳）
-- <a target="_blank" href="https://tech.youzan.com/tag/front-end/">团队博客</a>
-- <a target="_blank" href="https://github.com/youzan">开源项目</a>
+- <a target="_blank" href="https://app.mokahr.com/apply/flykizz/6252#/job/96f5d2c7-e657-4d31-9244-195edc443a7f?_k=jf2141">职位详情</a>（Base: 杭州/深圳）
+- <a target="_blank" href="https://tech.flykizz.com/tag/front-end/">团队博客</a>
+- <a target="_blank" href="https://github.com/flykizz">开源项目</a>
 
 ### 链接
 
-* [意见反馈](https://github.com/youzan/vant/issues)
+* [意见反馈](https://github.com/flykizz/buri/issues)
 * [更新日志](#/zh-CN/changelog)
-* [码云镜像](https://gitee.com/organizations/vant-contrib)
-* [Vant 示例仓库](https://github.com/youzan/vant-demo)
-* [VantWeapp 小程序组件](https://github.com/youzan/vant-weapp)
+* [码云镜像](https://gitee.com/organizations/buri-contrib)
+* [Burit 示例仓库](https://github.com/flykizz/buri-demo)
+* [BuritWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
 
 ### 开源协议
 

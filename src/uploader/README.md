@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Uploader } from 'vant';
+import { Uploader } from 'buri';
 
 Vue.use(Uploader);
 ```
@@ -14,7 +14,7 @@ Vue.use(Uploader);
 ### Basic Usage
 
 ```html
-<van-uploader :after-read="afterRead" />
+<buri-uploader :after-read="afterRead" />
 ```
 
 ```javascript
@@ -30,7 +30,7 @@ export default {
 ### Preview File
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<buri-uploader v-model="fileList" multiple />
 ```
 
 ```javascript
@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       fileList: [
-        { url: 'https://img.yzcdn.cn/vant/leaf.jpg' }
+        { url: 'https://img.yzcdn.cn/buri/leaf.jpg' }
       ]
     }
   }
@@ -48,7 +48,7 @@ export default {
 ### Max Count
 
 ```html
-<van-uploader
+<buri-uploader
   v-model="fileList"
   multiple
   :max-count="2"
@@ -68,15 +68,15 @@ export default {
 ### Upload Style
 
 ```html
-<van-uploader>
-  <van-button icon="photo" type="primary">Upload Image</van-button>
-</van-uploader>
+<buri-uploader>
+  <buri-button icon="photo" type="primary">Upload Image</buri-button>
+</buri-uploader>
 ```
 
 ### Before Read
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<buri-uploader :before-read="beforeRead" />
 ```
 
 ```js

@@ -8,7 +8,7 @@ The SwitchCell component will be deprecated in version 3.0. Please use the Cell 
 
 ``` javascript
 import Vue from 'vue';
-import { SwitchCell } from 'vant';
+import { SwitchCell } from 'buri';
 
 Vue.use(SwitchCell);
 ```
@@ -18,9 +18,9 @@ Vue.use(SwitchCell);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" title="Title" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" title="Title" />
+</buri-cell-group>
 ```
 
 ```javascript
@@ -38,9 +38,9 @@ export default {
 use `disabled` property to disable the component
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" disabled title="Title" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" disabled title="Title" />
+</buri-cell-group>
 ```
 
 ### Loading
@@ -48,9 +48,9 @@ use `disabled` property to disable the component
 use `loading` property to keep component in loading state
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" loading title="Title" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" loading title="Title" />
+</buri-cell-group>
 ```
 
 ## API

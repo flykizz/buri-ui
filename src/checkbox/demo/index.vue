@@ -1,84 +1,84 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-checkbox v-model="checkbox1">{{ $t('checkbox') }}</van-checkbox>
+      <buri-checkbox v-model="checkbox1">{{ $t('checkbox') }}</buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-checkbox :value="false" disabled>
+      <buri-checkbox :value="false" disabled>
         {{ $t('checkbox') }}
-      </van-checkbox>
-      <van-checkbox :value="true" disabled>
+      </buri-checkbox>
+      <buri-checkbox :value="true" disabled>
         {{ $t('checkbox') }}
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('disabledLabelClick')">
-      <van-checkbox v-model="checkboxLabel" label-disabled>
+      <buri-checkbox v-model="checkboxLabel" label-disabled>
         {{ $t('checkbox') }}
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('customShape')">
-      <van-checkbox v-model="checkboxShape" shape="square">
+      <buri-checkbox v-model="checkboxShape" shape="square">
         {{ $t('customColor') }}
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('customColor')">
-      <van-checkbox v-model="checkbox2" checked-color="#07c160">
+      <buri-checkbox v-model="checkbox2" checked-color="#07c160">
         {{ $t('customColor') }}
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('customIconSize')">
-      <van-checkbox v-model="checboxIcon" icon-size="24px">
+      <buri-checkbox v-model="checboxIcon" icon-size="24px">
         {{ $t('customIconSize') }}
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('customIcon')">
-      <van-checkbox v-model="checkbox3">
+      <buri-checkbox v-model="checkbox3">
         {{ $t('customIcon') }}
         <template #icon="{ checked }">
           <img :src="checked ? activeIcon : inactiveIcon">
         </template>
-      </van-checkbox>
+      </buri-checkbox>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-checkbox-group v-model="result">
-        <van-checkbox name="a">{{ $t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ $t('checkbox') }} b</van-checkbox>
-        <van-checkbox name="c">{{ $t('checkbox') }} c</van-checkbox>
-      </van-checkbox-group>
+      <buri-checkbox-group v-model="result">
+        <buri-checkbox name="a">{{ $t('checkbox') }} a</buri-checkbox>
+        <buri-checkbox name="b">{{ $t('checkbox') }} b</buri-checkbox>
+        <buri-checkbox name="c">{{ $t('checkbox') }} c</buri-checkbox>
+      </buri-checkbox-group>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-checkbox-group v-model="result2" :max="2">
-        <van-checkbox name="a">{{ $t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ $t('checkbox') }} b</van-checkbox>
-        <van-checkbox name="c">{{ $t('checkbox') }} c</van-checkbox>
-      </van-checkbox-group>
+      <buri-checkbox-group v-model="result2" :max="2">
+        <buri-checkbox name="a">{{ $t('checkbox') }} a</buri-checkbox>
+        <buri-checkbox name="b">{{ $t('checkbox') }} b</buri-checkbox>
+        <buri-checkbox name="c">{{ $t('checkbox') }} c</buri-checkbox>
+      </buri-checkbox-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('toggleAll')">
-      <van-checkbox-group v-model="checkAllResult" ref="group">
-        <van-checkbox name="a">{{ $t('checkbox') }} a</van-checkbox>
-        <van-checkbox name="b">{{ $t('checkbox') }} b</van-checkbox>
-        <van-checkbox name="c">{{ $t('checkbox') }} c</van-checkbox>
-      </van-checkbox-group>
+      <buri-checkbox-group v-model="checkAllResult" ref="group">
+        <buri-checkbox name="a">{{ $t('checkbox') }} a</buri-checkbox>
+        <buri-checkbox name="b">{{ $t('checkbox') }} b</buri-checkbox>
+        <buri-checkbox name="c">{{ $t('checkbox') }} c</buri-checkbox>
+      </buri-checkbox-group>
 
       <div class="demo-checkbox-buttons">
-        <van-button type="primary" @click="checkAll">{{ $t('checkAll') }}</van-button>
-        <van-button type="info" @click="toggleAll">{{ $t('inverse') }}</van-button>
+        <buri-button type="primary" @click="checkAll">{{ $t('checkAll') }}</buri-button>
+        <buri-button type="info" @click="toggleAll">{{ $t('inverse') }}</buri-button>
       </div>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-checkbox-group v-model="result3">
-        <van-cell-group>
-          <van-cell
+      <buri-checkbox-group v-model="result3">
+        <buri-cell-group>
+          <buri-cell
             v-for="(item, index) in list"
             clickable
             :key="index"
@@ -86,11 +86,11 @@
             @click="toggle(index)"
           >
             <template #right-icon>
-              <van-checkbox ref="checkboxes" :name="item" />
+              <buri-checkbox ref="checkboxes" :name="item" />
             </template>
-          </van-cell>
-        </van-cell-group>
-      </van-checkbox-group>
+          </buri-cell>
+        </buri-cell-group>
+      </buri-checkbox-group>
     </demo-block>
   </demo-section>
 </template>
@@ -145,8 +145,8 @@ export default {
       result2: [],
       result3: [],
       checkAllResult: [],
-      activeIcon: 'https://img.yzcdn.cn/vant/user-active.png',
-      inactiveIcon: 'https://img.yzcdn.cn/vant/user-inactive.png'
+      activeIcon: 'https://img.yzcdn.cn/buri/user-active.png',
+      inactiveIcon: 'https://img.yzcdn.cn/buri/user-inactive.png'
     };
   },
 
@@ -172,12 +172,12 @@ export default {
 .demo-checkbox {
   background: @white;
 
-  .van-checkbox {
+  .buri-checkbox {
     margin: 10px 0 0 20px;
   }
 
-  .van-cell {
-    .van-checkbox {
+  .buri-cell {
+    .buri-checkbox {
       margin: 0;
     }
   }
@@ -189,7 +189,7 @@ export default {
   &-buttons {
     margin-top: @padding-md;
 
-    .van-button {
+    .buri-button {
       margin-left: @padding-md;
     }
   }

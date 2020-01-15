@@ -1,5 +1,5 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class Area extends VanComponent {
+export class Area extends BuriComponent {
   reset(code?: string): void;
 }

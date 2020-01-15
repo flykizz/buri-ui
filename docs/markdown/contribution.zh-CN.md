@@ -2,9 +2,9 @@
 
 ### 介绍
 
-感谢你使用 Vant。
+感谢你使用 Burit。
 
-以下是关于向 Vant 提交反馈或代码的指南。在向 Vant 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
+以下是关于向 Burit 提交反馈或代码的指南。在向 Burit 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
 
 ### Issue 规范
 
@@ -15,14 +15,14 @@
 
 ### 本地开发
 
-按照下面的步骤操作，即可在本地开发 Vant 组件
+按照下面的步骤操作，即可在本地开发 Burit 组件
 
 ```bash
 # 克隆仓库
-git clone git@github.com:youzan/vant.git
+git clone git@github.com:flykizz/buri.git
 
 # 安装依赖
-cd vant && npm run bootstrap
+cd buri && npm run bootstrap
 
 # 进入开发模式，浏览器访问 http://localhost:8080
 npm run dev
@@ -36,7 +36,7 @@ npm run dev
 项目主要目录如下：
 
 ```
-vant
+buri
 ├─ build     # 构建
 ├─ docs      # 文档
 ├─ src       # 组件
@@ -47,7 +47,7 @@ vant
 
 ### 添加新组件
 
-添加新组件时，请按照下面的目录结构组织文件，并在 `vant.config.js` 中配置组件名称
+添加新组件时，请按照下面的目录结构组织文件，并在 `buri.config.js` 中配置组件名称
 
 ```
 src
@@ -74,7 +74,7 @@ src
 2. 基于 fork 后仓库的 dev 分支新建一个分支，比如`feature/button_color`
 3. 在新分支上进行开发，开发完成后，提 Pull Request 到主仓库的 dev 分支
 4. Pull Request 会在 Review 通过后被合并到主仓库
-5. 等待 Vant 发布版本，一般是每周一次
+5. 等待 Burit 发布版本，一般是每周一次
 
 ### 同步最新代码
 
@@ -82,7 +82,7 @@ src
 
 ```bash
 # 添加主仓库到 remote，作为 fork 后仓库的上游仓库
-git remote add upstream https://github.com/youzan/vant.git
+git remote add upstream https://github.com/flykizz/buri.git
 
 # 拉取主仓库最新代码
 git fetch upstream

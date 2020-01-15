@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VanDialog from './Dialog';
+import BuriDialog from './Dialog';
 import { isServer } from '../utils';
 
 let instance;
@@ -13,7 +13,7 @@ function initInstance() {
     instance.$destroy();
   }
 
-  instance = new (Vue.extend(VanDialog))({
+  instance = new (Vue.extend(BuriDialog))({
     el: document.createElement('div'),
     // avoid missing animation when first rendered
     propsData: {
@@ -52,7 +52,7 @@ Dialog.defaultOptions = {
   overlay: true,
   className: '',
   lockScroll: true,
-  transition: 'van-dialog-bounce',
+  transition: 'buri-dialog-bounce',
   beforeClose: null,
   overlayClass: '',
   overlayStyle: null,
@@ -95,10 +95,10 @@ Dialog.resetDefaultOptions = () => {
 Dialog.resetDefaultOptions();
 
 Dialog.install = () => {
-  Vue.use(VanDialog);
+  Vue.use(BuriDialog);
 };
 
-Dialog.Component = VanDialog;
+Dialog.Component = BuriDialog;
 
 Vue.prototype.$dialog = Dialog;
 

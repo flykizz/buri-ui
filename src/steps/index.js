@@ -5,7 +5,7 @@ import { ParentMixin } from '../mixins/relation';
 const [createComponent, bem] = createNamespace('steps');
 
 export default createComponent({
-  mixins: [ParentMixin('vanSteps')],
+  mixins: [ParentMixin('buriSteps')],
 
   props: {
     inactiveIcon: String,

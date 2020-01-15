@@ -21,7 +21,7 @@ const [createComponent, bem] = createNamespace('tabs');
 
 export default createComponent({
   mixins: [
-    ParentMixin('vanTabs'),
+    ParentMixin('buriTabs'),
     BindEventMixin(function(bind) {
       bind(window, 'resize', this.resize, true);
       if (this.scrollspy) {

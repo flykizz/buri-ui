@@ -1,27 +1,27 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-button type="primary" :text="$t('title1')" @click="$toast($t('text'))" />
-      <van-button type="primary" :text="$t('longTextButton')" @click="$toast($t('longText'))" />
+      <buri-button type="primary" :text="$t('title1')" @click="$toast($t('text'))" />
+      <buri-button type="primary" :text="$t('longTextButton')" @click="$toast($t('longText'))" />
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-button type="primary" :text="$t('title2')" @click="showLoadingToast()" />
-      <van-button type="primary" :text="$t('loadingType')" @click="showLoadingToast('spinner')" />
+      <buri-button type="primary" :text="$t('title2')" @click="showLoadingToast()" />
+      <buri-button type="primary" :text="$t('loadingType')" @click="showLoadingToast('spinner')" />
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-button type="info" :text="$t('success')" @click="showSuccessToast" />
-      <van-button type="danger" :text="$t('fail')" @click="showFailToast" />
+      <buri-button type="info" :text="$t('success')" @click="showSuccessToast" />
+      <buri-button type="danger" :text="$t('fail')" @click="showFailToast" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('customIcon')">
-      <van-button type="primary" :text="$t('customIcon')" @click="showIconToast" />
-      <van-button type="primary" :text="$t('customImage')" @click="showImageToast" />
+      <buri-button type="primary" :text="$t('customIcon')" @click="showIconToast" />
+      <buri-button type="primary" :text="$t('customImage')" @click="showImageToast" />
     </demo-block>
 
     <demo-block :title="$t('updateMessage')">
-      <van-button type="primary" :text="$t('updateMessage')" @click="showCustomizedToast" />
+      <buri-button type="primary" :text="$t('updateMessage')" @click="showCustomizedToast" />
     </demo-block>
   </demo-section>
 </template>
@@ -92,7 +92,7 @@ export default {
     showImageToast() {
       this.$toast({
         message: this.$t('customImage'),
-        icon: 'https://img.yzcdn.cn/vant/logo.png'
+        icon: 'https://img.yzcdn.cn/buri/logo.png'
       });
     },
 
@@ -124,7 +124,7 @@ export default {
 .demo-toast {
   background-color: @white;
 
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 }

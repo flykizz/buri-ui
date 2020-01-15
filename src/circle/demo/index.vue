@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-circle
+      <buri-circle
         v-model="currentRate1"
         :rate="rate"
         :speed="100"
@@ -10,7 +10,7 @@
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-circle
+      <buri-circle
         v-model="currentRate3"
         :rate="rate"
         :speed="100"
@@ -18,7 +18,7 @@
         :text="$t('customWidth')"
       />
 
-      <van-circle
+      <buri-circle
         v-model="currentRate3"
         color="#ee0a24"
         :rate="rate"
@@ -27,7 +27,7 @@
         :text="$t('customColor')"
       />
 
-      <van-circle
+      <buri-circle
         v-model="currentRate2"
         :rate="rate"
         :speed="100"
@@ -35,7 +35,7 @@
         :text="$t('gradient')"
       />
 
-      <van-circle
+      <buri-circle
         v-model="currentRate4"
         color="#07c160"
         :rate="rate"
@@ -45,7 +45,7 @@
         style="margin-top: 15px;"
       />
 
-      <van-circle
+      <buri-circle
         v-model="currentRate4"
         color="#7232dd"
         :rate="rate"
@@ -58,13 +58,13 @@
     </demo-block>
 
     <div style="margin-top: 15px;">
-      <van-button
+      <buri-button
         :text="$t('add')"
         type="primary"
         size="small"
         @click="add"
       />
-      <van-button
+      <buri-button
         :text="$t('decrease')"
         type="danger"
         size="small"
@@ -127,11 +127,11 @@ export default {
 @import "../../style/var";
 
 .demo-circle {
-  .van-circle {
+  .buri-circle {
     margin-left: @padding-md;
   }
 
-  .van-button {
+  .buri-button {
     margin: @padding-md 0 0 10px;
 
     &:first-of-type {

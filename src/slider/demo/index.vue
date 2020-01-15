@@ -1,14 +1,14 @@
 <template>
   <demo-section>
     <demo-block :title="$t('title1')">
-      <van-slider
+      <buri-slider
         v-model="value1"
         @change="onChange"
       />
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-slider
+      <buri-slider
         v-model="value2"
         :min="-50"
         :max="50"
@@ -17,14 +17,14 @@
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-slider
+      <buri-slider
         v-model="value3"
         disabled
       />
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-slider
+      <buri-slider
         v-model="value4"
         :step="10"
         @change="onChange"
@@ -32,7 +32,7 @@
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-slider
+      <buri-slider
         v-model="value5"
         bar-height="4px"
         active-color="#ee0a24"
@@ -41,19 +41,19 @@
     </demo-block>
 
     <demo-block :title="$t('customButton')">
-      <van-slider
+      <buri-slider
         v-model="value6"
         active-color="#ee0a24"
       >
         <template #button>
           <div class="custom-button">{{ value6 }}</div>
         </template>
-      </van-slider>
+      </buri-slider>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('vertical')">
       <div :style="{ height: '120px', paddingLeft: '30px' }">
-        <van-slider
+        <buri-slider
           v-model="value7"
           vertical
           @change="onChange"
@@ -115,7 +115,7 @@ export default {
   background: @white;
   user-select: none;
 
-  .van-slider {
+  .buri-slider {
     margin: 0 @padding-md @padding-xl;
   }
 
@@ -129,7 +129,7 @@ export default {
     border-radius: 100px;
   }
 
-  .van-doc-demo-block__title {
+  .buri-doc-demo-block__title {
     padding-top: 25px;
   }
 }

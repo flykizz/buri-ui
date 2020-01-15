@@ -4,7 +4,7 @@ import { ParentMixin } from '../mixins/relation';
 const [createComponent, bem] = createNamespace('goods-action');
 
 export default createComponent({
-  mixins: [ParentMixin('vanGoodsAction')],
+  mixins: [ParentMixin('buriGoodsAction')],
 
   props: {
     safeAreaInsetBottom: Boolean

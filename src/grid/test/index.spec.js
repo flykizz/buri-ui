@@ -4,16 +4,16 @@ test('click grid item', () => {
   const onClick = jest.fn();
   const wrapper = mount({
     template: `
-      <van-grid>
-        <van-grid-item @click="onClick" />
-      </van-grid>
+      <buri-grid>
+        <buri-grid-item @click="onClick" />
+      </buri-grid>
     `,
     methods: {
       onClick
     }
   });
 
-  const Item = wrapper.find('.van-grid-item__content');
+  const Item = wrapper.find('.buri-grid-item__content');
   Item.trigger('click');
 
   expect(onClick).toHaveBeenCalledTimes(1);
@@ -22,11 +22,11 @@ test('click grid item', () => {
 test('sqaure and set gutter', () => {
   const wrapper = mount({
     template: `
-      <van-grid square :column-num="2" gutter="10rem">
-        <van-grid-item />
-        <van-grid-item />
-        <van-grid-item />
-      </van-grid>
+      <buri-grid square :column-num="2" gutter="10rem">
+        <buri-grid-item />
+        <buri-grid-item />
+        <buri-grid-item />
+      </buri-grid>
     `
   });
 
@@ -36,9 +36,9 @@ test('sqaure and set gutter', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <van-grid icon-size="10">
-        <van-grid-item icon="success" />
-      </van-grid>
+      <buri-grid icon-size="10">
+        <buri-grid-item icon="success" />
+      </buri-grid>
     `
   });
 
@@ -48,11 +48,11 @@ test('icon-size prop', () => {
 test('render icon-slot', () => {
   const wrapper = mount({
     template: `
-      <van-grid icon-size="10">
-        <van-grid-item info="1">
+      <buri-grid icon-size="10">
+        <buri-grid-item info="1">
           <div slot="icon" />
-        </van-grid-item>
-      </van-grid>
+        </buri-grid-item>
+      </buri-grid>
     `
   });
 

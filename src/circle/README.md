@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Circle } from 'vant';
+import { Circle } from 'buri';
 
 Vue.use(Circle);
 ```
@@ -14,7 +14,7 @@ Vue.use(Circle);
 ### Basic Usage
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="30"
   :speed="100"
@@ -40,7 +40,7 @@ export default {
 ### Custom Width
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -51,7 +51,7 @@ export default {
 ### Custom Color
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -62,7 +62,7 @@ export default {
 ### Gradient
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -87,7 +87,7 @@ export default {
 ### Counter Clockwise
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -98,7 +98,7 @@ export default {
 ### Custom Size
 
 ```html
-<van-circle
+<buri-circle
   v-model="currentRate"
   :rate="rate"
   size="120px"

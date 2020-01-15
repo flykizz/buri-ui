@@ -1,5 +1,5 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 
-export class CheckboxGroup extends VanComponent {
+export class CheckboxGroup extends BuriComponent {
   toggleAll(checked?: boolean): void;
 }

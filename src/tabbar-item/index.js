@@ -7,7 +7,7 @@ import { ChildrenMixin } from '../mixins/relation';
 const [createComponent, bem] = createNamespace('tabbar-item');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanTabbar')],
+  mixins: [ChildrenMixin('buriTabbar')],
 
   props: {
     ...routeProps,

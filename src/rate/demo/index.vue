@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-rate v-model="value1" />
+      <buri-rate v-model="value1" />
     </demo-block>
 
     <demo-block :title="$t('customIcon')">
-      <van-rate
+      <buri-rate
         v-model="value2"
         icon="like"
         void-icon="like-o"
@@ -13,7 +13,7 @@
     </demo-block>
 
     <demo-block :title="$t('customStyle')">
-      <van-rate
+      <buri-rate
         v-model="value3"
         :size="25"
         color="#ee0a24"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block :title="$t('halfStar')">
-      <van-rate
+      <buri-rate
         v-model="value4"
         :size="25"
         allow-half
@@ -33,21 +33,21 @@
     </demo-block>
 
     <demo-block :title="$t('customCount')">
-      <van-rate
+      <buri-rate
         v-model="value5"
         :count="6"
       />
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-rate
+      <buri-rate
         v-model="value6"
         disabled
       />
     </demo-block>
 
     <demo-block :title="$t('readonly')">
-      <van-rate
+      <buri-rate
         v-model="value6"
         readonly
       />
@@ -96,7 +96,7 @@ export default {
   padding-bottom: 20px;
   background-color: #fff;
 
-  .van-rate {
+  .buri-rate {
     margin-left: @padding-md;
   }
 }

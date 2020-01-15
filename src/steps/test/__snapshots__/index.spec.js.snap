@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`icon slot 1`] = `
-<div class="van-steps van-steps--horizontal">
-  <div class="van-steps__items">
-    <div class="van-hairline van-step van-step--horizontal van-step--finish">
-      <div class="van-step__title">
+<div class="buri-steps buri-steps--horizontal">
+  <div class="buri-steps__items">
+    <div class="buri-hairline buri-step buri-step--horizontal buri-step--finish">
+      <div class="buri-step__title">
         A
       </div>
-      <div class="van-step__circle-container">Custim Inactive Icon</div>
-      <div class="van-step__line"></div>
+      <div class="buri-step__circle-container">Custim Inactive Icon</div>
+      <div class="buri-step__line"></div>
     </div>
-    <div class="van-hairline van-step van-step--horizontal van-step--process">
-      <div class="van-step__title" style="color: rgb(7, 193, 96);">
+    <div class="buri-hairline buri-step buri-step--horizontal buri-step--process">
+      <div class="buri-step__title" style="color: rgb(7, 193, 96);">
         B
       </div>
-      <div class="van-step__circle-container">Custim Active Icon</div>
-      <div class="van-step__line"></div>
+      <div class="buri-step__circle-container">Custim Active Icon</div>
+      <div class="buri-step__line"></div>
     </div>
-    <div class="van-hairline van-step van-step--horizontal">
-      <div class="van-step__title">
+    <div class="buri-hairline buri-step buri-step--horizontal">
+      <div class="buri-step__title">
         C
       </div>
-      <div class="van-step__circle-container">Custim Inactive Icon</div>
-      <div class="van-step__line"></div>
+      <div class="buri-step__circle-container">Custim Inactive Icon</div>
+      <div class="buri-step__line"></div>
     </div>
   </div>
 </div>

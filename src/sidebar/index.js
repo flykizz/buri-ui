@@ -4,7 +4,7 @@ import { ParentMixin } from '../mixins/relation';
 const [createComponent, bem] = createNamespace('sidebar');
 
 export default createComponent({
-  mixins: [ParentMixin('vanSidebar')],
+  mixins: [ParentMixin('buriSidebar')],
 
   model: {
     prop: 'activeKey'

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Dialog } from 'vant';
+import { Dialog } from 'buri';
 
 Vue.use(Dialog);
 ```
@@ -77,18 +77,18 @@ export default {
 }
 ```
 
-### Advanced Usage
+### Adburiced Usage
 
 If you need to render vue components within a dialog, you can use dialog component.
 
 ```html
-<van-dialog
+<buri-dialog
   v-model="show"
   title="Title"
   show-cancel-button
 >
-  <img src="https://img.yzcdn.cn/vant/apple-3.jpg">
-</van-dialog>
+  <img src="https://img.yzcdn.cn/buri/apple-3.jpg">
+</buri-dialog>
 ```
 
 ```js

@@ -4,7 +4,7 @@ import { mount, later, triggerDrag, mockScrollTop } from '../../../test';
 function createWrapper(options = {}) {
   return mount({
     template: `
-      <van-tabs
+      <buri-tabs
         :color="color"
         :type="type"
         :sticky="sticky"
@@ -13,10 +13,10 @@ function createWrapper(options = {}) {
         @change="onChange"
       >
         ${options.extraTemplate || ''}
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+        <buri-tab title="title1">Text</buri-tab>
+        <buri-tab title="title2">Text</buri-tab>
+        <buri-tab title="title3" disabled>Text</buri-tab>
+      </buri-tabs>
     `,
     data() {
       return {
@@ -35,11 +35,11 @@ test('click to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <buri-tabs @change="onChange">
+        <buri-tab title="title1">Text</buri-tab>
+        <buri-tab title="title2">Text</buri-tab>
+        <buri-tab title="title3" disabled>Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onChange
@@ -49,7 +49,7 @@ test('click to switch tab', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
   tabs.at(1).trigger('click');
   tabs.at(2).trigger('click');
   await later();
@@ -61,18 +61,18 @@ test('swipe to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs swipeable @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <buri-tabs swipeable @change="onChange">
+        <buri-tab title="title1">Text</buri-tab>
+        <buri-tab title="title2">Text</buri-tab>
+        <buri-tab title="title3" disabled>Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onChange
     }
   });
 
-  const content = wrapper.find('.van-tabs__content');
+  const content = wrapper.find('.buri-tabs__content');
   await later();
   expect(wrapper).toMatchSnapshot();
 
@@ -148,10 +148,10 @@ test('click event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick" @disabled="onDisabled">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2" disabled>Text</van-tab>
-      </van-tabs>
+      <buri-tabs @click="onClick" @disabled="onDisabled">
+        <buri-tab title="title1">Text</buri-tab>
+        <buri-tab title="title2" disabled>Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onClick,
@@ -159,7 +159,7 @@ test('click event', async () => {
     }
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
 
   tabs.at(0).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title1');
@@ -175,11 +175,11 @@ test('name prop', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
-        <van-tab title="title1" name="a">Text</van-tab>
-        <van-tab title="title2" name="b">Text</van-tab>
-        <van-tab title="title3" name="c" disabled>Text</van-tab>
-      </van-tabs>
+      <buri-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
+        <buri-tab title="title1" name="a">Text</buri-tab>
+        <buri-tab title="title2" name="b">Text</buri-tab>
+        <buri-tab title="title3" name="c" disabled>Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onClick,
@@ -191,7 +191,7 @@ test('name prop', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
   tabs.at(1).trigger('click');
 
   expect(onClick).toHaveBeenCalledWith('b', 'title2');
@@ -208,17 +208,17 @@ test('set name to zero', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick">
-        <van-tab title="title1" :name="1">Text</van-tab>
-        <van-tab title="title2" :name="0">Text</van-tab>
-      </van-tabs>
+      <buri-tabs @click="onClick">
+        <buri-tab title="title1" :name="1">Text</buri-tab>
+        <buri-tab title="title2" :name="0">Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onClick
     }
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
   tabs.at(1).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title2');
 });
@@ -226,21 +226,21 @@ test('set name to zero', async () => {
 test('title-style prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab title="title1" title-style="color: red;">Text</van-tab>
-      </van-tabs>
+      <buri-tabs>
+        <buri-tab title="title1" title-style="color: red;">Text</buri-tab>
+      </buri-tabs>
     `
   });
 
-  expect(wrapper.find('.van-tab').element.style.color).toEqual('red');
+  expect(wrapper.find('.buri-tab').element.style.color).toEqual('red');
 });
 
 test('dot prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab dot>Text</van-tab>
-      </van-tabs>
+      <buri-tabs>
+        <buri-tab dot>Text</buri-tab>
+      </buri-tabs>
     `
   });
 
@@ -250,9 +250,9 @@ test('dot prop', () => {
 test('info prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab info="10">Text</van-tab>
-      </van-tabs>
+      <buri-tabs>
+        <buri-tab info="10">Text</buri-tab>
+      </buri-tabs>
     `
   });
 
@@ -265,11 +265,11 @@ test('scrollspy', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs scrollspy sticky @change="onChange">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Text</van-tab>
-        <van-tab name="c" title="title3">Text</van-tab>
-      </van-tabs>
+      <buri-tabs scrollspy sticky @change="onChange">
+        <buri-tab name="a" title="title1">Text</buri-tab>
+        <buri-tab name="b" title="title2">Text</buri-tab>
+        <buri-tab name="c" title="title3">Text</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onChange
@@ -279,7 +279,7 @@ test('scrollspy', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
   tabs.at(2).trigger('click');
   expect(onChange).toHaveBeenCalledWith('c', 'title3');
 
@@ -294,10 +294,10 @@ test('rendered event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs v-model="active" @rendered="onRendered">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Title2</van-tab>
-      </van-tabs>
+      <buri-tabs v-model="active" @rendered="onRendered">
+        <buri-tab name="a" title="title1">Text</buri-tab>
+        <buri-tab name="b" title="title2">Title2</buri-tab>
+      </buri-tabs>
     `,
     data() {
       return {
@@ -311,9 +311,9 @@ test('rendered event', async () => {
 
   await later();
   expect(onRendered).toHaveBeenCalledWith('a', 'title1');
-  expect(wrapper.find('.van-tab__pane')).toMatchSnapshot();
+  expect(wrapper.find('.buri-tab__pane')).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.buri-tab');
   tabs.at(1).trigger('click');
   tabs.at(0).trigger('click');
 
@@ -326,10 +326,10 @@ test('should not trigger rendered event when disable lazy-render', async () => {
 
   mount({
     template: `
-      <van-tabs :lazy-render="false" @rendered="onRendered">
-        <van-tab>Text</van-tab>
-        <van-tab>Title2</van-tab>
-      </van-tabs>
+      <buri-tabs :lazy-render="false" @rendered="onRendered">
+        <buri-tab>Text</buri-tab>
+        <buri-tab>Title2</buri-tab>
+      </buri-tabs>
     `,
     methods: {
       onRendered

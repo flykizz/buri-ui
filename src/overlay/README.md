@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Overlay } from 'vant';
+import { Overlay } from 'buri';
 
 Vue.use(Overlay);
 ```
@@ -14,9 +14,9 @@ Vue.use(Overlay);
 ### Basic Usage
 
 ```html
-<van-button type="primary" text="Show Overlay" @click="show = true" />
+<buri-button type="primary" text="Show Overlay" @click="show = true" />
 
-<van-overlay :show="show" @click="show = false" />
+<buri-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -32,11 +32,11 @@ export default {
 ### Embedded Content
 
 ```html
-<van-overlay :show="show" @click="show = false">
+<buri-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</buri-overlay>
 
 <style>
 .wrapper {

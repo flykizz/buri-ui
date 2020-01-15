@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'buri';
 
 Vue.use(DropdownMenu).use(DropdownItem);
 ```
@@ -14,10 +14,10 @@ Vue.use(DropdownMenu).use(DropdownItem);
 ### Basic Usage
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<buri-dropdown-menu>
+  <buri-dropdown-item v-model="value1" :options="option1" />
+  <buri-dropdown-item v-model="value2" :options="option2" />
+</buri-dropdown-menu>
 ```
 
 ```js
@@ -44,14 +44,14 @@ export default {
 ### Custom Content
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="Title" ref="item">
-    <van-switch-cell v-model="switch1" title="Title" />
-    <van-switch-cell v-model="switch2" title="Title" />
-    <van-button block type="info" @click="onConfirm">Confirm</van-button>
-  </van-dropdown-item>
-</van-dropdown-menu>
+<buri-dropdown-menu>
+  <buri-dropdown-item v-model="value" :options="option" />
+  <buri-dropdown-item title="Title" ref="item">
+    <buri-switch-cell v-model="switch1" title="Title" />
+    <buri-switch-cell v-model="switch2" title="Title" />
+    <buri-button block type="info" @click="onConfirm">Confirm</buri-button>
+  </buri-dropdown-item>
+</buri-dropdown-menu>
 ```
 
 ```js
@@ -82,28 +82,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options
 
 ```html
-<van-dropdown-menu active-color="#ee0a24">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<buri-dropdown-menu active-color="#ee0a24">
+  <buri-dropdown-item v-model="value1" :options="option1" />
+  <buri-dropdown-item v-model="value2" :options="option2" />
+</buri-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<buri-dropdown-menu direction="up">
+  <buri-dropdown-item v-model="value1" :options="option1" />
+  <buri-dropdown-item v-model="value2" :options="option2" />
+</buri-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<buri-dropdown-menu>
+  <buri-dropdown-item v-model="value1" disabled :options="option1" />
+  <buri-dropdown-item v-model="value2" disabled :options="option2" />
+</buri-dropdown-menu>
 ```
 
 ## API

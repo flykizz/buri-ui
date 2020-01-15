@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Cell, CellGroup } from 'vant';
+import { Cell, CellGroup } from 'buri';
 
 Vue.use(Cell).use(CellGroup);
 ```
@@ -14,90 +14,90 @@ Vue.use(Cell).use(CellGroup);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" />
-  <van-cell title="Cell title" value="Content" label="Description" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell title="Cell title" value="Content" />
+  <buri-cell title="Cell title" value="Content" label="Description" />
+</buri-cell-group>
 ```
 
 ### Size
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" size="large" />
-  <van-cell title="Cell title" value="Content" size="large" label="Description" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell title="Cell title" value="Content" size="large" />
+  <buri-cell title="Cell title" value="Content" size="large" label="Description" />
+</buri-cell-group>
 ```
 
 ### Left Icon
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" icon="location-o" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell title="Cell title" icon="location-o" />
+</buri-cell-group>
 ```
 
 ### Value only
 
 ```html
-<van-cell-group>
-  <van-cell value="Content" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell value="Content" />
+</buri-cell-group>
 ```
 
 ### Link
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" is-link />
-  <van-cell title="Cell title" is-link value="Content" />
-  <van-cell title="Cell title" is-link arrow-direction="down" value="Content" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell title="Cell title" is-link />
+  <buri-cell title="Cell title" is-link value="Content" />
+  <buri-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+</buri-cell-group>
 ```
 
 ### Router
 
 ```html
-<van-cell-group>
-  <van-cell title="URL" is-link url="/vant/mobile.html" />
-  <van-cell title="Vue Router" is-link to="index" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-cell title="URL" is-link url="/buri/mobile.html" />
+  <buri-cell title="Vue Router" is-link to="index" />
+</buri-cell-group>
 ```
 
 ### Group Title
 
 ```html
-<van-cell-group title="Group 1">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
-<van-cell-group title="Group 2">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
+<buri-cell-group title="Group 1">
+  <buri-cell title="Cell title" value="Content" />
+</buri-cell-group>
+<buri-cell-group title="Group 2">
+  <buri-cell title="Cell title" value="Content" />
+</buri-cell-group>
 ```
 
 ### Use Slots
 
 ```html
-<van-cell value="Content" is-link>
+<buri-cell value="Content" is-link>
   <template slot="title">
     <span class="custom-title">Cell title</span>
-    <van-tag type="danger">Tag</van-tag>
+    <buri-tag type="danger">Tag</buri-tag>
   </template>
-</van-cell>
+</buri-cell>
 
-<van-cell title="Cell title" icon="shop-o">
-  <van-icon
+<buri-cell title="Cell title" icon="shop-o">
+  <buri-icon
     slot="right-icon"
     name="search"
     style="line-height: inherit;"
   />
-</van-cell>
+</buri-cell>
 ```
 
 ### Vertical Center
 
 ```html
-<van-cell center title="Cell title" value="Content" label="Description" />
+<buri-cell center title="Cell title" value="Content" label="Description" />
 ```
 
 ## API

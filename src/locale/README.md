@@ -2,15 +2,15 @@
 
 ### Intro
 
-The default language of Vant is Chinese. If you want to use other languages, you can follow the instructions below.
+The default language of Burit is Chinese. If you want to use other languages, you can follow the instructions below.
 
 ### Switch languages
 
-Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
+Burit supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
 
 ```js
-import { Locale } from 'vant';
-import enUS from 'vant/lib/locale/lang/en-US';
+import { Locale } from 'buri';
+import enUS from 'buri/lib/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```
@@ -20,11 +20,11 @@ Locale.use('en-US', enUS);
 Use `Locale.add` method to modify the default configs.
 
 ```js
-import { Locale } from 'vant';
+import { Locale } from 'buri';
 
 const messages = {
   'en-US': {
-    vanPicker: {
+    buriPicker: {
       confirm: 'Close'
     }
   }
@@ -46,4 +46,4 @@ Current supported languages:
 | Turkish | tr-TR |
 | Spanish (Spain) | es-ES |
 
-> View all language configs [Here](https://github.com/youzan/vant/tree/dev/src/locale/lang).
+> View all language configs [Here](https://github.com/flykizz/buri/tree/dev/src/locale/lang).

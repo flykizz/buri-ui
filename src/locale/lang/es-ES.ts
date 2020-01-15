@@ -12,7 +12,7 @@ export default {
   nameInvalid: 'nombre inválido',
   confirmDelete: 'Estás seguro de eliminarlo?',
   telInvalid: 'Teléfono inválido',
-  vanCalendar: {
+  buriCalendar: {
     end: 'Fin',
     start: 'Comienzo',
     title: 'Calendario',
@@ -20,34 +20,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}/${month}`,
     rangePrompt: (maxRange: Number) => `Elija no más de ${maxRange} días`
   },
-  vanContactCard: {
+  buriContactCard: {
     addText: 'Añadir información de contacto'
   },
-  vanContactList: {
+  buriContactList: {
     addText: 'Añadir nuevo contacto'
   },
-  vanPagination: {
+  buriPagination: {
     prev: 'Anterior',
     next: 'Siguiente'
   },
-  vanPullRefresh: {
+  buriPullRefresh: {
     pulling: 'Tira para recargar...',
     loosing: 'Suelta para recargar...'
   },
-  vanSubmitBar: {
+  buriSubmitBar: {
     label: 'Total：'
   },
-  vanCoupon: {
+  buriCoupon: {
     unlimited: 'Ilimitado',
     discount: (discount: number) => `${discount * 10}% de descuento`,
     condition: (condition: number) => `Al menos ${condition}`
   },
-  vanCouponCell: {
+  buriCouponCell: {
     title: 'Cupón',
     tips: 'Sin cupones',
     count: (count: number) => `You have ${count} coupons`
   },
-  vanCouponList: {
+  buriCouponList: {
     empty: 'Sin cupones',
     exchange: 'Intercambio',
     close: 'Cerrar',
@@ -55,7 +55,7 @@ export default {
     disabled: 'No disponible',
     placeholder: 'Código del cupón'
   },
-  vanAddressEdit: {
+  buriAddressEdit: {
     area: 'Área',
     postal: 'Código Postal',
     areaEmpty: 'Por favor selecciona una área de recogida',
@@ -66,11 +66,11 @@ export default {
     namePlaceholder: 'Nombre',
     areaPlaceholder: 'Área'
   },
-  vanAddressEditDetail: {
+  buriAddressEditDetail: {
     label: 'Dirección',
     placeholder: 'Dirección'
   },
-  vanAddressList: {
+  buriAddressList: {
     add: 'Anadir dirección'
   }
 };

@@ -9,8 +9,8 @@ const mockFileDataUrl = 'data:image/test';
 const mockFile = new File([], 'test.jpg');
 const file = { target: { files: [mockFile] } };
 const multiFile = { target: { files: [mockFile, mockFile] } };
-const IMAGE = 'https://img.yzcdn.cn/vant/cat.jpeg';
-const PDF = 'https://img.yzcdn.cn/vant/test.pdf';
+const IMAGE = 'https://img.yzcdn.cn/buri/cat.jpeg';
+const PDF = 'https://img.yzcdn.cn/buri/test.pdf';
 
 window.FileReader = function() {
   this.readAsText = function() {
@@ -184,8 +184,8 @@ it('render preview image', async () => {
   const wrapper = mount(Uploader, {
     propsData: {
       fileList: [
-        { url: 'https://img.yzcdn.cn/vant/cat.jpeg' },
-        { url: 'https://img.yzcdn.cn/vant/test.pdf' },
+        { url: 'https://img.yzcdn.cn/buri/cat.jpeg' },
+        { url: 'https://img.yzcdn.cn/buri/test.pdf' },
         { file: { name: 'test.pdf' } }
       ]
     },
@@ -206,7 +206,7 @@ it('image-fit prop', () => {
   const wrapper = mount(Uploader, {
     propsData: {
       imageFit: 'contain',
-      fileList: [{ url: 'https://img.yzcdn.cn/vant/cat.jpeg' }]
+      fileList: [{ url: 'https://img.yzcdn.cn/buri/cat.jpeg' }]
     }
   });
 
@@ -277,10 +277,10 @@ it('deletable prop', () => {
     }
   });
 
-  expect(wrapper.find('.van-uploader__preview-delete').element).toBeTruthy();
+  expect(wrapper.find('.buri-uploader__preview-delete').element).toBeTruthy();
 
   wrapper.setProps({ deletable: false });
-  expect(wrapper.find('.van-uploader__preview-delete').element).toBeFalsy();
+  expect(wrapper.find('.buri-uploader__preview-delete').element).toBeFalsy();
 });
 
 it('delete preview image', () => {
@@ -296,7 +296,7 @@ it('delete preview image', () => {
     }
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.buri-uploader__preview-delete').trigger('click');
   expect(wrapper.vm.fileList.length).toEqual(0);
 
   expect(wrapper).toMatchSnapshot();
@@ -311,7 +311,7 @@ it('before-delete prop return false', () => {
     }
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.buri-uploader__preview-delete').trigger('click');
   expect(wrapper.emitted('delete')).toBeFalsy();
 });
 
@@ -323,7 +323,7 @@ it('before-delete prop return true', () => {
     }
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.buri-uploader__preview-delete').trigger('click');
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
 
@@ -335,7 +335,7 @@ it('before-delete prop resolved', async () => {
     }
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.buri-uploader__preview-delete').trigger('click');
   await later();
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
@@ -348,7 +348,7 @@ it('before-delete prop rejected', async () => {
     }
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.buri-uploader__preview-delete').trigger('click');
   await later();
   expect(wrapper.emitted('delete')).toBeFalsy();
 });
@@ -361,15 +361,15 @@ it('click to preview image', () => {
     }
   });
 
-  wrapper.find('.van-image').trigger('click');
-  const imagePreviewNode = document.querySelector('.van-image-preview');
+  wrapper.find('.buri-image').trigger('click');
+  const imagePreviewNode = document.querySelector('.buri-image-preview');
   expect(imagePreviewNode).toBeFalsy();
 
   wrapper.setProps({ previewFullImage: true });
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.buri-image').trigger('click');
 
-  const imagePreviewNode2 = document.querySelector('.van-image-preview');
-  expect(imagePreviewNode2.querySelectorAll('.van-image-preview__image').length).toEqual(1);
+  const imagePreviewNode2 = document.querySelector('.buri-image-preview');
+  expect(imagePreviewNode2.querySelectorAll('.buri-image-preview__image').length).toEqual(1);
 });
 
 it('closeImagePreview method', () => {
@@ -398,7 +398,7 @@ it('click-preview event', () => {
     }
   });
 
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.buri-image').trigger('click');
   expect(wrapper.emitted('click-preview')[0][0]).toEqual({ url: IMAGE });
   expect(wrapper.emitted('click-preview')[0][1]).toEqual({ name: '', index: 0 });
 });
@@ -410,10 +410,10 @@ it('close-preview event', async () => {
     }
   });
 
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.buri-image').trigger('click');
 
-  const preview = document.querySelector('.van-image-preview');
-  const swipe = preview.querySelector('.van-swipe__track');
+  const preview = document.querySelector('.buri-image-preview');
+  const swipe = preview.querySelector('.buri-swipe__track');
   triggerDrag(swipe, 0, 0);
 
   await later(300);

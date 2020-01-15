@@ -1,3 +1,3 @@
 module.exports = {
-  presets: ['@vant/cli/preset']
+  presets: ['@buri-ui/cli/preset']
 };

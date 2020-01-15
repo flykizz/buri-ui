@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-radio {
+.buri-radio {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -22,7 +22,7 @@
     line-height: 1em;
     cursor: pointer;
 
-    .van-icon {
+    .buri-icon {
       display: block;
       box-sizing: border-box;
       width: 1.25em;
@@ -37,13 +37,13 @@
     }
 
     &--round {
-      .van-icon {
+      .buri-icon {
         border-radius: 100%;
       }
     }
 
     &--checked {
-      .van-icon {
+      .buri-icon {
         color: @white;
         background-color: @radio-checked-icon-color;
         border-color: @radio-checked-icon-color;
@@ -53,14 +53,14 @@
     &--disabled {
       cursor: not-allowed;
 
-      .van-icon {
+      .buri-icon {
         background-color: @radio-disabled-background-color;
         border-color: @radio-disabled-icon-color;
       }
     }
 
     &--disabled&--checked {
-      .van-icon {
+      .buri-icon {
         color: @radio-disabled-icon-color;
       }
     }

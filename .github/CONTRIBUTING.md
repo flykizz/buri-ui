@@ -1,6 +1,6 @@
-# Contributing to Vant
+# Contributing to Burit
 
-The following is a set of guidelines for contributing to Vant. Please spend several minutes in reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to Burit. Please spend several minutes in reading these guidelines before you create an issue or pull request.
 
 Anyway, these are just guidelines, not rules, use your best judgment and feel free to propose changes to this document in a pull request.
 
@@ -27,9 +27,9 @@ It's welcomed to pull request, And there are some tips about that:
 ## Getting started
 
 ```bash
-git clone git@github.com:youzan/vant.git
+git clone git@github.com:flykizz/buri.git
 
-cd vant
+cd buri
 
 npm run bootstrap
 
@@ -42,4 +42,4 @@ npm run dev
 
 You can use gitpod (A free online IDE) with a single click it will launch a ready to code workspace with dependencies pre-installed and the web server running so that you don't have to waste any time on the dev setup and start contributing straight away.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/youzan/vant)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/flykizz/buri)

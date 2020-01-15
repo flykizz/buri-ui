@@ -5,7 +5,7 @@ import { BORDER_TOP_BOTTOM } from '../utils/constant';
 const [createComponent, bem] = createNamespace('tabbar');
 
 export default createComponent({
-  mixins: [ParentMixin('vanTabbar')],
+  mixins: [ParentMixin('buriTabbar')],
 
   props: {
     route: Boolean,

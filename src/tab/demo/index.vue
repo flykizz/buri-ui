@@ -1,105 +1,105 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-tabs v-model="active">
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <buri-tabs v-model="active">
+        <buri-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('matchByName')">
-      <van-tabs v-model="activeName">
-        <van-tab name="a" :title="$t('tab') + 1">
+      <buri-tabs v-model="activeName">
+        <buri-tab name="a" :title="$t('tab') + 1">
           {{ $t('content') }} 1
-        </van-tab>
-        <van-tab name="b" :title="$t('tab') + 2">
+        </buri-tab>
+        <buri-tab name="b" :title="$t('tab') + 2">
           {{ $t('content') }} 2
-        </van-tab>
-        <van-tab name="c" :title="$t('tab') + 3">
+        </buri-tab>
+        <buri-tab name="c" :title="$t('tab') + 3">
           {{ $t('content') }} 3
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-tabs>
-        <van-tab v-for="index in 8" :title="$t('tab') + index" :key="index">
+      <buri-tabs>
+        <buri-tab v-for="index in 8" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-tabs @disabled="onClickDisabled">
-        <van-tab
+      <buri-tabs @disabled="onClickDisabled">
+        <buri-tab
           v-for="index in 3"
           :title="$t('tab') + index"
           :disabled="index === 2"
           :key="index"
         >
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-tabs type="card">
-        <van-tab v-for="index in 3" :title="$t('tab') + index" :key="index">
+      <buri-tabs type="card">
+        <buri-tab v-for="index in 3" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title5')">
-      <van-tabs @click="onClick">
-        <van-tab v-for="index in 2" :title="$t('tab') + index" :key="index">
+      <buri-tabs @click="onClick">
+        <buri-tab v-for="index in 2" :title="$t('tab') + index" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title6')">
-      <van-tabs :active="active" sticky>
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <buri-tabs :active="active" sticky>
+        <buri-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('title7')">
-      <van-tabs :active="active">
-        <van-tab v-for="index in 2" :key="index">
+      <buri-tabs :active="active">
+        <buri-tab v-for="index in 2" :key="index">
           <template #title>
-            <van-icon name="more-o" />{{ $t('tab') }}
+            <buri-icon name="more-o" />{{ $t('tab') }}
           </template>
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title8')">
-      <van-tabs animated>
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <buri-tabs animated>
+        <buri-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block :title="$t('title9')">
-      <van-tabs :active="active" swipeable>
-        <van-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
+      <buri-tabs :active="active" swipeable>
+        <buri-tab :title="$t('tab') + index" v-for="index in tabs" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="$t('title10')">
-      <van-tabs scrollspy sticky>
-        <van-tab :title="$t('tab') + index" v-for="index in 8" :key="index">
+      <buri-tabs scrollspy sticky>
+        <buri-tab :title="$t('tab') + index" v-for="index in 8" :key="index">
           {{ $t('content') }} {{ index }}
-        </van-tab>
-      </van-tabs>
+        </buri-tab>
+      </buri-tabs>
     </demo-block>
   </demo-section>
 </template>
@@ -164,17 +164,17 @@ export default {
 .demo-tab {
   margin-bottom: 80vh;
 
-  .van-tab .van-icon {
+  .buri-tab .buri-icon {
     margin-right: 5px;
     vertical-align: -2px;
   }
 
-  .van-tab__pane {
+  .buri-tab__pane {
     padding: 25px 20px;
     background-color: @white;
   }
 
-  .van-tabs--card .van-tab__pane {
+  .buri-tabs--card .buri-tab__pane {
     background-color: transparent;
   }
 }

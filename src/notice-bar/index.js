@@ -132,7 +132,7 @@ export default createComponent({
             class={[
               bem('content'),
               this.animationClass,
-              { 'van-ellipsis': !this.scrollable && !this.wrapable }
+              { 'buri-ellipsis': !this.scrollable && !this.wrapable }
             ]}
             style={contentStyle}
             onAnimationend={this.onAnimationEnd}

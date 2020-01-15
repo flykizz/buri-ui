@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Image } from 'vant';
+import { Image } from 'buri';
 
 Vue.use(Image);
 ```
@@ -20,10 +20,10 @@ Vue.use(Image);
 基础用法与原生`img`标签一致，可以设置`src`、`width`、`height`、`alt`等原生属性
 
 ```html
-<van-image
+<buri-image
   width="100"
   height="100"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
@@ -32,11 +32,11 @@ Vue.use(Image);
 通过`fit`属性可以设置图片填充模式，可选值见下方表格
 
 ```html
-<van-image
+<buri-image
   width="10rem"
   height="10rem"
   fit="contain"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
@@ -45,11 +45,11 @@ Vue.use(Image);
 通过`round`属性可以设置图片变圆，注意当图片宽高不相等且`fit`为`contain`或`scale-down`时，将无法填充一个完整的圆形。
 
 ```html
-<van-image
+<buri-image
   round
   width="10rem"
   height="10rem"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
@@ -58,11 +58,11 @@ Vue.use(Image);
 设置`lazy-load`属性来开启图片懒加载，需要搭配 [Lazyload](#/zh-CN/lazyload) 组件使用
 
 ```html
-<van-image
+<buri-image
   width="100"
   height="100"
   lazy-load
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
@@ -71,11 +71,11 @@ Vue.use(Image);
 `Image`组件提供了默认的加载中提示，支持通过`loading`插槽自定义内容
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<buri-image src="https://img.yzcdn.cn/buri/cat.jpeg">
   <template v-slot:loading>
-    <van-loading type="spinner" size="20" />
+    <buri-loading type="spinner" size="20" />
   </template>
-</van-image>
+</buri-image>
 ```
 
 ### 加载失败提示
@@ -83,9 +83,9 @@ Vue.use(Image);
 `Image`组件提供了默认的加载失败提示，支持通过`error`插槽自定义内容
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<buri-image src="https://img.yzcdn.cn/buri/cat.jpeg">
   <template v-slot:error>加载失败</template>
-</van-image>
+</buri-image>
 ```
 
 ## API

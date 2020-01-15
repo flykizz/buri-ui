@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Search } from 'vant';
+import { Search } from 'buri';
 
 Vue.use(Search);
 ```
@@ -14,7 +14,7 @@ Vue.use(Search);
 ### Basic Usage
 
 ```html
-<van-search placeholder="Placeholder" v-model="value" />
+<buri-search placeholder="Placeholder" v-model="value" />
 ```
 
 ```javascript
@@ -31,7 +31,7 @@ export default {
 
 ```html
 <form action="/">
-  <van-search
+  <buri-search
     v-model="value"
     placeholder="Placeholder"
     show-action
@@ -48,14 +48,14 @@ export default {
 Use `action` slot to custom right button, `cancel` event will no longer be triggered when use this slot
 
 ```html
-<van-search
+<buri-search
   v-model="value"
   show-action
   shape="round"
   @search="onSearch"
 >
   <div slot="action" @click="onSearch">Search</div>
-</van-search>
+</buri-search>
 ```
 
 ## API

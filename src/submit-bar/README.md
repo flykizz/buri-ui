@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { SubmitBar } from 'vant';
+import { SubmitBar } from 'buri';
 
 Vue.use(SubmitBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(SubmitBar);
 ### Basic Usage
 
 ```html
-<van-submit-bar
+<buri-submit-bar
   :price="3050"
   button-text="Submit"
   @submit="onSubmit"
@@ -26,7 +26,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggerd when disabled.
 
 ```html
-<van-submit-bar
+<buri-submit-bar
   disabled
   :price="3050"
   button-text="Submit"
@@ -41,7 +41,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggerd when loading.
 
 ```html
-<van-submit-bar
+<buri-submit-bar
   loading
   :price="3050"
   button-text="Submit"
@@ -49,21 +49,21 @@ Vue.use(SubmitBar);
 />
 ```
 
-### Advanced Usage
+### Adburiced Usage
 
 Use slot to add custom contents.
 
 ```html
-<van-submit-bar
+<buri-submit-bar
   :price="3050"
   button-text="Submit"
   @submit="onSubmit"
 >
-  <van-checkbox v-model="checked">Check</van-checkbox>
+  <buri-checkbox v-model="checked">Check</buri-checkbox>
   <span slot="tip">
     Some tips, <span @click="onClickEditAddress">Link</span>
   </span>
-</van-submit-bar>
+</buri-submit-bar>
 ```
 
 ## API

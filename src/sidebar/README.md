@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Sidebar, SidebarItem } from 'vant';
+import { Sidebar, SidebarItem } from 'buri';
 
 Vue.use(Sidebar);
 Vue.use(SidebarItem);
@@ -15,11 +15,11 @@ Vue.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<buri-sidebar v-model="activeKey">
+  <buri-sidebar-item title="Title" />
+  <buri-sidebar-item title="Title" />
+  <buri-sidebar-item title="Title" />
+</buri-sidebar>
 ```
 
 ``` javascript
@@ -35,31 +35,31 @@ export default {
 ### Show Info
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" dot />
-  <van-sidebar-item title="Title" info="5" />
-  <van-sidebar-item title="Title" info="99+" />
-</van-sidebar>
+<buri-sidebar v-model="activeKey">
+  <buri-sidebar-item title="Title" dot />
+  <buri-sidebar-item title="Title" info="5" />
+  <buri-sidebar-item title="Title" info="99+" />
+</buri-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" disabled />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<buri-sidebar v-model="activeKey">
+  <buri-sidebar-item title="Title" />
+  <buri-sidebar-item title="Title" disabled />
+  <buri-sidebar-item title="Title" />
+</buri-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<van-sidebar v-model="activeKey" @change="onChange">
-  <van-sidebar-item title="Title1" />
-  <van-sidebar-item title="Title2" />
-  <van-sidebar-item title="Title3" />
-</van-sidebar>
+<buri-sidebar v-model="activeKey" @change="onChange">
+  <buri-sidebar-item title="Title1" />
+  <buri-sidebar-item title="Title2" />
+  <buri-sidebar-item title="Title3" />
+</buri-sidebar>
 ```
 
 ```js

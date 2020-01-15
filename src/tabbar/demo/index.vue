@@ -1,61 +1,61 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-tabbar v-model="active">
-        <van-tabbar-item icon="home-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="search">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="friends-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">{{ $t('tab') }}</van-tabbar-item>
-      </van-tabbar>
+      <buri-tabbar v-model="active">
+        <buri-tabbar-item icon="home-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="search">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="friends-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="setting-o">{{ $t('tab') }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
 
     <demo-block :title="$t('matchByName')">
-      <van-tabbar v-model="activeName">
-        <van-tabbar-item name="home" icon="home-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item name="search" icon="search">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item name="friends" icon="friends-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item name="setting" icon="setting-o">{{ $t('tab') }}</van-tabbar-item>
-      </van-tabbar>
+      <buri-tabbar v-model="activeName">
+        <buri-tabbar-item name="home" icon="home-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item name="search" icon="search">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item name="friends" icon="friends-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item name="setting" icon="setting-o">{{ $t('tab') }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
 
     <demo-block :title="$t('badge')">
-      <van-tabbar v-model="active2">
-        <van-tabbar-item icon="home-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="search" dot>{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="friends-o" info="5">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="setting-o" info="20">{{ $t('tab') }}</van-tabbar-item>
-      </van-tabbar>
+      <buri-tabbar v-model="active2">
+        <buri-tabbar-item icon="home-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="search" dot>{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="friends-o" info="5">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="setting-o" info="20">{{ $t('tab') }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
 
     <demo-block :title="$t('customIcon')">
-      <van-tabbar v-model="active3">
-        <van-tabbar-item info="3">
+      <buri-tabbar v-model="active3">
+        <buri-tabbar-item info="3">
           <span>{{ $t('custom') }}</span>
           <template #icon="props">
             <img :src="props.active ? icon.active : icon.inactive">
           </template>
-        </van-tabbar-item>
-        <van-tabbar-item icon="search">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">{{ $t('tab') }}</van-tabbar-item>
-      </van-tabbar>
+        </buri-tabbar-item>
+        <buri-tabbar-item icon="search">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="setting-o">{{ $t('tab') }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
 
     <demo-block :title="$t('customColor')">
-      <van-tabbar v-model="active4" active-color="#07c160" inactive-color="#000">
-        <van-tabbar-item icon="home-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="search">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="friends-o">{{ $t('tab') }}</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">{{ $t('tab') }}</van-tabbar-item>
-      </van-tabbar>
+      <buri-tabbar v-model="active4" active-color="#07c160" inactive-color="#000">
+        <buri-tabbar-item icon="home-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="search">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="friends-o">{{ $t('tab') }}</buri-tabbar-item>
+        <buri-tabbar-item icon="setting-o">{{ $t('tab') }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
 
     <demo-block :title="$t('switchEvent')">
-      <van-tabbar v-model="active5" @change="onChange">
-        <van-tabbar-item icon="home-o">{{ $t('tab') + 1 }}</van-tabbar-item>
-        <van-tabbar-item icon="search">{{ $t('tab') + 2 }}</van-tabbar-item>
-        <van-tabbar-item icon="friends-o">{{ $t('tab') + 3 }}</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">{{ $t('tab') + 4 }}</van-tabbar-item>
-      </van-tabbar>
+      <buri-tabbar v-model="active5" @change="onChange">
+        <buri-tabbar-item icon="home-o">{{ $t('tab') + 1 }}</buri-tabbar-item>
+        <buri-tabbar-item icon="search">{{ $t('tab') + 2 }}</buri-tabbar-item>
+        <buri-tabbar-item icon="friends-o">{{ $t('tab') + 3 }}</buri-tabbar-item>
+        <buri-tabbar-item icon="setting-o">{{ $t('tab') + 4 }}</buri-tabbar-item>
+      </buri-tabbar>
     </demo-block>
   </demo-section>
 </template>
@@ -90,8 +90,8 @@ export default {
       active5: 0,
       activeName: 'home',
       icon: {
-        active: 'https://img.yzcdn.cn/vant/user-active.png',
-        inactive: 'https://img.yzcdn.cn/vant/user-inactive.png'
+        active: 'https://img.yzcdn.cn/buri/user-active.png',
+        inactive: 'https://img.yzcdn.cn/buri/user-inactive.png'
       }
     };
   },
@@ -109,7 +109,7 @@ export default {
 
 <style lang="less">
 .demo-tabbar {
-  .van-tabbar {
+  .buri-tabbar {
     position: relative;
   }
 }

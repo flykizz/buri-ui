@@ -6,7 +6,7 @@ import Info from '../info';
 const [createComponent, bem] = createNamespace('sidebar-item');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanSidebar')],
+  mixins: [ChildrenMixin('buriSidebar')],
 
   props: {
     ...routeProps,

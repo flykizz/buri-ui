@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Field } from 'vant';
+import { Field } from 'buri';
 
 Vue.use(Field);
 ```
@@ -21,9 +21,9 @@ Vue.use(Field);
 
 ```html
 <!-- Field 是基于 Cell 实现的，可以使用 CellGroup 作为父元素来提供外边框。 -->
-<van-cell-group>
-  <van-field v-model="value" placeholder="请输入用户名" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-field v-model="value" placeholder="请输入用户名" />
+</buri-cell-group>
 ```
 
 ```js
@@ -42,15 +42,15 @@ export default {
 
 ```html
 <!-- 输入任意文本 -->
-<van-field v-model="text" label="文本" />
+<buri-field v-model="text" label="文本" />
 <!-- 输入手机号，调起手机号键盘 -->
-<van-field v-model="tel" type="tel" label="手机号" />
+<buri-field v-model="tel" type="tel" label="手机号" />
 <!-- 允许输入整数，调起数字键盘 -->
-<van-field v-model="digit" type="digit" label="整数" />
+<buri-field v-model="digit" type="digit" label="整数" />
 <!-- 允许输入数字，调起全键盘 -->
-<van-field v-model="number" type="number" label="数字" />
+<buri-field v-model="number" type="number" label="数字" />
 <!-- 输入密码 -->
-<van-field v-model="password" type="password" label="密码" />
+<buri-field v-model="password" type="password" label="密码" />
 ```
 
 ```js
@@ -74,10 +74,10 @@ export default {
 通过`readonly`将输入框设置为只读状态，通过`disabled`将输入框设置为禁用状态
 
 ```html
-<van-cell-group>
-  <van-field label="文本" value="输入框只读" readonly />
-  <van-field label="文本" value="输入框已禁用" disabled />
-</van-cell-group>
+<buri-cell-group>
+  <buri-field label="文本" value="输入框只读" readonly />
+  <buri-field label="文本" value="输入框已禁用" disabled />
+</buri-cell-group>
 ```
 
 ### 显示图标
@@ -85,22 +85,22 @@ export default {
 通过`left-icon`和`right-icon`配置输入框两侧的图标，通过设置`clearable`在输入过程中展示清除图标
 
 ```html
-<van-cell-group>
-  <van-field
+<buri-cell-group>
+  <buri-field
     v-model="value1"
     label="文本"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="显示图标"
   />
-  <van-field
+  <buri-field
     v-model="value2"
     clearable
     label="文本"
     left-icon="music-o"
     placeholder="显示清除图标"
   />
-</van-cell-group>
+</buri-cell-group>
 ```
 
 ```js
@@ -119,22 +119,22 @@ export default {
 设置`required`属性表示这是一个必填项，可以配合`error`或`error-message`属性显示对应的错误提示
 
 ```html
-<van-cell-group>
-  <van-field
+<buri-cell-group>
+  <buri-field
     v-model="username"
     error
     required
     label="用户名"
     placeholder="请输入用户名"
   />
-  <van-field
+  <buri-field
     v-model="phone"
     required
     label="手机号"
     placeholder="请输入手机号"
     error-message="手机号格式错误"
   />
-</van-cell-group>
+</buri-cell-group>
 ```
 
 ### 插入按钮
@@ -142,15 +142,15 @@ export default {
 通过 button 插槽可以在输入框尾部插入按钮
 
 ```html
-<van-field
+<buri-field
   v-model="sms"
   center
   clearable
   label="短信验证码"
   placeholder="请输入短信验证码"
 >
-  <van-button slot="button" size="small" type="primary">发送验证码</van-button>
-</van-field>
+  <buri-button slot="button" size="small" type="primary">发送验证码</buri-button>
+</buri-field>
 ```
 
 ### 格式化输入内容
@@ -158,7 +158,7 @@ export default {
 通过`formatter`属性可以对输入的内容进行格式化
 
 ```html
-<van-field
+<buri-field
   v-model="value"
   label="文本"
   :formatter="formatter"
@@ -187,7 +187,7 @@ export default {
 对于 textarea，可以通过`autosize`属性设置高度自适应
 
 ```html
-<van-field
+<buri-field
   v-model="message"
   rows="1"
   autosize
@@ -202,7 +202,7 @@ export default {
 设置`maxlength`和`show-word-limit`属性后会在底部显示字数统计
 
 ```html
-<van-field
+<buri-field
   v-model="message"
   rows="2"
   autosize
@@ -219,7 +219,7 @@ export default {
 通过`input-align`属性可以设置输入框内容的对齐方式
 
 ```html
-<van-field
+<buri-field
   v-model="value"
   :label="文本"
   :placeholder="输入框内容右对齐"

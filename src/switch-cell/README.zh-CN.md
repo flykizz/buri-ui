@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { SwitchCell } from 'vant';
+import { SwitchCell } from 'buri';
 
 Vue.use(SwitchCell);
 ```
@@ -18,9 +18,9 @@ Vue.use(SwitchCell);
 ### 基础用法
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" title="标题" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" title="标题" />
+</buri-cell-group>
 ```
 
 ```javascript
@@ -38,9 +38,9 @@ export default {
 通过`disabled`属性可以将组件设置为禁用状态
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" disabled title="标题" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" disabled title="标题" />
+</buri-cell-group>
 ```
 
 ### 加载状态
@@ -48,9 +48,9 @@ export default {
 通过`loading`属性可以将组件设置为加载状态
 
 ```html
-<van-cell-group>
-  <van-switch-cell v-model="checked" loading title="标题" />
-</van-cell-group>
+<buri-cell-group>
+  <buri-switch-cell v-model="checked" loading title="标题" />
+</buri-cell-group>
 ```
 
 ## API

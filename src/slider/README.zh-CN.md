@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Slider } from 'vant';
+import { Slider } from 'buri';
 
 Vue.use(Slider);
 ```
@@ -14,7 +14,7 @@ Vue.use(Slider);
 ### 基本用法
 
 ```html
-<van-slider v-model="value" @change="onChange" />
+<buri-slider v-model="value" @change="onChange" />
 ```
 
 ```js
@@ -36,25 +36,25 @@ export default {
 ### 指定选择范围
 
 ```html
-<van-slider v-model="value" :min="-50" :max="50" />
+<buri-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### 禁用
 
 ```html
-<van-slider v-model="value" disabled />
+<buri-slider v-model="value" disabled />
 ```
 
 ### 指定步长
 
 ```html
-<van-slider v-model="value" :step="10" />
+<buri-slider v-model="value" :step="10" />
 ```
 
 ### 自定义样式
 
 ```html
-<van-slider
+<buri-slider
   v-model="value"
   bar-height="4px"
   active-color="#ee0a24"
@@ -64,7 +64,7 @@ export default {
 ### 自定义按钮
 
 ```html
-<van-slider
+<buri-slider
   v-model="value"
   active-color="#ee0a24"
 >
@@ -74,7 +74,7 @@ export default {
   >
     {{ value }}
   </div>
-</van-slider>
+</buri-slider>
 ```
 
 ### 垂直方向
@@ -83,7 +83,7 @@ Slider 垂直展示时，高度为 100% 父元素高度
 
 ```html
 <div :style="{ height: '100px' }">
-  <van-slider v-model="value" vertical />
+  <buri-slider v-model="value" vertical />
 </div>
 ```
 

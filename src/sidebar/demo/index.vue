@@ -1,42 +1,42 @@
 <template>
   <demo-section>
-    <van-grid :column-num="2" :border="false">
-      <van-grid-item>
+    <buri-grid :column-num="2" :border="false">
+      <buri-grid-item>
         <h3 class="demo-sidebar-title">{{ $t('basicUsage') }}</h3>
-        <van-sidebar v-model="activeKey1">
-          <van-sidebar-item :title="$t('title')" />
-          <van-sidebar-item :title="$t('title')" />
-          <van-sidebar-item :title="$t('title')" />
-        </van-sidebar>
-      </van-grid-item>
+        <buri-sidebar v-model="activeKey1">
+          <buri-sidebar-item :title="$t('title')" />
+          <buri-sidebar-item :title="$t('title')" />
+          <buri-sidebar-item :title="$t('title')" />
+        </buri-sidebar>
+      </buri-grid-item>
 
-      <van-grid-item>
+      <buri-grid-item>
         <h3 class="demo-sidebar-title">{{ $t('showInfo') }}</h3>
-        <van-sidebar v-model="activeKey2">
-          <van-sidebar-item :title="$t('title')" dot />
-          <van-sidebar-item :title="$t('title')" info="5" />
-          <van-sidebar-item :title="$t('title')" info="99+" />
-        </van-sidebar>
-      </van-grid-item>
+        <buri-sidebar v-model="activeKey2">
+          <buri-sidebar-item :title="$t('title')" dot />
+          <buri-sidebar-item :title="$t('title')" info="5" />
+          <buri-sidebar-item :title="$t('title')" info="99+" />
+        </buri-sidebar>
+      </buri-grid-item>
 
-      <van-grid-item>
+      <buri-grid-item>
         <h3 class="demo-sidebar-title">{{ $t('disabled') }}</h3>
-        <van-sidebar v-model="activeKey3">
-          <van-sidebar-item :title="$t('title')" />
-          <van-sidebar-item :title="$t('title')" disabled />
-          <van-sidebar-item :title="$t('title')" />
-        </van-sidebar>
-      </van-grid-item>
+        <buri-sidebar v-model="activeKey3">
+          <buri-sidebar-item :title="$t('title')" />
+          <buri-sidebar-item :title="$t('title')" disabled />
+          <buri-sidebar-item :title="$t('title')" />
+        </buri-sidebar>
+      </buri-grid-item>
 
-      <van-grid-item>
+      <buri-grid-item>
         <h3 class="demo-sidebar-title">{{ $t('changeEvent') }}</h3>
-        <van-sidebar v-model="activeKey4" @change="onChange">
-          <van-sidebar-item :title="$t('title') + 1" />
-          <van-sidebar-item :title="$t('title') + 2" />
-          <van-sidebar-item :title="$t('title') + 3" />
-        </van-sidebar>
-      </van-grid-item>
-    </van-grid>
+        <buri-sidebar v-model="activeKey4" @change="onChange">
+          <buri-sidebar-item :title="$t('title') + 1" />
+          <buri-sidebar-item :title="$t('title') + 2" />
+          <buri-sidebar-item :title="$t('title') + 3" />
+        </buri-sidebar>
+      </buri-grid-item>
+    </buri-grid>
   </demo-section>
 </template>
 
@@ -84,7 +84,7 @@ export default {
 .demo-sidebar {
   background-color: @white;
 
-  .van-sidebar {
+  .buri-sidebar {
     margin-left: @padding-md;
   }
 

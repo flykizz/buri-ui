@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NoticeBar } from 'vant';
+import { NoticeBar } from 'buri';
 
 Vue.use(NoticeBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NoticeBar);
 ### Basic Usage
 
 ```html
-<van-notice-bar
+<buri-notice-bar
   text="Notice Content"
   left-icon="volume-o"
 />
@@ -23,41 +23,41 @@ Vue.use(NoticeBar);
 ### Disable scroll
 
 ```html
-<van-notice-bar :scrollable="false">
+<buri-notice-bar :scrollable="false">
   Notice Content
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### Wrapable
 
 ```html
-<van-notice-bar wrapable :scrollable="false">
+<buri-notice-bar wrapable :scrollable="false">
   Notice Content
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### Mode
 
 ```html
-<van-notice-bar mode="closeable">
+<buri-notice-bar mode="closeable">
   Notice Content
-</van-notice-bar>
+</buri-notice-bar>
 
-<van-notice-bar mode="link">
+<buri-notice-bar mode="link">
   Notice Content
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ### Custom Style
 
 ```html
-<van-notice-bar
+<buri-notice-bar
   color="#1989fa"
   background="#ecf9ff"
   left-icon="info-o"
 >
   Notice Content
-</van-notice-bar>
+</buri-notice-bar>
 ```
 
 ## API

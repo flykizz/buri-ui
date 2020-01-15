@@ -3,111 +3,111 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__value van-cell__value--alone">
-          <div class="van-field__body"><input type="text" placeholder="请输入文本" class="van-field__control"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__value buri-cell__value--alone">
+          <div class="buri-field__body"><input type="text" placeholder="请输入文本" class="buri-field__control"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="请输入文本" class="van-field__control"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="请输入文本" class="buri-field__control"></div>
         </div>
       </div>
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>手机号</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="tel" placeholder="请输入手机号" class="van-field__control"></div>
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>手机号</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="tel" placeholder="请输入手机号" class="buri-field__control"></div>
         </div>
       </div>
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>整数</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="tel" placeholder="请输入整数" class="van-field__control"></div>
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>整数</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="tel" placeholder="请输入整数" class="buri-field__control"></div>
         </div>
       </div>
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>数字</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="请输入数字（支持小数）" class="van-field__control"></div>
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>数字</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="请输入数字（支持小数）" class="buri-field__control"></div>
         </div>
       </div>
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>密码</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="password" placeholder="请输入密码" class="van-field__control"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" readonly="readonly" class="van-field__control"></div>
-        </div>
-      </div>
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" disabled="disabled" class="van-field__control"></div>
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>密码</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="password" placeholder="请输入密码" class="buri-field__control"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-field__left-icon"><i class="van-icon van-icon-smile-o">
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" readonly="readonly" class="buri-field__control"></div>
+        </div>
+      </div>
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" disabled="disabled" class="buri-field__control"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-field__left-icon"><i class="buri-icon buri-icon-smile-o">
             <!----></i></div>
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="显示图标" class="van-field__control">
-            <div class="van-field__right-icon"><i class="van-icon van-icon-warning-o">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="显示图标" class="buri-field__control">
+            <div class="buri-field__right-icon"><i class="buri-icon buri-icon-warning-o">
                 <!----></i></div>
           </div>
         </div>
       </div>
-      <div class="van-cell van-field">
-        <div class="van-field__left-icon"><i class="van-icon van-icon-music-o">
+      <div class="buri-cell buri-field">
+        <div class="buri-field__left-icon"><i class="buri-icon buri-icon-music-o">
             <!----></i></div>
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="显示清除图标" class="van-field__control"></div>
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="显示清除图标" class="buri-field__control"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-cell--required van-field van-field--error">
-        <div class="van-cell__title van-field__label"><span>用户名</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="请输入用户名" class="van-field__control"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-cell--required buri-field buri-field--error">
+        <div class="buri-cell__title buri-field__label"><span>用户名</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="请输入用户名" class="buri-field__control"></div>
         </div>
       </div>
-      <div class="van-cell van-cell--required van-field">
-        <div class="van-cell__title van-field__label"><span>手机号</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="请输入手机号" class="van-field__control"></div>
-          <div class="van-field__error-message">手机号格式错误</div>
+      <div class="buri-cell buri-cell--required buri-field">
+        <div class="buri-cell__title buri-field__label"><span>手机号</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="请输入手机号" class="buri-field__control"></div>
+          <div class="buri-field__error-message">手机号格式错误</div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-cell--center van-field">
-        <div class="van-cell__title van-field__label"><span>短信验证码</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="请输入短信验证码" class="van-field__control">
-            <div class="van-field__button"><button class="van-button van-button--primary van-button--small"><span class="van-button__text">
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-cell--center buri-field">
+        <div class="buri-cell__title buri-field__label"><span>短信验证码</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="请输入短信验证码" class="buri-field__control">
+            <div class="buri-field__button"><button class="buri-button buri-button--primary buri-button--small"><span class="buri-button__text">
             发送验证码
           </span></button></div>
           </div>
@@ -116,42 +116,42 @@ exports[`renders demo correctly 1`] = `
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="格式化输入内容" class="van-field__control"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="格式化输入内容" class="buri-field__control"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>留言</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><textarea placeholder="请输入留言" rows="1" class="van-field__control" style="height: auto;"></textarea></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>留言</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><textarea placeholder="请输入留言" rows="1" class="buri-field__control" style="height: auto;"></textarea></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>留言</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><textarea placeholder="请输入留言" rows="2" class="van-field__control" style="height: auto;"></textarea></div>
-          <div class="van-field__word-limit">0/50</div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>留言</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><textarea placeholder="请输入留言" rows="2" class="buri-field__control" style="height: auto;"></textarea></div>
+          <div class="buri-field__word-limit">0/50</div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-cell-group van-hairline--top-bottom">
-      <div class="van-cell van-field">
-        <div class="van-cell__title van-field__label"><span>文本</span></div>
-        <div class="van-cell__value">
-          <div class="van-field__body"><input type="text" placeholder="输入框内容右对齐" class="van-field__control van-field__control--right"></div>
+    <div class="buri-cell-group buri-hairline--top-bottom">
+      <div class="buri-cell buri-field">
+        <div class="buri-cell__title buri-field__label"><span>文本</span></div>
+        <div class="buri-cell__value">
+          <div class="buri-field__body"><input type="text" placeholder="输入框内容右对齐" class="buri-field__control buri-field__control--right"></div>
         </div>
       </div>
     </div>

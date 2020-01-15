@@ -1,12 +1,12 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-search v-model="value" :placeholder="$t('placeholder')" />
+      <buri-search v-model="value" :placeholder="$t('placeholder')" />
     </demo-block>
 
     <demo-block :title="$t('listenToEvents')">
       <form action="/">
-        <van-search
+        <buri-search
           v-model="value"
           :placeholder="$t('placeholder')"
           show-action
@@ -17,7 +17,7 @@
     </demo-block>
 
     <demo-block :title="$t('customButton')">
-      <van-search
+      <buri-search
         v-model="value"
         :placeholder="$t('placeholder')"
         show-action
@@ -28,7 +28,7 @@
         <template #action>
           <div @click="onSearch">{{ $t('search') }}</div>
         </template>
-      </van-search>
+      </buri-search>
     </demo-block>
   </demo-section>
 </template>

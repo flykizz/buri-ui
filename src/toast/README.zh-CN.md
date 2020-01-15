@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'buri';
 
 Vue.use(Toast);
 ```
@@ -52,7 +52,7 @@ Toast({
 
 Toast({
   message: '展示图片',
-  icon: 'https://img.yzcdn.cn/vant/logo.png'
+  icon: 'https://img.yzcdn.cn/buri/logo.png'
 });
 ```
 
@@ -145,7 +145,7 @@ Toast.resetDefaultOptions('loading');
 | position | 位置，可选值为 `top` `bottom` | *string* | `middle` |
 | message | 文本内容，支持通过`\n`换行 | *string* | `''` | - |
 | icon `v2.0.1` | 自定义图标，支持传入图标名称或图片链接，可选值见 [Icon 组件](#/zh-CN/icon) | *string* | - |
-| iconPrefix `v2.0.9` | 图标类名前缀 | *string* | `van-icon` |
+| iconPrefix `v2.0.9` | 图标类名前缀 | *string* | `buri-icon` |
 | overlay `v2.2.13` | 是否显示背景遮罩层 | *boolean* | `false` |
 | forbidClick | 是否禁止背景点击 | *boolean* | `false` |
 | closeOnClick `v2.1.5` | 是否在点击后关闭 | *boolean* | `false` |

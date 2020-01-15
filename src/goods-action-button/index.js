@@ -6,7 +6,7 @@ import Button from '../button';
 const [createComponent, bem] = createNamespace('goods-action-button');
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanGoodsAction')],
+  mixins: [ChildrenMixin('buriGoodsAction')],
 
   props: {
     ...routeProps,

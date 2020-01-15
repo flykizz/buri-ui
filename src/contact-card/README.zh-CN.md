@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { ContactCard, ContactList, ContactEdit } from 'vant';
+import { ContactCard, ContactList, ContactEdit } from 'buri';
 
 Vue
   .use(ContactCard)
@@ -22,7 +22,7 @@ Vue
 
 ```html
 <!-- 联系人卡片 -->
-<van-contact-card
+<buri-contact-card
   :type="cardType"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -30,25 +30,25 @@ Vue
 />
 
 <!-- 联系人列表 -->
-<van-popup v-model="showList" position="bottom">
-  <van-contact-list
+<buri-popup v-model="showList" position="bottom">
+  <buri-contact-list
     v-model="chosenContactId"
     :list="list"
     @add="onAdd"
     @edit="onEdit"
     @select="onSelect"
   />
-</van-popup>
+</buri-popup>
 
 <!-- 联系人编辑 -->
-<van-popup v-model="showEdit" position="bottom">
-  <van-contact-edit
+<buri-popup v-model="showEdit" position="bottom">
+  <buri-contact-edit
     :contact-info="editingContact"
     :is-edit="isEdit"
     @save="onSave"
     @delete="onDelete"
   />
-</van-popup>
+</buri-popup>
 ```
 
 ``` javascript
@@ -127,7 +127,7 @@ export default {
 ### 不可编辑
 
 ```html
-<van-contact-card
+<buri-contact-card
   type="edit"
   name="张三"
   tel="13000000000"

@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
-vant-cli build-site
+buri-cli build-site
 
-superman-cdn /vant ./site/*.js
+superman-cdn /buri ./site/*.js
 
 rm -rf site/*.js
 

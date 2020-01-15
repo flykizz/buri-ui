@@ -6,7 +6,7 @@
 
 ```js
 import Vue from 'vue';
-import { ImagePreview } from 'vant';
+import { ImagePreview } from 'buri';
 
 Vue.use(ImagePreview);
 ```
@@ -64,13 +64,13 @@ setTimeout(() => {
 如果需要在图片预览内嵌入组件或其他自定义内容，可以使用组件调用的方式，调用前需要通过 `Vue.use` 注册组件
 
 ```html
-<van-image-preview
+<buri-image-preview
   v-model="show"
   :images="images"
   @change="onChange"
 >
   <template v-slot:index>第{{ index }}页</template>
-</van-image-preview>
+</buri-image-preview>
 ```
 
 ```js

@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-picker :columns="$t('column1')" @change="onChange1" />
+      <buri-picker :columns="$t('column1')" @change="onChange1" />
     </demo-block>
 
     <demo-block :title="$t('defaultIndex')">
-      <van-picker :columns="$t('column1')" :default-index="2" @change="onChange1" />
+      <buri-picker :columns="$t('column1')" :default-index="2" @change="onChange1" />
     </demo-block>
 
     <demo-block :title="$t('title3')">
-      <van-picker
+      <buri-picker
         show-toolbar
         :title="$t('title')"
         :columns="$t('column1')"
@@ -19,7 +19,7 @@
     </demo-block>
 
     <demo-block :title="$t('withPopup')">
-      <van-field
+      <buri-field
         readonly
         clickable
         :label="$t('city')"
@@ -27,26 +27,26 @@
         :placeholder="$t('chooseCity')"
         @click="onClickField"
       />
-      <van-popup v-model="showPicker" position="bottom">
-        <van-picker
+      <buri-popup v-model="showPicker" position="bottom">
+        <buri-picker
           show-toolbar
           :columns="$t('column1')"
           @cancel="onCancel2"
           @confirm="onConfirm2"
         />
-      </van-popup>
+      </buri-popup>
     </demo-block>
 
     <demo-block :title="$t('title2')">
-      <van-picker :columns="$t('column2')" />
+      <buri-picker :columns="$t('column2')" />
     </demo-block>
 
     <demo-block :title="$t('title4')">
-      <van-picker :columns="columns" @change="onChange2" />
+      <buri-picker :columns="columns" @change="onChange2" />
     </demo-block>
 
     <demo-block :title="$t('loadingStatus')">
-      <van-picker loading :columns="columns" />
+      <buri-picker loading :columns="columns" />
     </demo-block>
   </demo-section>
 </template>

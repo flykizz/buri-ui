@@ -3,38 +3,38 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-address-list">
-      <div role="radiogroup" class="van-radio-group">
-        <div role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--borderless van-address-item">
-          <div class="van-cell__value van-cell__value--alone van-address-item__value">
-            <div role="radio" tabindex="0" aria-checked="true" class="van-radio">
-              <div class="van-radio__icon van-radio__icon--round van-radio__icon--checked" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                  <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">张三 13000000000<span class="van-tag van-tag--round van-tag--danger van-address-item__tag">默认</span>
+    <div class="buri-address-list">
+      <div role="radiogroup" class="buri-radio-group">
+        <div role="button" tabindex="0" class="buri-cell buri-cell--clickable buri-cell--borderless buri-address-item">
+          <div class="buri-cell__value buri-cell__value--alone buri-address-item__value">
+            <div role="radio" tabindex="0" aria-checked="true" class="buri-radio">
+              <div class="buri-radio__icon buri-radio__icon--round buri-radio__icon--checked" style="font-size: 18px;"><i class="buri-icon buri-icon-success">
+                  <!----></i></div><span class="buri-radio__label"><div class="buri-address-item__name">张三 13000000000<span class="buri-tag buri-tag--round buri-tag--danger buri-address-item__tag">默认</span>
             </div>
-            <div class="van-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
+            <div class="buri-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
           </div>
-        </div><i class="van-icon van-icon-edit van-address-item__edit">
+        </div><i class="buri-icon buri-icon-edit buri-address-item__edit">
           <!----></i>
       </div>
-      <div role="button" tabindex="0" class="van-cell van-cell--clickable van-cell--borderless van-address-item">
-        <div class="van-cell__value van-cell__value--alone van-address-item__value">
-          <div role="radio" tabindex="-1" aria-checked="false" class="van-radio">
-            <div class="van-radio__icon van-radio__icon--round" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">李四 1310000000</div><div class="van-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
+      <div role="button" tabindex="0" class="buri-cell buri-cell--clickable buri-cell--borderless buri-address-item">
+        <div class="buri-cell__value buri-cell__value--alone buri-address-item__value">
+          <div role="radio" tabindex="-1" aria-checked="false" class="buri-radio">
+            <div class="buri-radio__icon buri-radio__icon--round" style="font-size: 18px;"><i class="buri-icon buri-icon-success">
+                <!----></i></div><span class="buri-radio__label"><div class="buri-address-item__name">李四 1310000000</div><div class="buri-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
           </div>
-        </div><i class="van-icon van-icon-edit van-address-item__edit">
+        </div><i class="buri-icon buri-icon-edit buri-address-item__edit">
           <!----></i>
       </div>
     </div>
-    <div class="van-address-list__disabled-text">以下地址超出配送范围</div>
-    <div class="van-cell van-cell--borderless van-address-item van-address-item--disabled">
-      <div class="van-cell__value van-cell__value--alone van-address-item__value">
-        <div class="van-address-item__name">王五 1320000000</div>
-        <div class="van-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
-      </div><i class="van-icon van-icon-edit van-address-item__edit">
+    <div class="buri-address-list__disabled-text">以下地址超出配送范围</div>
+    <div class="buri-cell buri-cell--borderless buri-address-item buri-address-item--disabled">
+      <div class="buri-cell__value buri-cell__value--alone buri-address-item__value">
+        <div class="buri-address-item__name">王五 1320000000</div>
+        <div class="buri-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
+      </div><i class="buri-icon buri-icon-edit buri-address-item__edit">
         <!----></i>
     </div>
-    <div class="van-address-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-address-list__add"><span class="van-button__text">新增地址</span></button></div>
+    <div class="buri-address-list__bottom"><button class="buri-button buri-button--danger buri-button--normal buri-button--block buri-button--round buri-address-list__add"><span class="buri-button__text">新增地址</span></button></div>
   </div>
 </div>
 </div>

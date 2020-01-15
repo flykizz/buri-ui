@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button render default slot 1`] = `<button class="van-button van-button--default van-button--large van-button--square van-goods-action-button van-goods-action-button--first van-goods-action-button--last"><span class="van-button__text">Default Content</span></button>`;
+exports[`Button render default slot 1`] = `<button class="buri-button buri-button--default buri-button--large buri-button--square buri-goods-action-button buri-goods-action-button--first buri-goods-action-button--last"><span class="buri-button__text">Default Content</span></button>`;
 
 exports[`Icon render default slot 1`] = `
-<div role="button" tabindex="0" class="van-goods-action-icon">
-  <div class="van-icon van-icon-undefined van-goods-action-icon__icon">
+<div role="button" tabindex="0" class="buri-goods-action-icon">
+  <div class="buri-icon buri-icon-undefined buri-goods-action-icon__icon">
     <!---->
   </div>Default Content
 </div>
 `;
 
 exports[`Icon render icon slot 1`] = `
-<div role="button" tabindex="0" class="van-goods-action-icon">
-  <div class="van-goods-action-icon__icon">Custom Icon</div>Text
+<div role="button" tabindex="0" class="buri-goods-action-icon">
+  <div class="buri-goods-action-icon__icon">Custom Icon</div>Text
 </div>
 `;

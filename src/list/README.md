@@ -8,7 +8,7 @@ A list component to show items and control loading status.
 
 ``` javascript
 import Vue from 'vue';
-import { List } from 'vant';
+import { List } from 'buri';
 
 Vue.use(List);
 ```
@@ -18,18 +18,18 @@ Vue.use(List);
 ### Basic Usage
 
 ```html
-<van-list
+<buri-list
   v-model="loading"
   :finished="finished"
   finished-text="Finished"
   @load="onLoad"
 >
-  <van-cell
+  <buri-cell
     v-for="item in list"
     :key="item"
     :title="item"
   />
-</van-list>
+</buri-list>
 ```
 
 ```js
@@ -62,18 +62,18 @@ export default {
 ### Error Info
 
 ```html
-<van-list
+<buri-list
   v-model="loading"
   :error.sync="error"
   error-text="Request failed. Click to reload"
   @load="onLoad"
 >
-  <van-cell
+  <buri-cell
     v-for="item in list"
     :key="item"
     :title="item"
   />
-</van-list>
+</buri-list>
 ```
 
 ```js

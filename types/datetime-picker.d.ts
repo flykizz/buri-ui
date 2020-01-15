@@ -1,6 +1,6 @@
-import { VanComponent } from './component';
+import { BuriComponent } from './component';
 import { Picker } from './picker';
 
-export class DatetimePicker extends VanComponent {
+export class DatetimePicker extends BuriComponent {
   getPicker(): Picker;
 }

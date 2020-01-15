@@ -1,6 +1,6 @@
 {
-  "name": "vant",
-  "version": "2.4.3-beta.0",
+  "name": "buri",
+  "version": "1.0.0",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,19 +14,19 @@
   ],
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "dev": "vant-cli dev",
-    "lint": "vant-cli lint",
-    "test": "vant-cli test",
-    "build": "vant-cli build",
-    "release": "vant-cli release",
-    "test:watch": "vant-cli test --watch",
+    "dev": "buri-cli dev",
+    "lint": "buri-cli lint",
+    "test": "buri-cli test",
+    "build": "buri-cli build",
+    "release": "buri-cli release",
+    "test:watch": "buri-cli test --watch",
     "release:site": "sh docs/site/release.sh",
     "test:coverage": "open test/coverage/index.html"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "vant-cli commit-lint"
+      "commit-msg": "buri-cli commit-lint"
     }
   },
   "lint-staged": {
@@ -41,17 +41,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:youzan/vant.git"
+    "url": "git@github.com:flykizz/buri-ui.git"
   },
   "keywords": [
     "vue",
     "component"
   ],
-  "author": "youzanfe",
+  "author": "flykizz",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "7.x",
-    "@vant/icons": "1.2.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "vue-lazyload": "1.2.3"
   },
@@ -59,7 +58,7 @@
     "vue": ">= 2.5.22"
   },
   "devDependencies": {
-    "@vant/cli": "^2.1.7",
+    "@buri-ui/cli": "^1.0.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
@@ -76,12 +75,12 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@vant"
+      "@buri-ui"
     ]
   },
   "stylelint": {
     "extends": [
-      "@vant/stylelint-config"
+      "@buri-ui/stylelint-config"
     ]
   },
   "prettier": {

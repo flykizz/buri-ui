@@ -1,7 +1,7 @@
 <div class="card">
-  <div class="van-doc-intro">
-    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
+  <div class="buri-doc-intro">
+    <img class="buri-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/buri/logo.png">
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Burit</h2>
     <p>Mobile UI Components built on Vue</p>
   </div>
 </div>
@@ -23,7 +23,7 @@ See in [Quickstart](#/en-US/quickstart).
 
 ### Contribution
 
-Please make sure to read the [Contributing Guide](https://github.com/youzan/vant/blob/dev/.github/CONTRIBUTING.md) before making a pull request.
+Please make sure to read the [Contributing Guide](https://github.com/flykizz/buri/blob/dev/.github/CONTRIBUTING.md) before making a pull request.
 
 ### Browser Support
 
@@ -31,10 +31,10 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 
 ### Links
 
-* [Feedback](https://github.com/youzan/vant/issues)
+* [Feedback](https://github.com/flykizz/buri/issues)
 * [Changelog](#/en-US/changelog)
-* [Vant Demo](https://github.com/youzan/vant-demo)
-* [Vant Weapp](https://github.com/youzan/vant-weapp)
+* [Burit Demo](https://github.com/flykizz/buri-demo)
+* [Burit Weapp](https://github.com/flykizz/buri-weapp)
 
 ### LICENSE
 

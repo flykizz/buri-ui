@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ``` javascript
 import Vue from 'vue';
-import { Area } from 'vant';
+import { Area } from 'buri';
 
 Vue.use(Area);
 ```
@@ -20,7 +20,7 @@ Vue.use(Area);
 To initailize `Area` component, `area-list` property is required. Data structure will be introduced later. 
 
 ```html
-<van-area :area-list="areaList" />
+<buri-area :area-list="areaList" />
 ```
 
 ### Initial Value
@@ -28,7 +28,7 @@ To initailize `Area` component, `area-list` property is required. Data structure
 To have a selected value，simply pass the `code` of target area to `value` property.
 
 ```html
-<van-area :area-list="areaList" value="110101" />
+<buri-area :area-list="areaList" value="110101" />
 ```
 
 ### Columns Number
@@ -37,7 +37,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 Set `columns-num` with 2, you'll have a 2 level picker.
 
 ```html
-<van-area :area-list="areaList" :columns-num="2" title="Title" />
+<buri-area :area-list="areaList" :columns-num="2" title="Title" />
 ```
 
 ### Columns Placeholder
@@ -45,7 +45,7 @@ Set `columns-num` with 2, you'll have a 2 level picker.
 `columns-placeholder` property is used to config placeholder of columns.
 
 ```html
-<van-area
+<buri-area
   :area-list="areaList"
   :columns-placeholder="['Choose', 'Choose', 'Choose']"
   title="Title"
@@ -116,7 +116,7 @@ Example of `AreaList`
 }
 ```
 
-All code of China: [Area.json](https://github.com/youzan/vant/blob/dev/src/area/demo/area-en.js)
+All code of China: [Area.json](https://github.com/flykizz/buri/blob/dev/src/area/demo/area-en.js)
 
 ### argument of callback function confirm
 

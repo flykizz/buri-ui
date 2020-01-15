@@ -8,7 +8,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Icon } from 'vant';
+import { Icon } from 'buri';
 
 Vue.use(Icon);
 ```
@@ -20,8 +20,8 @@ Vue.use(Icon);
 `Icon`的`name`属性支持传入图标名称或图片链接，所有可用的图标名称见右侧示例
 
 ```html
-<van-icon name="chat-o" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<buri-icon name="chat-o" />
+<buri-icon name="https://b.yzcdn.cn/buri/icon-demo-1126.png" />
 ```
 
 ### 提示信息
@@ -29,9 +29,9 @@ Vue.use(Icon);
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`info`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-icon name="chat-o" dot />
-<van-icon name="chat-o" info="9" />
-<van-icon name="chat-o" info="99+" />
+<buri-icon name="chat-o" dot />
+<buri-icon name="chat-o" info="9" />
+<buri-icon name="chat-o" info="99+" />
 ```
 
 ### 图标颜色
@@ -39,8 +39,8 @@ Vue.use(Icon);
 `Icon`的`color`属性用来设置图标的颜色
 
 ```html
-<van-icon name="chat-o" color="#1989fa" />
-<van-icon name="chat-o" color="#07c160" />
+<buri-icon name="chat-o" color="#1989fa" />
+<buri-icon name="chat-o" color="#07c160" />
 ```
 
 ### 图标大小
@@ -48,8 +48,8 @@ Vue.use(Icon);
 `Icon`的`size`属性用来设置图标的尺寸大小，默认单位为`px`
 
 ```html
-<van-icon name="chat-o" size="40" />
-<van-icon name="chat-o" size="3rem" />
+<buri-icon name="chat-o" size="40" />
+<buri-icon name="chat-o" size="3rem" />
 ```
 
 ### 使用本地字体文件
@@ -57,7 +57,7 @@ Vue.use(Icon);
 Icon 组件默认引用有赞 CDN 提供的字体文件，并通过网络下载。如果需要在项目中使用本地字体文件，请引入下面的 CSS 文件，并在项目中配置`url-loader`
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'buri/lib/icon/local.css';
 ```
 
 ### 自定义图标
@@ -82,7 +82,7 @@ import 'vant/lib/icon/local.css';
 
 ```html
 <!-- 通过 class-prefix 指定类名为 my-icon -->
-<van-icon class-prefix="my-icon" name="extra" />
+<buri-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -96,7 +96,7 @@ import 'vant/lib/icon/local.css';
 | info | 图标右上角徽标的内容 | *string \| number* | - |
 | color | 图标颜色 | *string* | `inherit` |
 | size | 图标大小，如 `20px` `2em`，默认单位为`px` | *string \| number* | `inherit` |
-| class-prefix | 类名前缀 | *string* | `van-icon` |
+| class-prefix | 类名前缀 | *string* | `buri-icon` |
 | tag | HTML 标签 | *string* | `i` |
 
 ### Events

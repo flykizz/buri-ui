@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Search } from 'vant';
+import { Search } from 'buri';
 
 Vue.use(Search);
 ```
@@ -16,7 +16,7 @@ Vue.use(Search);
 v-model 用于控制搜索框中的文字，background 可以自定义搜索框外部背景色
 
 ```html
-<van-search placeholder="请输入搜索关键词" v-model="value" />
+<buri-search placeholder="请输入搜索关键词" v-model="value" />
 ```
 
 ### 事件监听
@@ -25,7 +25,7 @@ Search 组件提供了`search`和`cancel`事件，`search`事件在点击键盘�
 
 ```html
 <form action="/">
-  <van-search
+  <buri-search
     v-model="value"
     placeholder="请输入搜索关键词"
     show-action
@@ -35,14 +35,14 @@ Search 组件提供了`search`和`cancel`事件，`search`事件在点击键盘�
 </form>
 ```
 
-> Tips: 在 van-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮
+> Tips: 在 buri-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮
 
 ### 自定义按钮
 
 使用`action`插槽可以自定义右侧按钮的内容。使用插槽后，cancel 事件将不再触发
 
 ```html
-<van-search
+<buri-search
   v-model="value"
   placeholder="请输入搜索关键词"
   show-action
@@ -50,7 +50,7 @@ Search 组件提供了`search`和`cancel`事件，`search`事件在点击键盘�
   @search="onSearch"
 >
   <div slot="action" @click="onSearch">搜索</div>
-</van-search>
+</buri-search>
 ```
 
 ## API

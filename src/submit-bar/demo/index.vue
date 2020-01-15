@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-submit-bar
+      <buri-submit-bar
         :price="3050"
         :button-text="$t('submit')"
         @submit="onClickButton"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="$t('disabled')">
-      <van-submit-bar
+      <buri-submit-bar
         disabled
         :price="3050"
         :button-text="$t('submit')"
@@ -20,7 +20,7 @@
     </demo-block>
 
     <demo-block :title="$t('loadingStatus')">
-      <van-submit-bar
+      <buri-submit-bar
         loading
         :price="3050"
         :button-text="$t('submit')"
@@ -28,13 +28,13 @@
       />
     </demo-block>
 
-    <demo-block :title="$t('advancedUsage')">
-      <van-submit-bar
+    <demo-block :title="$t('adburicedUsage')">
+      <buri-submit-bar
         :price="3050"
         :button-text="$t('submit')"
         @submit="onClickButton"
       >
-        <van-checkbox v-model="checked">{{ $t('check') }}</van-checkbox>
+        <buri-checkbox v-model="checked">{{ $t('check') }}</buri-checkbox>
         <template #tip>
           {{ $t('tip2') }}
           <span
@@ -44,7 +44,7 @@
             {{ $t('tip3') }}
           </span>
         </template>
-      </van-submit-bar>
+      </buri-submit-bar>
     </demo-block>
   </demo-section>
 </template>
@@ -93,7 +93,7 @@ export default {
 @import '../../style/var';
 
 .demo-submit-bar {
-  .van-submit-bar {
+  .buri-submit-bar {
     position: relative;
   }
 
@@ -101,7 +101,7 @@ export default {
     color: @blue;
   }
 
-  .van-checkbox {
+  .buri-checkbox {
     margin-right: @padding-sm;
   }
 }

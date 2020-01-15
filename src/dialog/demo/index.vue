@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="$t('alert1')">
-      <van-button type="primary" @click="onClickAlert">{{ $t('alert1') }}</van-button>
-      <van-button type="primary" @click="onClickAlert2">{{ $t('alert2') }}</van-button>
+      <buri-button type="primary" @click="onClickAlert">{{ $t('alert1') }}</buri-button>
+      <buri-button type="primary" @click="onClickAlert2">{{ $t('alert2') }}</buri-button>
     </demo-block>
 
     <demo-block :title="$t('confirm')">
-      <van-button type="primary" @click="onClickConfirm">{{ $t('confirm') }}</van-button>
+      <buri-button type="primary" @click="onClickConfirm">{{ $t('confirm') }}</buri-button>
     </demo-block>
 
     <demo-block :title="$t('asyncClose')">
-      <van-button type="primary" @click="onClickAsyncClose">{{ $t('asyncClose') }}</van-button>
+      <buri-button type="primary" @click="onClickAsyncClose">{{ $t('asyncClose') }}</buri-button>
     </demo-block>
 
     <demo-block :title="$t('componentCall')">
-      <van-button type="primary" @click="show = true">{{ $t('componentCall') }}</van-button>
-      <van-dialog v-model="show" :title="$t('title')" show-cancel-button :lazy-render="false">
+      <buri-button type="primary" @click="show = true">{{ $t('componentCall') }}</buri-button>
+      <buri-dialog v-model="show" :title="$t('title')" show-cancel-button :lazy-render="false">
         <img :src="image">
-      </van-dialog>
+      </buri-dialog>
     </demo-block>
   </demo-section>
 </template>
@@ -46,7 +46,7 @@ export default {
     return {
       show: false,
       currentRate: 0,
-      image: 'https://img.yzcdn.cn/vant/apple-3.jpg'
+      image: 'https://img.yzcdn.cn/buri/apple-3.jpg'
     };
   },
 
@@ -96,7 +96,7 @@ export default {
 .demo-dialog {
   background-color: @white;
 
-  .van-doc-demo-block > .van-button {
+  .buri-doc-demo-block > .buri-button {
     margin-left: @padding-md;
   }
 

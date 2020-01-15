@@ -1,9 +1,9 @@
 <template>
   <demo-section>
     <demo-block :title="$t('default')">
-      <van-button type="primary" @touchstart.stop="keyboard = 'default'">{{ $t('button1') }}</van-button>
+      <buri-button type="primary" @touchstart.stop="keyboard = 'default'">{{ $t('button1') }}</buri-button>
 
-      <van-number-keyboard
+      <buri-number-keyboard
         :show="keyboard === 'default'"
         :close-button-text="$t('close')"
         extra-key="."
@@ -14,9 +14,9 @@
     </demo-block>
 
     <demo-block :title="$t('custom')">
-      <van-button type="info" @touchstart.stop="keyboard = 'custom'">{{ $t('button2') }}</van-button>
+      <buri-button type="info" @touchstart.stop="keyboard = 'custom'">{{ $t('button2') }}</buri-button>
 
-      <van-number-keyboard
+      <buri-number-keyboard
         :show="keyboard === 'custom'"
         :close-button-text="$t('close')"
         theme="custom"
@@ -28,7 +28,7 @@
     </demo-block>
 
     <demo-block :title="$t('bindValue')">
-      <van-field
+      <buri-field
         readonly
         clickable
         :value="value"
@@ -36,7 +36,7 @@
         @touchstart.native.stop="keyboard = 'bindValue'"
       />
 
-      <van-number-keyboard
+      <buri-number-keyboard
         v-model="value"
         :show="keyboard === 'bindValue'"
         maxlength="6"
@@ -45,9 +45,9 @@
     </demo-block>
 
     <demo-block :title="$t('extraKey')">
-      <van-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">{{ $t('button3') }}</van-button>
+      <buri-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">{{ $t('button3') }}</buri-button>
 
-      <van-number-keyboard
+      <buri-number-keyboard
         :show="keyboard === 'extraKey'"
         :close-button-text="$t('close')"
         extra-key="X"
@@ -58,9 +58,9 @@
     </demo-block>
 
     <demo-block :title="$t('title')">
-      <van-button plain type="info" @touchstart.stop="keyboard = 'title'">{{ $t('button4') }}</van-button>
+      <buri-button plain type="info" @touchstart.stop="keyboard = 'title'">{{ $t('button4') }}</buri-button>
 
-      <van-number-keyboard
+      <buri-number-keyboard
         :show="keyboard === 'title'"
         :close-button-text="$t('close')"
         :title="$t('title')"
@@ -129,7 +129,7 @@ export default {
 @import '../../style/var';
 
 .demo-number-keyboard {
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 }

@@ -11,6 +11,6 @@ test('focus event', () => {
     }
   });
 
-  wrapper.find('.van-password-input__security').trigger('touchstart');
+  wrapper.find('.buri-password-input__security').trigger('touchstart');
   expect(focus).toHaveBeenCalledTimes(1);
 });

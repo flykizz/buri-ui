@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-card
+      <buri-card
         num="2"
         price="2.00"
         :desc="$t('desc')"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="$t('discountInfo')">
-      <van-card
+      <buri-card
         num="2"
         price="2.00"
         origin-price="10.00"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block :title="$t('customContent')">
-      <van-card
+      <buri-card
         num="2"
         price="2.00"
         :desc="$t('desc')"
@@ -32,39 +32,39 @@
       >
         <template #tags>
           <div>
-            <van-tag
+            <buri-tag
               plain
               type="danger"
               style="margin-right: 5px;"
             >
               标签
-            </van-tag>
-            <van-tag
+            </buri-tag>
+            <buri-tag
               plain
               type="danger"
             >
               标签
-            </van-tag>
+            </buri-tag>
           </div>
         </template>
 
         <template #footer>
           <div>
-            <van-button
+            <buri-button
               round
               size="mini"
             >
               {{ $t('button') }}
-            </van-button>
-            <van-button
+            </buri-button>
+            <buri-button
               round
               size="mini"
             >
               {{ $t('button') }}
-            </van-button>
+            </buri-button>
           </div>
         </template>
-      </van-card>
+      </buri-card>
     </demo-block>
   </demo-section>
 </template>
@@ -85,7 +85,7 @@ export default {
 
   data() {
     return {
-      imageURL: 'https://img.yzcdn.cn/vant/t-thirt.jpg'
+      imageURL: 'https://img.yzcdn.cn/buri/t-thirt.jpg'
     };
   }
 };

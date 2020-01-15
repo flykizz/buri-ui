@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { NavBar } from 'vant';
+import { NavBar } from 'buri';
 
 Vue.use(NavBar);
 ```
@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### Basic Usage
 
 ```html
-<van-nav-bar
+<buri-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -37,12 +37,12 @@ export default {
 }
 ```
 
-### Advanced Usage
+### Adburiced Usage
 
 ```html
-<van-nav-bar title="Title" left-text="Back" left-arrow>
-  <van-icon name="search" slot="right" />
-</van-nav-bar>
+<buri-nav-bar title="Title" left-text="Back" left-arrow>
+  <buri-icon name="search" slot="right" />
+</buri-nav-bar>
 ```
 
 ## API

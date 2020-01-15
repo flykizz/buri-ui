@@ -1,22 +1,22 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-button type="danger" :text="$t('basicUsage')" @click="showNotify" />
+      <buri-button type="danger" :text="$t('basicUsage')" @click="showNotify" />
     </demo-block>
 
     <demo-block :title="$t('notifyType')">
       <div style="margin-bottom: 15px;">
-        <van-button type="info" :text="$t('primary')" @click="showType('primary')" />
-        <van-button type="primary" :text="$t('success')" @click="showType('success')" />
+        <buri-button type="info" :text="$t('primary')" @click="showType('primary')" />
+        <buri-button type="primary" :text="$t('success')" @click="showType('success')" />
       </div>
 
-      <van-button type="danger" :text="$t('danger')" @click="showType('danger')" />
-      <van-button type="warning" :text="$t('warning')" @click="showType('warning')" />
+      <buri-button type="danger" :text="$t('danger')" @click="showType('danger')" />
+      <buri-button type="warning" :text="$t('warning')" @click="showType('warning')" />
     </demo-block>
 
     <demo-block :title="$t('customNotify')">
-      <van-button type="primary" :text="$t('customColor')" @click="showCustomColor" />
-      <van-button type="primary" :text="$t('customDuration')" @click="showCustomDuration" />
+      <buri-button type="primary" :text="$t('customColor')" @click="showCustomColor" />
+      <buri-button type="primary" :text="$t('customDuration')" @click="showCustomDuration" />
     </demo-block>
   </demo-section>
 </template>
@@ -84,7 +84,7 @@ export default {
 .demo-notify {
   background-color: @white;
 
-  .van-button {
+  .buri-button {
     margin-left: @padding-md;
   }
 }

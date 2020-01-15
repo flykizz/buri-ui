@@ -1,36 +1,36 @@
 <template>
   <demo-section>
-    <van-cell center :title="$t('basicUsage')">
-      <van-stepper v-model="stepper1" />
-    </van-cell>
+    <buri-cell center :title="$t('basicUsage')">
+      <buri-stepper v-model="stepper1" />
+    </buri-cell>
 
-    <van-cell center :title="$t('step')">
-      <van-stepper v-model="stepper2" step="2" />
-    </van-cell>
+    <buri-cell center :title="$t('step')">
+      <buri-stepper v-model="stepper2" step="2" />
+    </buri-cell>
 
-    <van-cell center :title="$t('range')">
-      <van-stepper v-model="stepper3" :min="5" :max="8" />
-    </van-cell>
+    <buri-cell center :title="$t('range')">
+      <buri-stepper v-model="stepper3" :min="5" :max="8" />
+    </buri-cell>
 
-    <van-cell center :title="$t('integer')">
-      <van-stepper v-model="stepper4" integer />
-    </van-cell>
+    <buri-cell center :title="$t('integer')">
+      <buri-stepper v-model="stepper4" integer />
+    </buri-cell>
 
-    <van-cell center :title="$t('disabled')">
-      <van-stepper v-model="stepper5" disabled />
-    </van-cell>
+    <buri-cell center :title="$t('disabled')">
+      <buri-stepper v-model="stepper5" disabled />
+    </buri-cell>
 
-    <van-cell center :title="$t('decimalLength')">
-      <van-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
-    </van-cell>
+    <buri-cell center :title="$t('decimalLength')">
+      <buri-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
+    </buri-cell>
 
-    <van-cell center :title="$t('customSize')">
-      <van-stepper v-model="stepper7" button-size="32px" input-width="40px" />
-    </van-cell>
+    <buri-cell center :title="$t('customSize')">
+      <buri-stepper v-model="stepper7" button-size="32px" input-width="40px" />
+    </buri-cell>
 
-    <van-cell center :title="$t('asyncChange')">
-      <van-stepper :value="stepper6" async-change @change="onChange" />
-    </van-cell>
+    <buri-cell center :title="$t('asyncChange')">
+      <buri-stepper :value="stepper6" async-change @change="onChange" />
+    </buri-cell>
   </demo-section>
 </template>
 

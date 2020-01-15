@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'buri';
 
 Vue.use(PullRefresh);
 ```
@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 The `refresh` event will be triggered when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<buri-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 ```
 
 ```javascript
@@ -47,13 +47,13 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<van-pull-refresh
+<buri-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
 >
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 ```
 
 ### Custom Tips
@@ -61,26 +61,26 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<buri-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <img
     class="doge"
     slot="pulling"
     slot-scope="props"
-    src="https://img.yzcdn.cn/vant/doge.png"
+    src="https://img.yzcdn.cn/buri/doge.png"
     :style="{ transform: `scale(${props.distance / 80})` }"
   >
   <img
     class="doge"
     slot="loosing"
-    src="https://img.yzcdn.cn/vant/doge.png"
+    src="https://img.yzcdn.cn/buri/doge.png"
   >
   <img
     class="doge"
     slot="loading"
-    src="https://img.yzcdn.cn/vant/doge-fire.jpg"
+    src="https://img.yzcdn.cn/buri/doge-fire.jpg"
   >
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</buri-pull-refresh>
 
 <style>
 .doge {

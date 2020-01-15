@@ -2,15 +2,15 @@
 
 ### 介绍
 
-Vant 默认采用中文作为语言，如果需要使用其他语言，可以参考下面的方案。
+Burit 默认采用中文作为语言，如果需要使用其他语言，可以参考下面的方案。
 
 ### 多语言切换
 
-Vant 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可以切换当前使用的语言。
+Burit 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可以切换当前使用的语言。
 
 ```js
-import { Locale } from 'vant';
-import enUS from 'vant/lib/locale/lang/en-US';
+import { Locale } from 'buri';
+import enUS from 'buri/lib/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```
@@ -20,11 +20,11 @@ Locale.use('en-US', enUS);
 通过 `Locale.add` 方法可以实现文案的修改和扩展，示例如下：
 
 ```js
-import { Locale } from 'vant';
+import { Locale } from 'buri';
 
 const messages = {
   'zh-CN': {
-    vanPicker: {
+    buriPicker: {
       confirm: '关闭' // 将'确认'修改为'关闭'
     }
   }
@@ -46,7 +46,7 @@ Locale.add(messages);
 | 土耳其语 | tr-TR |
 | 西班牙语 | es-ES |
 
-> 在 [这里](https://github.com/youzan/vant/tree/dev/src/locale/lang) 查看所有的 i18n 配置文件。
+> 在 [这里](https://github.com/flykizz/buri/tree/dev/src/locale/lang) 查看所有的 i18n 配置文件。
 
 ### Sku 组件
 

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="$t('basicUsage')">
-      <van-address-edit
+      <buri-address-edit
         :area-list="areaList"
         show-postal
         show-delete
@@ -73,7 +73,7 @@ export default {
 
 <style lang="less">
 .demo-address-edit {
-  .van-doc-demo-block__title {
+  .buri-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

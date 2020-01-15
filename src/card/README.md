@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Card } from 'vant';
+import { Card } from 'buri';
 
 Vue.use(Card);
 ```
@@ -14,26 +14,26 @@ Vue.use(Card);
 ### Basic Usage
 
 ```html
-<van-card
+<buri-card
   num="2"
   price="2.00"
   title="Title"
   desc="Description"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
 />
 ```
 
 ### Discount Info
 
 ```html
-<van-card
+<buri-card
   num="2"
   tag="Tag"
   price="2.00"
   title="Title"
   desc="Description"
   origin-price="10.00"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
 />
 ```
 
@@ -42,22 +42,22 @@ Vue.use(Card);
 Use slot to custom content.
 
 ```html
-<van-card
+<buri-card
   num="2"
   title="Title"
   desc="Description"
   price="2.00"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
 >
   <div slot="tags">
-    <van-tag plain type="danger">Tag</van-tag>
-    <van-tag plain type="danger">Tag</van-tag>
+    <buri-tag plain type="danger">Tag</buri-tag>
+    <buri-tag plain type="danger">Tag</buri-tag>
   </div>
   <div slot="footer">
-    <van-button size="mini">Button</van-button>
-    <van-button size="mini">Button</van-button>
+    <buri-button size="mini">Button</buri-button>
+    <buri-button size="mini">Button</buri-button>
   </div>
-</van-card>
+</buri-card>
 ```
 
 ## API

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Image } from 'vant';
+import { Image } from 'buri';
 
 Vue.use(Image);
 ```
@@ -14,21 +14,21 @@ Vue.use(Image);
 ### Basic Usage
 
 ```html
-<van-image
+<buri-image
   width="100"
   height="100"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
 ### Fit Mode
 
 ```html
-<van-image
+<buri-image
   width="10rem"
   height="10rem"
   fit="contain"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
@@ -37,27 +37,27 @@ Vue.use(Image);
 Show round image, it may not works at `fit=contain` and `fit=scale-down`
 
 ```html
-<van-image
+<buri-image
   round
   width="10rem"
   height="10rem"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
 ### Lazy Load
 
 ```html
-<van-image
+<buri-image
   width="100"
   height="100"
   lazy-load
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
+  src="https://img.yzcdn.cn/buri/cat.jpeg"
 />
 ```
 
 ```js
-import { Lazyload } from 'vant';
+import { Lazyload } from 'buri';
 
 Vue.use(Lazyload);
 ```

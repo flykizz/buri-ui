@@ -10,7 +10,7 @@ const [createComponent, bem] = createNamespace('collapse-item');
 const CELL_SLOTS = ['title', 'icon', 'right-icon'];
 
 export default createComponent({
-  mixins: [ChildrenMixin('vanCollapse')],
+  mixins: [ChildrenMixin('buriCollapse')],
 
   props: {
     ...cellProps,
@@ -46,7 +46,7 @@ export default createComponent({
         !accordion &&
         !Array.isArray(value)
       ) {
-        console.error('[Vant] Collapse: type of prop "value" should be Array');
+        console.error('[Burit] Collapse: type of prop "value" should be Array');
         return;
       }
 

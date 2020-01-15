@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Pagination } from 'vant';
+import { Pagination } from 'buri';
 
 Vue.use(Pagination);
 ```
@@ -14,7 +14,7 @@ Vue.use(Pagination);
 ### Basic Usage
 
 ```html
-<van-pagination 
+<buri-pagination 
   v-model="currentPage" 
   :total-items="24" 
   :items-per-page="5"
@@ -34,7 +34,7 @@ export default {
 ### Simple mode
 
 ```html
-<van-pagination 
+<buri-pagination 
   v-model="currentPage" 
   :page-count="12"
   mode="simple" 
@@ -44,7 +44,7 @@ export default {
 ### Show ellipses
 
 ```html
-<van-pagination 
+<buri-pagination 
   v-model="currentPage" 
   :total-items="125" 
   :show-page-size="3" 

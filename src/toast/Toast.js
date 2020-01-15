@@ -27,7 +27,7 @@ export default createComponent({
     },
     transition: {
       type: String,
-      default: 'van-fade'
+      default: 'buri-fade'
     },
     lockScroll: {
       type: Boolean,

@@ -4,7 +4,7 @@
 
 ``` javascript
 import Vue from 'vue';
-import { Card } from 'vant';
+import { Card } from 'buri';
 
 Vue.use(Card);
 ```
@@ -14,12 +14,12 @@ Vue.use(Card);
 ### 基础用法
 
 ```html
-<van-card
+<buri-card
   num="2"
   price="2.00"
   desc="描述信息"
   title="商品标题"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
 />
 ```
 
@@ -28,13 +28,13 @@ Vue.use(Card);
 通过`origin-price`设置商品原价，通过`tag`设置商品左上角标签
 
 ```html
-<van-card
+<buri-card
   num="2"
   tag="标签"
   price="2.00"
   desc="描述信息"
   title="商品标题"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
   origin-price="10.00"
 />
 ```
@@ -44,22 +44,22 @@ Vue.use(Card);
 `Card`组件提供了多个插槽，可以灵活地自定义内容
 
 ```html
-<van-card
+<buri-card
   num="2"
   price="2.00"
   desc="描述信息"
   title="商品标题"
-  thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+  thumb="https://img.yzcdn.cn/buri/t-thirt.jpg"
 >
   <div slot="tags">
-    <van-tag plain type="danger">标签</van-tag>
-    <van-tag plain type="danger">标签</van-tag>
+    <buri-tag plain type="danger">标签</buri-tag>
+    <buri-tag plain type="danger">标签</buri-tag>
   </div>
   <div slot="footer">
-    <van-button size="mini">按钮</van-button>
-    <van-button size="mini">按钮</van-button>
+    <buri-button size="mini">按钮</buri-button>
+    <buri-button size="mini">按钮</buri-button>
   </div>
-</van-card>
+</buri-card>
 ```
 
 ## API

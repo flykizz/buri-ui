@@ -14,7 +14,7 @@ test('click number key', () => {
     }
   });
 
-  clickKey(wrapper.findAll('.van-key').at(0));
+  clickKey(wrapper.findAll('.buri-key').at(0));
   expect(wrapper.emitted('input')[0][0]).toEqual(1);
 
   wrapper.destroy();
@@ -23,13 +23,13 @@ test('click number key', () => {
 it('click delete key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  clickKey(wrapper.findAll('.van-key').at(11));
+  clickKey(wrapper.findAll('.buri-key').at(11));
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
 
 it('click empty key', () => {
   const wrapper = mount(NumberKeyboard);
-  clickKey(wrapper.findAll('.van-key').at(9));
+  clickKey(wrapper.findAll('.buri-key').at(9));
   expect(wrapper.emitted('input')).toBeFalsy();
 });
 
@@ -41,7 +41,7 @@ test('click close button', () => {
     }
   });
 
-  clickKey(wrapper.findAll('.van-key').at(12));
+  clickKey(wrapper.findAll('.buri-key').at(12));
   expect(wrapper.emitted('close')).toBeTruthy();
 });
 
@@ -124,7 +124,7 @@ test('disable hideOnClickOutside', () => {
 test('focus on key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.van-key');
+  const key = wrapper.find('.buri-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchend');
@@ -134,7 +134,7 @@ test('focus on key', () => {
 test('move and blur key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.van-key');
+  const key = wrapper.find('.buri-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchmove', 0, 0);
@@ -157,7 +157,7 @@ test('bind value', () => {
     }
   });
 
-  const keys = wrapper.findAll('.van-key');
+  const keys = wrapper.findAll('.buri-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
@@ -182,7 +182,7 @@ test('maxlength', () => {
     }
   });
 
-  const keys = wrapper.findAll('.van-key');
+  const keys = wrapper.findAll('.buri-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
