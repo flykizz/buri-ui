@@ -1,6 +1,6 @@
 {
   "name": "@buri-ui/stylelint-config",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "stylelint config of buri.",
   "main": "index.js",
   "publishConfig": {
