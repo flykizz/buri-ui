@@ -1,0 +1,30 @@
+{
+  "name": "@buri-ui/icons",
+  "version": "1.0.2",
+  "description": "buri icons",
+  "main": "./src/config.js",
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "export": "node ./build/export.js",
+    "build": "npm run export && gulp --gulpfile ./build/build-iconfont.js",
+    "release": "npm run build && npm publish"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/tree/master/packages/buri-icons",
+  "devDependencies": {
+    "fast-glob": "^3.0.0",
+    "fs-extra": "^8.0.1",
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "md5-file": "^4.0.0",
+    "shelljs": "^0.8.3",
+    "svgo": "^1.2.2"
+  },
+  "gitHead": "68708d05954d40de4b3eb3439e24a7bf591d1d67"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@buri-ui/markdown-loader",
+  "version": "1.0.2",
+  "description": "Simple and fast vue markdown loader",
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/tree/master/packages/buri-markdown-loader",
+  "dependencies": {
+    "front-matter": "^3.0.2",
+    "highlight.js": "^9.15.6",
+    "loader-utils": "^1.2.3",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.4",
+    "transliteration": "^2.1.4"
+  },
+  "gitHead": "68708d05954d40de4b3eb3439e24a7bf591d1d67"
+}

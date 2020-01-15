@@ -1,0 +1,21 @@
+{
+  "name": "@buri-ui/cli",
+  "version": "1.0.1",
+  "description": "buri cli tools",
+  "main": "./src/index.js",
+  "bin": {
+    "buri": "./src/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/tree/master/packages/buri-cli",
+  "dependencies": {
+    "commander": "^2.17.1",
+    "husky": "^3.0.4",
+    "shelljs": "^0.8.2",
+    "signale": "^1.4.0"
+  },
+  "gitHead": "68708d05954d40de4b3eb3439e24a7bf591d1d67"
+}

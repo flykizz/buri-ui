@@ -1,0 +1,12 @@
+{
+  "name": "@buri-ui/touch-emulator",
+  "version": "1.0.2",
+  "description": "Brui touch emulator",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/tree/master/packages/buri-touch-emulator",
+  "gitHead": "68708d05954d40de4b3eb3439e24a7bf591d1d67"
+}

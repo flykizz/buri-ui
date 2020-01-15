@@ -1,0 +1,20 @@
+{
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
+      "allowBranch": ["master", "feature/*", "dev/*"]
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]      
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent"
+}

@@ -1,0 +1,129 @@
+@import "./var";
+
+@keyframes burislide-up-enter {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes burislide-up-leave {
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes burislide-down-enter {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes burislide-down-leave {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes burislide-left-enter {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes burislide-left-leave {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes burislide-right-enter {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes burislide-right-leave {
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes burifade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes burifade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes burirotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.burifade {
+  &-enter-active {
+    animation: @animation-duration-base burifade-in;
+  }
+
+  &-leave-active {
+    animation: @animation-duration-base burifade-out;
+  }
+}
+
+.burislide-up {
+  &-enter-active {
+    animation: burislide-up-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: burislide-up-leave @animation-duration-base both ease;
+  }
+}
+
+.burislide-down {
+  &-enter-active {
+    animation: burislide-down-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: burislide-down-leave @animation-duration-base both ease;
+  }
+}
+
+.burislide-left {
+  &-enter-active {
+    animation: burislide-left-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: burislide-left-leave @animation-duration-base both ease;
+  }
+}
+
+.burislide-right {
+  &-enter-active {
+    animation: burislide-right-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: burislide-right-leave @animation-duration-base both ease;
+  }
+}

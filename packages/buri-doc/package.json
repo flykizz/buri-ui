@@ -1,0 +1,25 @@
+{
+  "name": "@buri-ui/doc",
+  "version": "1.0.4",
+  "description": "buri document template",
+  "main": "./lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "webpack --progress --config ./build/webpack.config.js",
+    "release": "npm run build && npm publish"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/tree/master/packages/buri-doc",
+  "gitHead": "68708d05954d40de4b3eb3439e24a7bf591d1d67",
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "webpack": "^4.41.5"
+  }
+}
