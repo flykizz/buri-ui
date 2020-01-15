@@ -1,0 +1,20 @@
+{
+  "name": "@buri-ui/markdown-vetur",
+  "version": "1.1.2",
+  "description": "simple parse markdown to vue component description for vetur auto-completion",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": "https://github.com/flykizz/buri-ui/master/dev/packages/buri-markdown-vetur",
+  "author": "zhangshuai",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "release": "npm run build && npm publish"
+  }
+}
