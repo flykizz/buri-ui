@@ -51,6 +51,7 @@
   "dependencies": {
     "@babel/runtime": "7.x",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "gulp": "^4.0.2",
     "vue-lazyload": "1.2.3"
   },
   "peerDependencies": {
@@ -58,6 +59,12 @@
   },
   "devDependencies": {
     "@buri-ui/cli": "^1.0.0",
+    "@buri-ui/eslint-config": "^1.1.0",
+    "@buri-ui/markdown-loader": "^1.1.0",
+    "@buri-ui/markdown-vetur": "^1.1.0",
+    "@buri-ui/stylelint-config": "^1.1.7",
+    "@buri-ui/touch-emulator": "^1.1.0",
+    "babel-cli": "^6.26.0",
     "husky": "^4.0.10",
     "lerna": "^3.19.0",
     "lint-staged": "^9.5.0",
