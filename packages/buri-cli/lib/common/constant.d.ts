@@ -27,6 +27,6 @@ export declare const JEST_STYLE_MOCK_FILE: string;
 export declare const SCRIPT_EXTS: string[];
 export declare const STYLE_EXTS: string[];
 export declare function getPackageJson(): any;
-export declare function getBuritConfig(): any;
+export declare function getBuriConfig(): any;
 export declare const SRC_DIR: any;
 export declare const STYLE_DIR: string;

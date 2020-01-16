@@ -24,7 +24,7 @@ function formatName(component, lang) {
  *   - action-sheet/README.md => ActionSheet
  */
 function resolveDocuments(components) {
-    const buriConfig = common_1.getBuritConfig();
+    const buriConfig = common_1.getBuriConfig();
     const { locales, defaultLang } = buriConfig.site;
     const docs = [];
     if (locales) {

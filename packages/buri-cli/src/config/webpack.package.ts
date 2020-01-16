@@ -1,11 +1,11 @@
 import merge from 'webpack-merge';
 import { join } from 'path';
 import { baseConfig } from './webpack.base';
-import { getBuritConfig, getWebpackConfig, setBuildTarget } from '../common';
+import { getBuriConfig, getWebpackConfig, setBuildTarget } from '../common';
 import { LIB_DIR, ES_DIR } from '../common/constant';
 
 export function packageConfig(isMinify: boolean) {
-  const { name } = getBuritConfig();
+  const { name } = getBuriConfig();
 
   setBuildTarget('package');
 

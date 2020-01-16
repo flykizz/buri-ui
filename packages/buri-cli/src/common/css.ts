@@ -1,13 +1,13 @@
 import { get } from 'lodash';
 import { existsSync } from 'fs';
 import { join, isAbsolute } from 'path';
-import { getBuritConfig } from '../common';
+import { getBuriConfig } from '../common';
 import { STYLE_DIR, SRC_DIR } from './constant';
 
 type CSS_LANG = 'css' | 'less' | 'scss';
 
 function getCssLang(): CSS_LANG {
-  const buriConfig = getBuritConfig();
+  const buriConfig = getBuriConfig();
   const preprocessor = get(buriConfig, 'build.css.preprocessor', 'less');
 
   if (preprocessor === 'sass') {
@@ -20,7 +20,7 @@ function getCssLang(): CSS_LANG {
 export const CSS_LANG = getCssLang();
 
 export function getCssBaseFile() {
-  const buriConfig = getBuritConfig();
+  const buriConfig = getBuriConfig();
   let path = join(STYLE_DIR, `base.${CSS_LANG}`);
 
   const baseFile = get(buriConfig, 'build.css.base', '');

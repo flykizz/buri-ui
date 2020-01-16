@@ -1,4 +1,4 @@
-# Eslint Config of Burit
+# Eslint Config of Buri
 
 ## Install
 

@@ -2,11 +2,11 @@
 import markdownVetur from '@buri-ui/markdown-vetur';
 import { join } from 'path';
 import { get } from 'lodash';
-import { SRC_DIR, getBuritConfig, ROOT } from '../common/constant';
+import { SRC_DIR, getBuriConfig, ROOT } from '../common/constant';
 
 // generate vetur tags & attributes
 export function genVeturConfig() {
-  const buriCongig = getBuritConfig();
+  const buriCongig = getBuriConfig();
   const options = get(buriCongig, 'build.vetur');
 
   if (options) {

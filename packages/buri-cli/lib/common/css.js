@@ -6,7 +6,7 @@ const path_1 = require("path");
 const common_1 = require("../common");
 const constant_1 = require("./constant");
 function getCssLang() {
-    const buriConfig = common_1.getBuritConfig();
+    const buriConfig = common_1.getBuriConfig();
     const preprocessor = lodash_1.get(buriConfig, 'build.css.preprocessor', 'less');
     if (preprocessor === 'sass') {
         return 'scss';
@@ -15,7 +15,7 @@ function getCssLang() {
 }
 exports.CSS_LANG = getCssLang();
 function getCssBaseFile() {
-    const buriConfig = common_1.getBuritConfig();
+    const buriConfig = common_1.getBuriConfig();
     let path = path_1.join(constant_1.STYLE_DIR, `base.${exports.CSS_LANG}`);
     const baseFile = lodash_1.get(buriConfig, 'build.css.base', '');
     if (baseFile) {

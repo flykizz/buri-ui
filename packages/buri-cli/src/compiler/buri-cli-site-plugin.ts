@@ -8,7 +8,7 @@ import { genSiteDesktopShared } from './gen-site-desktop-shared';
 import { genStyleDepsMap } from './gen-style-deps-map';
 import { PACKAGE_ENTRY_FILE, PACKAGE_STYLE_FILE } from '../common/constant';
 
-const PLUGIN_NAME = 'BuritCliSitePlugin';
+const PLUGIN_NAME = 'BuriCliSitePlugin';
 
 export async function genSiteEntry() {
   return new Promise((resolve, reject) => {
@@ -31,7 +31,7 @@ export async function genSiteEntry() {
   });
 }
 
-export class BuritCliSitePlugin {
+export class BuriCliSitePlugin {
   apply(compiler: Compiler) {
     if (process.env.NODE_ENV === 'production') {
       compiler.hooks.beforeCompile.tapPromise(PLUGIN_NAME, genSiteEntry);

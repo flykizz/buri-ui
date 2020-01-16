@@ -1,7 +1,7 @@
 <div class="card">
   <div class="buri-doc-intro">
     <img class="buri-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/buri/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Burit</h2>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Buri</h2>
     <p>轻量、可靠的移动端 Vue 组件库</p>
   </div>
 </div>
@@ -50,8 +50,8 @@
 * [意见反馈](https://github.com/flykizz/buri/issues)
 * [更新日志](#/zh-CN/changelog)
 * [码云镜像](https://gitee.com/organizations/buri-contrib)
-* [Burit 示例仓库](https://github.com/flykizz/buri-demo)
-* [BuritWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
+* [Buri 示例仓库](https://github.com/flykizz/buri-demo)
+* [BuriWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
 
 ### 开源协议
 

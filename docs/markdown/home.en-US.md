@@ -1,7 +1,7 @@
 <div class="card">
   <div class="buri-doc-intro">
     <img class="buri-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/buri/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Burit</h2>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Buri</h2>
     <p>Mobile UI Components built on Vue</p>
   </div>
 </div>
@@ -33,8 +33,8 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 
 * [Feedback](https://github.com/flykizz/buri/issues)
 * [Changelog](#/en-US/changelog)
-* [Burit Demo](https://github.com/flykizz/buri-demo)
-* [Burit Weapp](https://github.com/flykizz/buri-weapp)
+* [Buri Demo](https://github.com/flykizz/buri-demo)
+* [Buri Weapp](https://github.com/flykizz/buri-weapp)
 
 ### LICENSE
 

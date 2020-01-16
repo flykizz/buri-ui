@@ -1,4 +1,4 @@
-import { getBuritConfig } from './constant';
+import { getBuriConfig } from './constant';
 export declare const EXT_REGEXP: RegExp;
 export declare const SFC_REGEXP: RegExp;
 export declare const DEMO_REGEXP: RegExp;
@@ -30,4 +30,4 @@ export declare function setNodeEnv(value: NodeEnv): void;
 export declare function setBuildTarget(value: BuildTarget): void;
 export declare function isDev(): boolean;
 export declare function smartOutputFile(filePath: string, content: string): void;
-export { getBuritConfig };
+export { getBuriConfig };

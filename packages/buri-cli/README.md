@@ -1,6 +1,6 @@
-# Burit Cli
+# Buri Cli
 
-Burit Cli 是一个 Vue 组件库构建工具，通过 Burit Cli 可以快速搭建一套功能完备的 Vue 组件库。
+Buri Cli 是一个 Vue 组件库构建工具，通过 Buri Cli 可以快速搭建一套功能完备的 Vue 组件库。
 
 ### 特性
 

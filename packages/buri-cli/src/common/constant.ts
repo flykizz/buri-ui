@@ -59,14 +59,14 @@ export function getPackageJson() {
   return require(PACKAGE_JSON_FILE);
 }
 
-export function getBuritConfig() {
+export function getBuriConfig() {
   delete require.cache[VANT_CONFIG_FILE];
 
   return require(VANT_CONFIG_FILE);
 }
 
 function getSrcDir() {
-  const buriConfig = getBuritConfig();
+  const buriConfig = getBuriConfig();
   const srcDir = get(buriConfig, 'build.srcDir');
 
   if (srcDir) {

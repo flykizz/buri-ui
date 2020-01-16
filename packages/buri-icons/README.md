@@ -1,4 +1,4 @@
-# Burit Icons
+# Buri Icons
 
 ## Install
 

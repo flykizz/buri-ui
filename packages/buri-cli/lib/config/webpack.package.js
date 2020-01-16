@@ -9,7 +9,7 @@ const webpack_base_1 = require("./webpack.base");
 const common_1 = require("../common");
 const constant_1 = require("../common/constant");
 function packageConfig(isMinify) {
-    const { name } = common_1.getBuritConfig();
+    const { name } = common_1.getBuriConfig();
     common_1.setBuildTarget('package');
     return webpack_merge_1.default(webpack_base_1.baseConfig, {
         mode: 'production',

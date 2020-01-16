@@ -69,8 +69,8 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 
 * [Documentation](https://flykizz.github.io/buri)
 * [Changelog](https://flykizz.github.io/buri#/en-US/changelog)
-* [Burit Demo](https://github.com/flykizz/buri-demo)
-* [Burit Weapp](https://github.com/flykizz/buri-weapp)
+* [Buri Demo](https://github.com/flykizz/buri-demo)
+* [Buri Weapp](https://github.com/flykizz/buri-weapp)
 
 ## Preview
 
@@ -80,7 +80,7 @@ You can scan the following QR code to access the demo：
 
 ## Wechat Group
 
-Scan the qrcode to join our wechat discussion group, please note that you want to join Burit discussion group.
+Scan the qrcode to join our wechat discussion group, please note that you want to join Buri discussion group.
 
 <img src="https://img.yzcdn.cn/buri/wechat_20180606.png" width="220" height="292" >
 

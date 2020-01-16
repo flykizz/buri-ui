@@ -8,7 +8,7 @@ const gen_site_mobile_shared_1 = require("./gen-site-mobile-shared");
 const gen_site_desktop_shared_1 = require("./gen-site-desktop-shared");
 const gen_style_deps_map_1 = require("./gen-style-deps-map");
 const constant_1 = require("../common/constant");
-const PLUGIN_NAME = 'BuritCliSitePlugin';
+const PLUGIN_NAME = 'BuriCliSitePlugin';
 async function genSiteEntry() {
     return new Promise((resolve, reject) => {
         gen_style_deps_map_1.genStyleDepsMap()
@@ -30,7 +30,7 @@ async function genSiteEntry() {
     });
 }
 exports.genSiteEntry = genSiteEntry;
-class BuritCliSitePlugin {
+class BuriCliSitePlugin {
     apply(compiler) {
         if (process.env.NODE_ENV === 'production') {
             compiler.hooks.beforeCompile.tapPromise(PLUGIN_NAME, genSiteEntry);
@@ -40,4 +40,4 @@ class BuritCliSitePlugin {
         }
     }
 }
-exports.BuritCliSitePlugin = BuritCliSitePlugin;
+exports.BuriCliSitePlugin = BuriCliSitePlugin;

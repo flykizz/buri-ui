@@ -13,7 +13,7 @@ const webpack_base_1 = require("./webpack.base");
 const common_1 = require("../common");
 const buri_cli_site_plugin_1 = require("../compiler/buri-cli-site-plugin");
 const constant_1 = require("../common/constant");
-const buriConfig = common_1.getBuritConfig();
+const buriConfig = common_1.getBuriConfig();
 const baiduAnalytics = lodash_1.get(buriConfig, 'site.baiduAnalytics');
 function getSiteConfig() {
     const siteConfig = buriConfig.site;
@@ -67,10 +67,10 @@ exports.siteDevBaseConfig = webpack_merge_1.default(webpack_base_1.baseConfig, {
     },
     plugins: [
         new webpackbar_1.default({
-            name: 'Burit Cli',
+            name: 'Buri Cli',
             color: constant_1.GREEN
         }),
-        new buri_cli_site_plugin_1.BuritCliSitePlugin(),
+        new buri_cli_site_plugin_1.BuriCliSitePlugin(),
         new html_webpack_plugin_1.default({
             title,
             logo: siteConfig.logo,

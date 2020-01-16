@@ -2,7 +2,7 @@
 
 ### Intro
 
-Burit contains some common styles that can be used directly by the className.
+Buri contains some common styles that can be used directly by the className.
 
 ### Text ellipsis
 

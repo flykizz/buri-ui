@@ -85,8 +85,8 @@ buri 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 * [详细文档](https://flykizz.github.io/buri)
 * [更新日志](https://flykizz.github.io/buri#/zh-CN/changelog)
 * [码云镜像](https://gitee.com/organizations/buri-contrib)
-* [Burit 示例仓库](https://github.com/flykizz/buri-demo)
-* [BuritWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
+* [Buri 示例仓库](https://github.com/flykizz/buri-demo)
+* [BuriWeapp 小程序组件](https://github.com/flykizz/buri-weapp)
 
 ## 手机预览
 
@@ -96,7 +96,7 @@ buri 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 
 ## 微信讨论群
 
-欢迎大家加入 Burit 交流群一起讨论，添加下方微信并注明『加入 Burit 交流群』即可
+欢迎大家加入 Buri 交流群一起讨论，添加下方微信并注明『加入 Buri 交流群』即可
 
 <img src="https://img.yzcdn.cn/buri/wechat_20180606.png" width="220" height="292" >
 

@@ -50,13 +50,13 @@ function getPackageJson() {
     return require(exports.PACKAGE_JSON_FILE);
 }
 exports.getPackageJson = getPackageJson;
-function getBuritConfig() {
+function getBuriConfig() {
     delete require.cache[exports.VANT_CONFIG_FILE];
     return require(exports.VANT_CONFIG_FILE);
 }
-exports.getBuritConfig = getBuritConfig;
+exports.getBuriConfig = getBuriConfig;
 function getSrcDir() {
-    const buriConfig = getBuritConfig();
+    const buriConfig = getBuriConfig();
     const srcDir = lodash_1.get(buriConfig, 'build.srcDir');
     if (srcDir) {
         if (path_1.isAbsolute(srcDir)) {

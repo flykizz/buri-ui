@@ -10,7 +10,7 @@ const lodash_1 = require("lodash");
 const constant_1 = require("../common/constant");
 // generate vetur tags & attributes
 function genVeturConfig() {
-    const buriCongig = constant_1.getBuritConfig();
+    const buriCongig = constant_1.getBuriConfig();
     const options = lodash_1.get(buriCongig, 'build.vetur');
     if (options) {
         markdown_vetur_1.default.parseAndWrite({

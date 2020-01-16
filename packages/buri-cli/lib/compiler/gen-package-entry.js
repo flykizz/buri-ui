@@ -20,7 +20,7 @@ function genExports(names) {
 }
 function genPackageEntry(options) {
     const names = common_1.getComponents();
-    const buriConfig = constant_1.getBuritConfig();
+    const buriConfig = constant_1.getBuriConfig();
     const skipInstall = lodash_1.get(buriConfig, 'build.skipInstall', []).map(common_1.pascalize);
     const version = process.env.PACKAGE_VERSION || constant_1.getPackageJson().version;
     const components = names.map(common_1.pascalize);

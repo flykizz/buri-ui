@@ -3,7 +3,7 @@ import releaseIt from 'release-it';
 import { build } from '../commands/build';
 import { changelog } from '../commands/changelog';
 
-class BuritCliReleasePlugin extends releaseIt.Plugin {
+class BuriCliReleasePlugin extends releaseIt.Plugin {
   async beforeRelease() {
     // log an empty line
     console.log('');
@@ -13,4 +13,4 @@ class BuritCliReleasePlugin extends releaseIt.Plugin {
   }
 }
 
-module.exports = BuritCliReleasePlugin;
+module.exports = BuriCliReleasePlugin;

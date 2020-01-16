@@ -46,7 +46,7 @@ export default createComponent({
         !accordion &&
         !Array.isArray(value)
       ) {
-        console.error('[Burit] Collapse: type of prop "value" should be Array');
+        console.error('[Buri] Collapse: type of prop "value" should be Array');
         return;
       }
 

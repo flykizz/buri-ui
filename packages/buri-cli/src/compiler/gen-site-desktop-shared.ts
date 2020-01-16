@@ -4,7 +4,7 @@ import { existsSync, readdirSync } from 'fs-extra';
 import {
   pascalize,
   removeExt,
-  getBuritConfig,
+  getBuriConfig,
   smartOutputFile,
   normalizePath
 } from '../common';
@@ -40,7 +40,7 @@ function formatName(component: string, lang?: string) {
  *   - action-sheet/README.md => ActionSheet
  */
 function resolveDocuments(components: string[]): DocumentItem[] {
-  const buriConfig = getBuritConfig();
+  const buriConfig = getBuriConfig();
   const { locales, defaultLang } = buriConfig.site;
 
   const docs: DocumentItem[] = [];

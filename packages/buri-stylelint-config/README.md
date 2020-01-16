@@ -1,4 +1,4 @@
-# Stylelint Config of Burit
+# Stylelint Config of Buri
 
 ## Install
 

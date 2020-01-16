@@ -2,11 +2,11 @@
 
 ### Intro
 
-Burit provides a set of default themes, if you want to custom the theme color or other styles, you can use the following methods:
+Buri provides a set of default themes, if you want to custom the theme color or other styles, you can use the following methods:
 
 ### Less variables
 
-Burit use [Less](http://lesscss.org/) as css preprocessor，you can modify less variables to custom theme.
+Buri use [Less](http://lesscss.org/) as css preprocessor，you can modify less variables to custom theme.
 
 There are some basic variables below, all available variables could be found in [var.less](https://github.com/flykizz/buri/blob/dev/src/style/var.less)。
 

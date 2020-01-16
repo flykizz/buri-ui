@@ -26,7 +26,7 @@ function getSetName(demos) {
         .join('\n');
 }
 function genConfig(demos) {
-    const buriConfig = common_1.getBuritConfig();
+    const buriConfig = common_1.getBuriConfig();
     const demoNames = demos.map(item => common_1.decamelize(item.name));
     function demoFilter(nav) {
         return nav.filter(group => {

@@ -7,7 +7,7 @@ import { SlotsMixin } from '../../mixins/slots';
 import Vue, { VNode, VueConstructor, ComponentOptions, RenderContext } from 'vue';
 import { DefaultProps, FunctionComponent } from '../types';
 
-export interface BuritComponentOptions extends ComponentOptions<Vue> {
+export interface BuriComponentOptions extends ComponentOptions<Vue> {
   functional?: boolean;
   install?: (Vue: VueConstructor) => void;
 }
@@ -47,7 +47,7 @@ export function unifySlots(context: RenderContext) {
 }
 
 // should be removed after Vue 3
-function transformFunctionComponent(pure: FunctionComponent): BuritComponentOptions {
+function transformFunctionComponent(pure: FunctionComponent): BuriComponentOptions {
   return {
     functional: true,
     props: pure.props,
@@ -58,7 +58,7 @@ function transformFunctionComponent(pure: FunctionComponent): BuritComponentOpti
 
 export function createComponent(name: string) {
   return function<Props = DefaultProps, Events = {}, Slots = {}> (
-    sfc: BuritComponentOptions | FunctionComponent
+    sfc: BuriComponentOptions | FunctionComponent
   ): TsxComponent<Props, Events, Slots> {
     if (typeof sfc === 'function') {
       sfc = transformFunctionComponent(sfc);

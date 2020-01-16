@@ -2,15 +2,15 @@
 
 ### 介绍
 
-Burit 提供了一套默认主题，CSS 命名采用 BEM 的风格，方便使用者覆盖样式。如果你想完全替换主题色或者其他样式，可以使用下面提供的方法。
+Buri 提供了一套默认主题，CSS 命名采用 BEM 的风格，方便使用者覆盖样式。如果你想完全替换主题色或者其他样式，可以使用下面提供的方法。
 
 ### 示例工程
 
-我们提供了一个基于 Vue Cli 3 的示例工程，仓库地址为 [Burit Demo](https://github.com/flykizz/buri-demo)，其中包含了定制主题的基本配置，可以作为参考。
+我们提供了一个基于 Vue Cli 3 的示例工程，仓库地址为 [Buri Demo](https://github.com/flykizz/buri-demo)，其中包含了定制主题的基本配置，可以作为参考。
 
 ### 样式变量
 
-Burit 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内置了一些样式变量，通过替换样式变量即可定制你自己需要的主题。
+Buri 使用了 [Less](http://lesscss.org/) 对样式进行预处理，并内置了一些样式变量，通过替换样式变量即可定制你自己需要的主题。
 
 下面是一些基本的样式变量，所有可用的颜色变量请参考 [配置文件](https://github.com/flykizz/buri/blob/dev/src/style/var.less)。
 

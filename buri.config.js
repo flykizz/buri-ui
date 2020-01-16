@@ -367,7 +367,7 @@ module.exports = {
         ]
       },
       'en-US': {
-        title: 'Burit',
+        title: 'Buri',
         description: 'Mobile UI Components built on Vue',
         logo: 'https://img.yzcdn.cn/buri/logo.png',
         langLabel: 'En',

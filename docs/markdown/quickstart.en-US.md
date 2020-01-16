@@ -83,17 +83,17 @@ import 'buri/lib/button/style';
 
 ```js
 import Vue from 'vue';
-import Burit from 'buri';
+import Buri from 'buri';
 import 'buri/lib/index.css';
 
-Vue.use(Burit);
+Vue.use(Buri);
 ```
 
 > If you configured babel-plugin-import, you won't be allowed to import all components.
 
 ### 4. CDN
 
-The easiest way to use Burit is to include a CDN link in the html file, after which you can access all components via the global variable `buri`.
+The easiest way to use Buri is to include a CDN link in the html file, after which you can access all components via the global variable `buri`.
 
 ```html
 <!-- import style -->
@@ -119,7 +119,7 @@ The easiest way to use Burit is to include a CDN link in the html file, after wh
 
 ### Rem units
 
-Burit use `px` as size units by default，you can use tools such as `postcss-pxtorem` to transform units to `rem`.
+Buri use `px` as size units by default，you can use tools such as `postcss-pxtorem` to transform units to `rem`.
 
 - [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
 - [lib-flexible](https://github.com/amfe/lib-flexible)

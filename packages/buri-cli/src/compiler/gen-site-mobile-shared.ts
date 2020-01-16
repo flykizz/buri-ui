@@ -5,7 +5,7 @@ import {
   pascalize,
   removeExt,
   decamelize,
-  getBuritConfig,
+  getBuriConfig,
   smartOutputFile,
   normalizePath
 } from '../common';
@@ -42,7 +42,7 @@ function getSetName(demos: DemoItem[]) {
 }
 
 function genConfig(demos: DemoItem[]) {
-  const buriConfig = getBuritConfig();
+  const buriConfig = getBuriConfig();
   const demoNames = demos.map(item => decamelize(item.name));
 
   function demoFilter(nav: any[]) {

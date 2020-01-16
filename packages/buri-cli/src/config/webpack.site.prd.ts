@@ -1,10 +1,10 @@
 import merge from 'webpack-merge';
 import { get } from 'lodash';
-import { getBuritConfig, getWebpackConfig } from '../common';
+import { getBuriConfig, getWebpackConfig } from '../common';
 import { siteDevBaseConfig } from './webpack.site.dev';
 import { SITE_DIST_DIR } from '../common/constant';
 
-const buriConfig = getBuritConfig();
+const buriConfig = getBuriConfig();
 const outputDir = get(buriConfig, 'build.site.outputDir', SITE_DIST_DIR);
 const publicPath = get(buriConfig, 'build.site.publicPath', '/');
 

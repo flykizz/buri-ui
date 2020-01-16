@@ -5,15 +5,15 @@ import WebpackBar from 'webpackbar';
 import { get } from 'lodash';
 import { join } from 'path';
 import { baseConfig } from './webpack.base';
-import { getBuritConfig, getWebpackConfig } from '../common';
-import { BuritCliSitePlugin } from '../compiler/buri-cli-site-plugin';
+import { getBuriConfig, getWebpackConfig } from '../common';
+import { BuriCliSitePlugin } from '../compiler/buri-cli-site-plugin';
 import {
   GREEN,
   SITE_MODILE_SHARED_FILE,
   SITE_DESKTOP_SHARED_FILE
 } from '../common/constant';
 
-const buriConfig = getBuritConfig();
+const buriConfig = getBuriConfig();
 const baiduAnalytics = get(buriConfig, 'site.baiduAnalytics');
 
 function getSiteConfig() {
@@ -75,10 +75,10 @@ export const siteDevBaseConfig = merge(baseConfig as any, {
   },
   plugins: [
     new WebpackBar({
-      name: 'Burit Cli',
+      name: 'Buri Cli',
       color: GREEN
     }),
-    new BuritCliSitePlugin(),
+    new BuriCliSitePlugin(),
     new HtmlWebpackPlugin({
       title,
       logo: siteConfig.logo,

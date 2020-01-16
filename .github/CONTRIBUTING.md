@@ -1,6 +1,6 @@
-# Contributing to Burit
+# Contributing to Buri
 
-The following is a set of guidelines for contributing to Burit. Please spend several minutes in reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to Buri. Please spend several minutes in reading these guidelines before you create an issue or pull request.
 
 Anyway, these are just guidelines, not rules, use your best judgment and feel free to propose changes to this document in a pull request.
 

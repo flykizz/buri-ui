@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = require("path");
 const fs_extra_1 = require("fs-extra");
 const constant_1 = require("./constant");
-exports.getBuritConfig = constant_1.getBuritConfig;
+exports.getBuriConfig = constant_1.getBuriConfig;
 exports.EXT_REGEXP = /\.\w+$/;
 exports.SFC_REGEXP = /\.(vue)$/;
 exports.DEMO_REGEXP = /\/demo$/;
